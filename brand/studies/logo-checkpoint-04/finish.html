@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Logo finish — Source geometry, two-value</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root { --void:#0A0A0A; --ivory:#F7F6F3; --charcoal:#2A2A2A; --mist:#D6D9D7; --hair:rgba(10,10,10,.12); --hair-inv:rgba(247,246,243,.14); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--ivory); color:var(--void); font-family:Inter,system-ui,sans-serif; }
+  body { padding:28px 32px 48px; }
+  .kicker { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--charcoal); font-weight:500; }
+  h1 { font-family:Fraunces,serif; font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0; font-feature-settings:"lnum" 1; font-weight:400; font-size:30px; letter-spacing:-.03em; margin:12px 0 6px; }
+  h2 { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0,"WONK" 0; font-weight:400; font-size:18px; margin:28px 0 12px; padding-top:16px; border-top:1px solid var(--hair); }
+  .lede { color:var(--charcoal); font-size:14px; line-height:1.5; max-width:46rem; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:720px; }
+  figure { margin:0; text-align:center; }
+  figcaption { margin-top:8px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); }
+  .panel { border:1px solid var(--hair); background:#fff; padding:16px; display:flex; align-items:center; justify-content:center; min-height:180px; }
+  .panel.void { background:var(--void); border-color:#1c1c1c; }
+  .panel img.mark { width:140px; height:140px; object-fit:contain; display:block; }
+  .panel img.ref { height:140px; width:auto; display:block; }
+  .panel img.lock { width:100%; height:auto; display:block; }
+  .sz { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  .sz .chip { display:flex; align-items:center; gap:8px; padding:8px 10px; background:#eceae6; }
+  .sz .chip.void { background:var(--void); }
+  .sz img { image-rendering:pixelated; }
+  .lockup { display:flex; align-items:center; gap:.38em; font-size:28px; }
+  .lockup img { height:.78em; width:auto; }
+  .wm { font-family:Fraunces,serif; font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0; letter-spacing:-.03em; line-height:1; }
+  .rec { border:1px solid var(--hair); padding:14px 16px; max-width:46rem; }
+  .rec strong { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0; font-size:18px; font-weight:400; }
+  .notes { font-size:13px; line-height:1.5; color:var(--charcoal); max-width:46rem; }
+  .notes code { font-size:12px; }
+</style>
+</head>
+<body>
+  <div class="kicker">Internal · Logo finish · Production candidate · Not frozen · Phase B held</div>
+  <h1>Source geometry. Two-value finish.</h1>
+  <p class="lede">Geometry search is stopped. Occupancy is frozen in plan: parallel stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Objecthood is material/value — structure versus bead — not more silhouette. Flat matte. No chrome tubes, no glow, no teal. Type is not frozen; Fraunces is the current inscriptional lockup candidate.</p>
+
+  <h2>On ivory · 04 vs candidate</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="ref" src="reference-04-mark.png" alt="Direction 04 mark"/></div>
+      <figcaption>04 board · structure vs bead</figcaption>
+    </figure>
+    <figure>
+      <div class="panel"><img class="mark" src="finish/mark-on-ivory.svg" alt="Two-value on ivory"/></div>
+      <figcaption>Candidate · Void members, stone bead</figcaption>
+    </figure>
+  </div>
+
+  <h2>On void · 04 vs candidate</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel void"><img class="ref" src="reference-04-icon.png" alt="Direction 04 icon"/></div>
+      <figcaption>04 app icon</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void"><img class="mark" src="finish/icon-app.svg" alt="Two-value app icon"/></div>
+      <figcaption>Candidate · Mist members, darker bead</figcaption>
+    </figure>
+  </div>
+
+  <h2>Lockup · 04 vs candidate + Fraunces</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="lock" src="reference-04-lockup.png" alt="Direction 04 lockup"/></div>
+      <figcaption>04 lockup · Canela / proprietary</figcaption>
+    </figure>
+    <figure>
+      <div class="panel">
+        <div class="lockup">
+          <img src="finish/mark-on-ivory.svg" alt=""/>
+          <span class="wm">Waking Matter</span>
+        </div>
+      </div>
+      <figcaption>Candidate + Fraunces · type not frozen</figcaption>
+    </figure>
+  </div>
+  <p class="notes" style="margin-top:10px">SVG lockup files still carry Newsreader outlines as a stand-in. The comparison lockup above is Fraunces (opsz 144, SOFT 0).</p>
+
+  <h2>1-bit fallback · never all-one-fill</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="mark" src="finish/rejected-one-fill.svg" alt="Rejected one-fill"/></div>
+      <figcaption>Rejected · one fill (corporate H)</figcaption>
+    </figure>
+    <figure>
+      <div class="panel"><img class="mark" src="finish/mark.svg" alt="Members plus ring"/></div>
+      <figcaption>1-bit parent · members + ring</figcaption>
+    </figure>
+  </div>
+  <p class="notes">A hole in the aperture is preferred in principle. Source occupancy leaves ~1.7 units of air each side of the orb, so a boolean counter would vanish. Ring is the honest 1-bit bead. At 16px the ring fills the slit and reads as a bar — that is why small sizes use two-value, not 1-bit.</p>
+
+  <h2>Small sizes · two-value, parent geometry</h2>
+  <div class="sz">
+    <div class="chip"><img src="finish/raster/ivory-16.png" width="16" height="16" alt="16 ivory"/><span>16</span></div>
+    <div class="chip"><img src="finish/raster/ivory-24.png" width="24" height="24" alt="24 ivory"/><span>24</span></div>
+    <div class="chip"><img src="finish/raster/ivory-32.png" width="32" height="32" alt="32 ivory"/><span>32</span></div>
+    <div class="chip void"><img src="finish/raster/void-16.png" width="16" height="16" alt="16 void"/><img src="finish/raster/void-32.png" width="32" height="32" alt="32 void"/></div>
+    <div class="chip"><img src="finish/raster/favicon-16.png" width="16" height="16" alt="favicon 16"/><img src="finish/raster/favicon-32.png" width="32" height="32" alt="favicon 32"/><span>favicon</span></div>
+  </div>
+  <p class="notes">Not thickened. Not a 32-grid recut. If 16px is delicate, that is occupancy, not a license to redraw the parent.</p>
+
+  <h2>Architectural · 400px</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="mark" src="finish/raster/ivory-400.png" alt="Ivory 400" style="width:220px;height:220px"/></div>
+      <figcaption>Ivory · 400</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void"><img class="mark" src="finish/raster/void-400.png" alt="Void 400" style="width:220px;height:220px"/></div>
+      <figcaption>Void · 400</figcaption>
+    </figure>
+  </div>
+
+  <h2>For independent review</h2>
+  <div class="rec">
+    <p><strong>Production candidate. Geometry frozen in plan. Finish not frozen.</strong></p>
+    <p class="lede" style="margin:8px 0 0">Ask only whether structure/bead separation recovers Direction 04 objecthood without chrome, glow, or teal. Do not reopen pillar/gap/orb search. Do not resume Phase B. Live <code>main</code> is untouched.</p>
+  </div>
+</body>
+</html>

@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-labelledby="markTitle markDesc">
-  <title id="markTitle">Waking Matter mark</title>
-  <desc id="markDesc">Two vertical rounded pillars with a sphere in the aperture between them.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Waking Matter mark">
+  <title>Waking Matter mark</title>
+  <desc>Two stadium members (structure) and a ring bead (matter). Never a single fill.</desc>
   <g fill="currentColor">
-    <rect x="32" y="16" width="16" height="88" rx="8"/>
-    <rect x="72" y="16" width="16" height="88" rx="8"/>
-    <circle cx="60" cy="60" r="11"/>
+    <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50"/>
+<rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50"/>
   </g>
+  <circle cx="60.00" cy="60.00" r="11.40" fill="none" stroke="currentColor" stroke-width="2.20"/>
 </svg>

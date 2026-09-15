@@ -8,7 +8,7 @@ This document is for the independent critic. It is not a public page.
 
 - Aperture mark: two stadium pillars and a sphere in the gap. Matte, not luminous.
 - Primary lockup: mark + editorial serif wordmark on Ivory.
-- Void / Charcoal / Ivory / Resonance / Mist, with teal used almost nowhere except a shaded mid-tone in the dark sphere.
+- Void / Charcoal / Ivory / Resonance / Mist. The mark is two-value matte (structure vs bead). Resonance is not a mark identity.
 - Dark homepage hero, large Newsreader headline, tracked uppercase nav and eyebrows.
 - Traits: Precision, Depth, Composure, numbered.
 - Quiet motion, hairlines, composure over spectacle.
@@ -39,7 +39,7 @@ This document is for the independent critic. It is not a public page.
 
 - No commissioned photography yet. The hero uses the mark at architectural scale instead of a stock interior.
 - Newsreader stands in for Canela (OFL, self-hosted). Inter stands in for the board sans. Neue Montreal and Sora are not used.
-- Resonance is present in the dark sphere only. If a later composition looks teal, it has drifted.
+- Resonance is not in the mark. If a later composition looks teal, it has drifted.
 
 ## Institution vs template
 

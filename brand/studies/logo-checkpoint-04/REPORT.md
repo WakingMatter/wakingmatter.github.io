@@ -1,39 +1,46 @@
-# Logo gate — three-cut (Source occupancy as law)
+# Logo finish — Source geometry, two-value
 
-**Status:** revise. No freeze. Phase B held. Production `brand/logos/` unchanged.
+**Status:** production candidate. Geometry frozen in plan. Finish not frozen. Phase B held.
 
-Open [`index.html`](index.html). Geometry: [`generate_marks.py`](generate_marks.py).
+Open [`finish.html`](finish.html). Generator: [`generate_finish.py`](generate_finish.py).
 
-Independent review of the six-cut sheet: it was a real checkpoint, but no candidate won both **04 fidelity** and **not a corporate H**. Flare was too far from 04. Source was the honest silhouette and still a one-colour H. Asym was only an optical hint.
+Independent re-review of the three-cut sheet: the one-colour parent-mark constraint was the wrong test. Geometry search is stopped. Source occupancy is law. Objecthood in Direction 04 is **structure vs bead** — material/value — not more silhouette. Forcing one fill collapses Source into an H.
 
-This sheet is the smallest next move. Three deltas off Source. Throat, High, Catch, chrome, and the 62% Flare are out.
+## Frozen in plan (Source occupancy)
 
-## Occupancy law (Source)
+Parallel full stadium members. Centred orb.
 
-Parallel members. Pillar 11, gap 26.2, orb r 11.4 (87% fill), height 94, y0 13. Same as the 04 one-colour reconstruction.
+| | |
+| --- | --- |
+| Pillar | 11 |
+| Gap | 26.2 |
+| Sphere | r 11.4 |
+| Height | 94 |
+| y0 | 13 |
+| Left x | 35.90 |
+| Right x | 73.10 |
+| Centre | 60, 60 |
 
-| ID | Cut | One change |
+Do not reopen pillar / gap / orb / taper / asymmetry search.
+
+## Finish (candidate)
+
+Flat matte. No chrome tubes, no glow, no teal.
+
+| Ground | Members | Bead |
 | --- | --- | --- |
-| — | Source | Law. Not a candidate. |
-| 1 | Raised Source | cy 51 (was 60) |
-| 2 | Worn Source | rx 0.4 × width (was 0.5 ×, half-pill) |
-| 3 | Optical Flare | outer foot +10% (was 0; old Flare was +62%). Inner slit parallel. |
+| Ivory | Void `#0A0A0A` | Stone `#7A7F7C` (Mist darkened) |
+| Void | Mist `#D6D9D7` | Darker matte `#4E5451` |
+| 1-bit | filled members | ring (stroke 2.2). Hole preferred in principle; occupancy does not overlap, so a counter would vanish. Never all-one-fill. |
 
-## Tests
+Small-size SVG and favicons use the two-value parent, not a thickened 32-grid recut.
 
-| | 04 fidelity | Not a corporate H | Both? |
-| --- | --- | --- | --- |
-| Source | Pass | Fail | No |
-| 1 Raised | Pass | Moves it at 400px; still an H at 16 | No |
-| 2 Worn | Pass | Fail | No |
-| 3 Optical Flare | Pass | Fail (optical hint) | No |
+Fraunces remains the inscriptional lockup candidate. Type is not frozen. SVG lockups still carry Newsreader outlines as a stand-in.
 
-## Recommendation
+## Not this pass
 
-**No winner of both tests.** Do not freeze.
+- Phase B / site (`src/` untouched, including `Mark.astro`)
+- Merge
+- Live `main`
 
-Raised is the only cut that materially moves the H-bar without leaving occupancy. It is not enough. Worn and Optical Flare stay letters with a detail.
-
-Fraunces (opsz 144, SOFT 0) still pairs best with this occupancy. Type is not frozen.
-
-Stop for independent re-review. No Phase B.
+Stop for independent review of the finish only.

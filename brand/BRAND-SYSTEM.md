@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Logo checkpoint (open).** The marks in `logos/` are the shipped stadium geometry. They are **not frozen.** A 4–6 one-colour study against Direction 04 lives in [`studies/logo-checkpoint-04/`](studies/logo-checkpoint-04/index.html). Do not treat the corporate-H aperture as canonical until that checkpoint is independently reviewed.
+> **Logo finish (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is restrained matte two-value (structure vs bead). Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html) before freeze. Phase B held. Do not treat this as canon until that review.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -18,33 +18,34 @@ Do not invent a team, customers, funding, products, partnerships, publications, 
 
 ## 1. Mark
 
-The mark is two restrained vertical stadiums — rounded pillars, or an aperture — with a small sphere in the gap between them. It should read as calm, ambiguous, and ownable. It is not a letter H that needs to be explained, and it is not a picture of a thing.
+The mark is two parallel full stadiums — a holding structure — and a centred orb, the bead. Direction 04 objecthood is **material/value separation**, not silhouette. Members and bead are never the same fill in the colour parent. One shared fill collapses the mark into a corporate H.
 
-**Concept:** a holding structure and a unit of matter. The gap is as important as the ink.
+**Concept:** structure and a unit of matter. The gap is as important as the ink.
 
-**Do not let it become:** a brain, a robot, a circuit, a glowing orb, a planet, a spark, a stacked pyramid, a neural node, or a cosmic gradient.
+**Do not let it become:** a brain, a robot, a circuit, a glowing orb, a planet, a spark, a stacked pyramid, a neural node, chrome tubes, a teal identity, or a cosmic gradient.
 
 ### Construction
 
-Master viewBox: `0 0 120 120`.
+Master viewBox: `0 0 120 120`. Source occupancy, frozen in plan:
 
 | Part | Value |
 | --- | --- |
-| Left pillar | `rect x=32 y=16 width=16 height=88 rx=8` |
-| Right pillar | `rect x=72 y=16 width=16 height=88 rx=8` |
-| Sphere | `circle cx=60 cy=60 r=10` |
-| Pillar width | 16 |
-| Gap | 24 (1.5 × pillar width) |
-| Sphere diameter | 20 |
+| Left member | `rect x=35.90 y=13.00 width=11.00 height=94.00 rx=5.50` |
+| Right member | `rect x=73.10 y=13.00 width=11.00 height=94.00 rx=5.50` |
+| Sphere | `circle cx=60.00 cy=60.00 r=11.40` |
+| Pillar width | 11 |
+| Gap | 26.2 (≈2.38 × pillar width) |
+| Sphere radius | 11.4 (≈87% of gap) |
+| Height | 94 |
 | Optical center | `60, 60` |
 
-The sphere sits in the aperture and does not overlap the pillars. Caps are full half-circles (stadiums). Do not square the ends. Do not add a crossbar.
+The sphere sits in the aperture and does not overlap the members (clearance ≈1.7 each side). Caps are full half-circles (stadiums). Do not square the ends. Do not add a crossbar. Do not reopen pillar / gap / orb search.
 
-A **small-size** cut (`mark-small.svg`, 32×32) thickens the pillars slightly (`width=5` on a 32-unit grid) so the mark still reads at 16px.
+A **small-size** cut (`mark-small.svg`, `favicon.svg`) uses the **same geometry** and the two-value treatment. Do not thicken, recut onto a 32-grid, or distort the parent to chase 16px mass.
 
 ### Clearspace
 
-Minimum clearspace is **one pillar width** on all sides — `16` units in the 120-unit grid, equal to `0.2×` the mark’s frame. Do not let type, rules, or photography enter this margin.
+Minimum clearspace is **one pillar width** on all sides — `11` units in the 120-unit grid. Do not let type, rules, or photography enter this margin.
 
 Exception: the primary lockup, where the wordmark is locked to the mark at a fixed gap of **0.38 × cap height**.
 
@@ -62,27 +63,28 @@ If the lockup would fall below 120 px wide, use the **mark only**.
 
 ### Colorways
 
-| File | Ground | Ink |
-| --- | --- | --- |
-| `mark.svg` / `mark-mono.svg` / `lockup.svg` | any | `currentColor` |
-| `mark-on-ivory.svg` / `lockup-on-ivory.svg` | Ivory | Void pillars, matte sphere |
-| `mark-on-void.svg` / `lockup-on-void.svg` | Void | Mist pillars, pearl sphere with a **trace** of Resonance |
-| `icon-app.svg` | Void rounded square | Dimensional mark |
-| `icon-app-mono.svg` | Void rounded square | Ivory mark |
+Flat matte. No chrome tubes, no inner-light that reads as metal, no glow, no teal.
 
-Resonance appears in the sphere of the **void** colorway only, as a shaded mid-tone, never as a glow. The ivory colorway is essentially black and pale stone.
+| File | Ground | Treatment |
+| --- | --- | --- |
+| `mark.svg` / `mark-mono.svg` / `lockup.svg` / `lockup-mono.svg` | any | 1-bit: members filled + sphere as **ring**. Never members + filled bead in one ink. |
+| `mark-on-ivory.svg` / `lockup-on-ivory.svg` / `mark-small.svg` | Ivory | Void members, distinct matte stone bead (`#7A7F7C`, Mist darkened). Charcoal members are allowed if Void is too emphatic. |
+| `mark-on-void.svg` / `lockup-on-void.svg` | Void | Mist members, distinct matte darker bead (`#4E5451`). |
+| `icon-app.svg` | Void rounded square | Same two-value as void colorway |
+| `icon-app-mono.svg` | Void rounded square | Ivory members + ring |
+| `favicon.svg` | Ivory | Same two-value as ivory colorway, parent geometry |
+
+A boolean hole in the aperture would be the preferred 1-bit bead, but Source occupancy does not overlap, so the hole would vanish. Ring is the honest 1-bit parent.
 
 ---
 
 ## 2. Wordmark
 
-The wordmark is **Waking Matter** in Newsreader at display optical size, regular weight, tracking slightly tight. It is not Canela, Sora, or Neue Montreal.
+**Type is not frozen.** Fraunces (opsz 144, SOFT 0) is the current inscriptional lockup candidate against Direction 04. SVG lockup files still carry Newsreader outlines as a stand-in until type is decided. It is not Canela, Sora, or Neue Montreal.
 
 Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height`.
 
 Do not outline, extra-letterspace, or stack the words except in a display setting where the name is the headline (and then it is typesetting, not the logo).
-
-Do not pair the mark with a different typeface.
 
 ---
 
@@ -93,10 +95,10 @@ Do not pair the mark with a different typeface.
 | Void | `#0A0A0A` | Primary ink, dark grounds, hero |
 | Charcoal | `#2A2A2A` | Secondary ink, diagrams |
 | Ivory | `#F7F6F3` | Paper, light grounds, type on Void |
-| Resonance | `#5C8F8A` | Rare accent. Not a brand fill. |
+| Resonance | `#5C8F8A` | Rare accent. Not a brand fill. Not in the mark. |
 | Mist | `#D6D9D7` | Rules on Void, sphere highlight, hairlines |
 
-**Most surfaces are Void or Ivory.** Charcoal is for quieter text on Ivory when Void would be too emphatic. Mist is not body text on Ivory (contrast is insufficient). Resonance is not a button color, not a section wash, and not a gradient background.
+**Most surfaces are Void or Ivory.** Charcoal is for quieter text on Ivory when Void would be too emphatic. Mist is not body text on Ivory (contrast is insufficient). Resonance is not a button color, not a section wash, not a gradient background, and not a mark identity.
 
 Approximate mix: if a composition feels more than a few percent teal, it has drifted.
 
@@ -213,7 +215,7 @@ All masters live in `brand/logos/`. Site copies of the public marks live in `pub
 | `lockup-mono.svg` | Primary, single color |
 | `lockup-on-ivory.svg` | Primary on light |
 | `lockup-on-void.svg` | Primary on dark |
-| `icon-app.svg` | App / social, dimensional |
+| `icon-app.svg` | App / social, two-value on Void |
 | `icon-app-mono.svg` | App / social, mono |
 | `favicon.svg` | Browser icon on Ivory |
 

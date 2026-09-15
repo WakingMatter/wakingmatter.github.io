@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="Waking Matter mark, small sizes">
-  <g fill="currentColor">
-    <rect x="8" y="4" width="5" height="24" rx="2.5"/>
-    <rect x="19" y="4" width="5" height="24" rx="2.5"/>
-    <circle cx="16" cy="16" r="3.1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Waking Matter mark, small sizes">
+  <g fill="#0A0A0A">
+    <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50"/>
+<rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50"/>
+  </g>
+  <g fill="#7A7F7C">
+    <circle cx="60.00" cy="60.00" r="11.40"/>
   </g>
 </svg>
