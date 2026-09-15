@@ -1,18 +1,24 @@
-# Logo finish pass 3 — inner face and bead object
+# Logo finish pass 3 — provisionally frozen
 
-**Status:** revise finish. Geometry frozen in plan. Finish not frozen. Phase B held.
+**Status:** PASS GEOMETRY + FINISH TO PROVISIONAL FREEZE. Type is not frozen. Phase B held.
 
-Open [`finish.html`](finish.html). Generator: [`generate_finish.py`](generate_finish.py).
+Open [`finish.html`](finish.html). Wordmark gate: [`../wordmark-gate-01/index.html`](../wordmark-gate-01/index.html).
 
-Independent finish-gate verdict on pass 2: **REVISE FINISH**. Inner face was a 14% whisper (`#1C1C1C`) and read as black bars. Void bead was darker than the light columns and read as a hole. Geometry stays Source.
+Independent finish-gate verdict on pass 3: **PASS**. Source occupancy and the modeled two-value finish are frozen. Do not reopen geometry, small-size occupancy, color, or mono fallback.
 
-## Frozen in plan (Source occupancy)
+## Frozen in plan (Source occupancy + finish)
 
-Unchanged. Parallel full stadiums. Centred orb. Pillar 11 / gap 26.2 / r 11.4 / height 94. Do not reopen search.
+Parallel full stadiums. Centred orb. Pillar 11 / gap 26.2 / r 11.4 / height 94. Inner face ~40% Charcoal / Mist plane. Bead is the object in the slot (pewter body/terminator; brighter matte pole; lighter-than-column on void). 1-bit members+ring is mono fallback only.
 
-## This pass (two finish corrections only)
+## Next gate
 
-| | Pass 2 (rejected) | Pass 3 |
+Type / wordmark only. See the wordmark study. Do not resume Phase B. Do not touch editorial copy. Live `main` is untouched.
+
+## This finish (historical)
+
+Pass 3 corrections that are now frozen:
+
+| | Pass 2 (rejected) | Pass 3 (frozen) |
 | --- | --- | --- |
 | Inner face | ~14% `#1C1C1C` whisper, invisible at 180/400 | ~40% slot-facing plane. Ivory inner Charcoal `#2A2A2A`. Void inner Mist `#D6D9D7` against outer `#8E928F`. Not chrome. |
 | Bead on ivory | Pole `#8B918D` too dim / later hot-spot | Brighter matte pole `#B8BCBA`, pewter body `#3A3E3C`, terminator `#1A1C1B`. No glow. |
@@ -20,16 +26,5 @@ Unchanged. Parallel full stadiums. Centred orb. Pillar 11 / gap 26.2 / r 11.4 / 
 | Members | Flat bars / too-thin inner edge | Columns around a slot. One inner-edge value step. |
 | Parent | Modeled two-value in `mark.svg` | Unchanged role. Ring only in `mark-mono.svg` (untouched). |
 | App icon | Height 348 / 512 | Unchanged (placement only). |
-| Type | Shipping Newsreader; study Fraunces | Unchanged. Type not frozen. |
 
-## Not this pass
-
-- Geometry zoo
-- Teal / chrome
-- Type freeze / type zoo
-- Mono fallback recut
-- Phase B / `src/`
-- Editorial copy must-fixes
-- Merge / live `main`
-
-Stop for independent re-review of this finish only.
+Do not reopen this table. Type remains unfrozen.

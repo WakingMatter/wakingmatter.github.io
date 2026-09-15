@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Logo finish pass 3 (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is matte modeled two-value: a ~40% slot-facing inner plane so members read as columns around a slot, and a pewter bead that is the object in the slot on both grounds. Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html). Phase B held.
+> **Geometry and finish provisionally frozen.** Source occupancy: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is the modeled two-value in `logos/mark.svg` (pass 3). **Type is not frozen.** Wordmark gate: [`studies/wordmark-gate-01/index.html`](studies/wordmark-gate-01/index.html). Phase B held.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -70,12 +70,12 @@ Matte modeled finish. No chrome tubes, no glow, no teal. One inner-edge value st
 | `mark.svg` / `mark-on-ivory.svg` / `mark-small.svg` | Ivory | **Parent master.** Void columns with a ~40% slot-facing Charcoal inner plane (`#2A2A2A`). Pewter bead: pole `#B8BCBA` / body `#3A3E3C` / terminator `#1A1C1B`. |
 | `mark-on-void.svg` | Void | Outer `#8E928F`, Mist inner plane. Bead is the object: pole `#E2E4E1` (lighter than the column) / body `#3A3E3C` / terminator `#1A1C1B`. |
 | `mark-mono.svg` / `lockup-mono.svg` / `icon-app-mono.svg` | any | **Mono fallback only.** Members filled + ring. Never the parent master. |
-| `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + Newsreader outlines (stand-in; type not frozen) |
-| `lockup-on-void.svg` | Void | Modeled void mark + Newsreader outlines |
+| `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + Newsreader outlines (**stand-in, not a candidate**; type not frozen) |
+| `lockup-on-void.svg` | Void | Modeled void mark + Newsreader outlines (stand-in) |
 | `icon-app.svg` | Void rounded square | Same void finish; mark scaled up in the square (placement only) |
 | `favicon.svg` | Ivory | Same modeled parent geometry |
 
-Candidate Fraunces lockups live in the study (`lockup-fraunces-*.svg`). They are not shipping masters.
+Candidate Fraunces lockups remain in the finish study only. They are not shipping masters. Current type recommendation lives in the wordmark gate.
 
 A boolean hole in the aperture would be the preferred 1-bit bead, but Source occupancy does not overlap, so the hole would vanish. Ring is the honest mono fallback.
 
@@ -83,11 +83,13 @@ A boolean hole in the aperture would be the preferred 1-bit bead, but Source occ
 
 ## 2. Wordmark
 
-**Type is not frozen.** Fraunces (opsz 144, SOFT 0) is the current inscriptional lockup candidate against Direction 04; outlined candidate lockups are in the finish study only. Shipping SVG lockups still carry Newsreader outlines as a stand-in and must not be treated as a type freeze. It is not Canela, Sora, or Neue Montreal.
+**Type is not frozen.** Direction 04 (Canela, proprietary) is the source: thin, severe, inscriptional, archaeological-future. Fraunces was closer than Newsreader and is still too calligraphic/soft. Shipping SVG lockups still carry Newsreader outlines as a stand-in and must not be treated as a candidate or a freeze.
 
-Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height`.
+Current gate: [`studies/wordmark-gate-01/index.html`](studies/wordmark-gate-01/index.html). Recommendation pending independent review: **Gloock** (OFL), 04-tight lockup, outlined. It is not Canela, Sora, or Neue Montreal.
 
-Do not outline, extra-letterspace, or stack the words except in a display setting where the name is the headline (and then it is typesetting, not the logo).
+Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height` unless the wordmark gate explicitly adopts Direction 02 air.
+
+Do not extra-letterspace or stack the words except in a display setting where the name is the headline (and then it is typesetting, not the logo). Outlined custom wordmarks are allowed once a face is chosen; they are the lockup, not a second type family.
 
 ---
 
