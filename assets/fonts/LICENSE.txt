@@ -1,0 +1,9 @@
+Newsreader
+Copyright 2020 The Newsreader Project Authors
+SIL Open Font License 1.1 — https://scripts.sil.org/OFL
+https://fonts.google.com/specimen/Newsreader
+
+IBM Plex Sans
+Copyright 2017 IBM Corp.
+SIL Open Font License 1.1 — https://scripts.sil.org/OFL
+https://github.com/IBM/plex
