@@ -14,9 +14,26 @@
     <line x1="20" y1="160" x2="260" y2="160"/>
   </g>
   <g transform="translate(80 40) scale(1.2766) translate(-35.9 -13)">
-    <g fill="#0A0A0A"><rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50"/>
-<rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50"/></g>
-    <g fill="#7A7F7C"><circle cx="60.00" cy="60.00" r="11.40"/></g>
+  <defs>
+    <linearGradient id="cnColL" x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="0.86" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#1C1C1C"/>
+    </linearGradient>
+    <linearGradient id="cnColR" x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C1C1C"/>
+      <stop offset="0.14" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <radialGradient id="cnBead" cx="36%" cy="30%" r="68%">
+      <stop offset="0" stop-color="#8B918D"/>
+      <stop offset="0.38" stop-color="#3A3E3C"/>
+      <stop offset="1" stop-color="#1A1C1B"/>
+    </radialGradient>
+  </defs>
+  <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#cnColL)"/>
+  <rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#cnColR)"/>
+  <circle cx="60.00" cy="60.00" r="11.40" fill="url(#cnBead)"/>
   </g>
   <g font-family="ui-monospace, monospace" font-size="9" fill="#2A2A2A">
     <text x="80" y="34">11</text>
@@ -24,7 +41,8 @@
     <text x="176" y="34">11</text>
     <text x="272" y="52">height 94</text>
     <text x="272" y="108">sphere r 11.4</text>
-    <text x="272" y="128">two-value: structure / bead</text>
-    <text x="272" y="164">1-bit: members + ring</text>
+    <text x="272" y="128">bead: pole / body / terminator</text>
+    <text x="272" y="148">members: inner-edge step</text>
+    <text x="272" y="168">1-bit: members + ring (mono)</text>
   </g>
 </svg>

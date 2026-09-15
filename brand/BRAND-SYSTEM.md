@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Logo finish (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is restrained matte two-value (structure vs bead). Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html) before freeze. Phase B held. Do not treat this as canon until that review.
+> **Logo finish pass 2 (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is matte modeled two-value: columns around a slot, pewter bead with pole / body / terminator. Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html). Phase B held.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -18,7 +18,7 @@ Do not invent a team, customers, funding, products, partnerships, publications, 
 
 ## 1. Mark
 
-The mark is two parallel full stadiums — a holding structure — and a centred orb, the bead. Direction 04 objecthood is **material/value separation**, not silhouette. Members and bead are never the same fill in the colour parent. One shared fill collapses the mark into a corporate H.
+The mark is two parallel full stadiums — columns around a slot — and a centred orb, the bead. Direction 04 objecthood is **material/value separation**, not silhouette. The colour parent models the bead as matter (highlight pole, body, terminator) and the members as columns (one inner-edge value step, slot-facing). Members and bead are never the same fill. A flat one-fill, or a 1-bit ring used as parent, is wrong.
 
 **Concept:** structure and a unit of matter. The gap is as important as the ink.
 
@@ -63,24 +63,27 @@ If the lockup would fall below 120 px wide, use the **mark only**.
 
 ### Colorways
 
-Flat matte. No chrome tubes, no inner-light that reads as metal, no glow, no teal.
+Matte modeled finish. No chrome tubes, no glow, no teal. One inner-edge value step on the members — not a vertical metal roll.
 
 | File | Ground | Treatment |
 | --- | --- | --- |
-| `mark.svg` / `mark-mono.svg` / `lockup.svg` / `lockup-mono.svg` | any | 1-bit: members filled + sphere as **ring**. Never members + filled bead in one ink. |
-| `mark-on-ivory.svg` / `lockup-on-ivory.svg` / `mark-small.svg` | Ivory | Void members, distinct matte stone bead (`#7A7F7C`, Mist darkened). Charcoal members are allowed if Void is too emphatic. |
-| `mark-on-void.svg` / `lockup-on-void.svg` | Void | Mist members, distinct matte darker bead (`#4E5451`). |
-| `icon-app.svg` | Void rounded square | Same two-value as void colorway |
-| `icon-app-mono.svg` | Void rounded square | Ivory members + ring |
-| `favicon.svg` | Ivory | Same two-value as ivory colorway, parent geometry |
+| `mark.svg` / `mark-on-ivory.svg` / `mark-small.svg` | Ivory | **Parent master.** Void columns with a slot-facing inner step (`#1C1C1C`). Pewter bead: pole `#8B918D` / body `#3A3E3C` / terminator `#1A1C1B`. |
+| `mark-on-void.svg` | Void | Dim-Mist outer, Mist inner step. Dark bead: dim Mist pole `#9A9E9C` / body `#2E3230` / terminator `#0E1010`. |
+| `mark-mono.svg` / `lockup-mono.svg` / `icon-app-mono.svg` | any | **Mono fallback only.** Members filled + ring. Never the parent master. |
+| `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + Newsreader outlines (stand-in; type not frozen) |
+| `lockup-on-void.svg` | Void | Modeled void mark + Newsreader outlines |
+| `icon-app.svg` | Void rounded square | Same void finish; mark scaled up in the square (placement only) |
+| `favicon.svg` | Ivory | Same modeled parent geometry |
 
-A boolean hole in the aperture would be the preferred 1-bit bead, but Source occupancy does not overlap, so the hole would vanish. Ring is the honest 1-bit parent.
+Candidate Fraunces lockups live in the study (`lockup-fraunces-*.svg`). They are not shipping masters.
+
+A boolean hole in the aperture would be the preferred 1-bit bead, but Source occupancy does not overlap, so the hole would vanish. Ring is the honest mono fallback.
 
 ---
 
 ## 2. Wordmark
 
-**Type is not frozen.** Fraunces (opsz 144, SOFT 0) is the current inscriptional lockup candidate against Direction 04. SVG lockup files still carry Newsreader outlines as a stand-in until type is decided. It is not Canela, Sora, or Neue Montreal.
+**Type is not frozen.** Fraunces (opsz 144, SOFT 0) is the current inscriptional lockup candidate against Direction 04; outlined candidate lockups are in the finish study only. Shipping SVG lockups still carry Newsreader outlines as a stand-in and must not be treated as a type freeze. It is not Canela, Sora, or Neue Montreal.
 
 Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height`.
 
@@ -215,7 +218,7 @@ All masters live in `brand/logos/`. Site copies of the public marks live in `pub
 | `lockup-mono.svg` | Primary, single color |
 | `lockup-on-ivory.svg` | Primary on light |
 | `lockup-on-void.svg` | Primary on dark |
-| `icon-app.svg` | App / social, two-value on Void |
+| `icon-app.svg` | App / social, modeled void finish |
 | `icon-app-mono.svg` | App / social, mono |
 | `favicon.svg` | Browser icon on Ivory |
 

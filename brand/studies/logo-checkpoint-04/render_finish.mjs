@@ -23,16 +23,20 @@ function read(name) {
 
 const ivory = read("mark-on-ivory.svg");
 const onVoid = read("mark-on-void.svg");
-const oneBit = read("mark.svg").replace("<svg", `<svg style="color:#0A0A0A"`);
-const oneBitVoid = read("mark.svg").replace("<svg", `<svg style="color:#F7F6F3"`);
+const oneBit = read("mark-mono.svg").replace("<svg", `<svg style="color:#0A0A0A"`);
+const oneBitVoid = read("mark-mono.svg").replace(
+  "<svg",
+  `<svg style="color:#F7F6F3"`,
+);
 const rejected = read("rejected-one-fill.svg").replace(
   "<svg",
   `<svg style="color:#0A0A0A"`,
 );
 const icon = read("icon-app.svg");
 const favicon = read("favicon.svg");
-const lockIvory = read("lockup-on-ivory.svg");
-const lockVoid = read("lockup-on-void.svg");
+const lockIvory = read("lockup-fraunces-ivory.svg");
+const lockVoid = read("lockup-fraunces-void.svg");
+const lockNews = read("lockup-on-ivory.svg");
 
 for (const size of [16, 24, 32, 180, 400]) {
   render(ivory, size, join(out, `ivory-${size}.png`), "#F7F6F3");
@@ -46,6 +50,7 @@ render(icon, 180, join(out, "icon-180.png"));
 render(icon, 400, join(out, "icon-400.png"));
 render(favicon, 16, join(out, "favicon-16.png"));
 render(favicon, 32, join(out, "favicon-32.png"));
-render(lockIvory, 720, join(out, "lockup-ivory.png"), "#F7F6F3");
-render(lockVoid, 720, join(out, "lockup-void.png"), "#0A0A0A");
+render(lockIvory, 720, join(out, "lockup-fraunces-ivory.png"), "#F7F6F3");
+render(lockVoid, 720, join(out, "lockup-fraunces-void.png"), "#0A0A0A");
+render(lockNews, 720, join(out, "lockup-newsreader-ivory.png"), "#F7F6F3");
 console.log("finish rasters", out);

@@ -1,12 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Waking Matter app icon">
   <rect width="512" height="512" rx="112" fill="#0A0A0A"/>
-  <g transform="translate(64.51 64.51) scale(3.19149)">
-    <g fill="#D6D9D7">
-      <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50"/>
-<rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50"/>
-    </g>
-    <g fill="#4E5451">
-      <circle cx="60.00" cy="60.00" r="11.40"/>
-    </g>
+  <g transform="translate(33.87 33.87) scale(3.70213)">
+  <defs>
+    <linearGradient id="icColL" x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B8BCBA"/>
+      <stop offset="0.86" stop-color="#B8BCBA"/>
+      <stop offset="1" stop-color="#D6D9D7"/>
+    </linearGradient>
+    <linearGradient id="icColR" x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D6D9D7"/>
+      <stop offset="0.14" stop-color="#B8BCBA"/>
+      <stop offset="1" stop-color="#B8BCBA"/>
+    </linearGradient>
+    <radialGradient id="icBead" cx="36%" cy="30%" r="68%">
+      <stop offset="0" stop-color="#9A9E9C"/>
+      <stop offset="0.38" stop-color="#2E3230"/>
+      <stop offset="1" stop-color="#0E1010"/>
+    </radialGradient>
+  </defs>
+  <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#icColL)"/>
+  <rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#icColR)"/>
+  <circle cx="60.00" cy="60.00" r="11.40" fill="url(#icBead)"/>
   </g>
 </svg>
