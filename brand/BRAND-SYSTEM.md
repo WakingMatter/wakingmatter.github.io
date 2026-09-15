@@ -1,5 +1,7 @@
 # Waking Matter brand system
 
+> **Logo checkpoint (open).** The marks in `logos/` are the shipped stadium geometry. They are **not frozen.** A 4–6 one-colour study against Direction 04 lives in [`studies/logo-checkpoint-04/`](studies/logo-checkpoint-04/index.html). Do not treat the corporate-H aperture as canonical until that checkpoint is independently reviewed.
+
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
 **Visual source of truth, in rank order:** Direction 04 Impeccable Craft (north star) → Direction 03 Systems Lab (grid, construction, numbered rigor) → Direction 01 Quiet Research Institution (editorial air). Direction 02 is a negative reference: do not drift toward luminous sci-fi or generic AI.

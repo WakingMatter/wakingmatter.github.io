@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Waking Matter — Logo checkpoint 04</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --void: #0a0a0a;
+        --charcoal: #2a2a2a;
+        --ivory: #f7f6f3;
+        --mist: #d6d9d7;
+        --hair: rgba(10, 10, 10, 0.12);
+        --serif-news: "Newsreader", "Iowan Old Style", serif;
+        --serif-fraunces: "Fraunces", "Times New Roman", serif;
+        --serif-cormorant: "Cormorant Garamond", "Palatino Linotype", serif;
+        --sans: Inter, system-ui, sans-serif;
+        --mono: "IBM Plex Mono", ui-monospace, monospace;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        background: var(--ivory);
+        color: var(--void);
+        font-family: var(--sans);
+      }
+      body { padding: 2.5rem 3rem 4rem; }
+      .kicker, .label, figcaption, th, td:first-child {
+        font-size: 0.6875rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--hair);
+        color: var(--charcoal);
+      }
+      h1 {
+        font-family: var(--serif-news);
+        font-weight: 400;
+        font-size: clamp(2rem, 4vw, 3.1rem);
+        letter-spacing: -0.035em;
+        line-height: 1.05;
+        margin: 1.5rem 0 0.6rem;
+        max-width: 16ch;
+      }
+      .lede {
+        max-width: 46rem;
+        color: var(--charcoal);
+        font-size: 1.05rem;
+        line-height: 1.55;
+      }
+      h2 {
+        font-family: var(--serif-news);
+        font-weight: 400;
+        font-size: 1.65rem;
+        letter-spacing: -0.03em;
+        margin: 3rem 0 0.8rem;
+        padding-top: 1.4rem;
+        border-top: 1px solid var(--hair);
+      }
+      .criteria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem 2rem;
+        margin: 1.5rem 0 0;
+      }
+      .criteria p { margin: 0.35rem 0 0; color: var(--charcoal); font-size: 0.92rem; line-height: 1.45; }
+      .ref {
+        margin: 1.5rem 0 0;
+        border: 1px solid var(--hair);
+        padding: 0.75rem;
+        background: #fff;
+      }
+      .ref img { width: 100%; height: auto; display: block; }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.25rem;
+      }
+      figure { margin: 0; }
+      figure img, figure svg { display: block; width: 100%; height: auto; color: var(--void); }
+      figcaption { margin-top: 0.55rem; color: var(--charcoal); }
+      .void-row figure {
+        background: var(--void);
+        color: var(--ivory);
+        padding: 1.1rem 0.8rem 0.9rem;
+      }
+      .void-row img { filter: invert(1); }
+      .scale-row {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 1rem;
+        align-items: end;
+        margin-top: 1rem;
+      }
+      .scale-cell {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        align-items: flex-start;
+      }
+      .chip {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--charcoal);
+        font-family: var(--mono);
+        font-size: 0.7rem;
+      }
+      .chip img { display: block; }
+      .lockups {
+        display: grid;
+        gap: 1.4rem;
+        margin-top: 1rem;
+      }
+      .lockup {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        min-height: 4.5rem;
+      }
+      .lockup img { width: 42px; height: 42px; flex: none; }
+      .wm { line-height: 1; letter-spacing: -0.03em; }
+      .wm-news { font-family: var(--serif-news); font-size: 2.6rem; font-optical-sizing: auto; }
+      .wm-fraunces { font-family: var(--serif-fraunces); font-size: 2.55rem; font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0; }
+      .wm-cormorant { font-family: var(--serif-cormorant); font-size: 2.85rem; font-weight: 500; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.88rem;
+      }
+      th, td {
+        border-top: 1px solid var(--hair);
+        padding: 0.7rem 0.55rem;
+        vertical-align: top;
+        text-align: left;
+      }
+      th { color: var(--charcoal); font-weight: 500; }
+      .rec {
+        border: 1px solid var(--hair);
+        padding: 1.25rem 1.4rem;
+        margin-top: 1rem;
+        max-width: 46rem;
+      }
+      .rec h3 {
+        font-family: var(--serif-news);
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+        letter-spacing: -0.03em;
+      }
+      .warn { color: var(--charcoal); font-size: 0.92rem; }
+      @media (max-width: 900px) {
+        body { padding: 1.25rem; }
+        .row, .scale-row, .criteria { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <span class="kicker">Internal · Logo checkpoint · Do not freeze</span>
+      <span class="kicker">Direction 04 north star · One-colour studies</span>
+    </div>
+
+    <h1>The mark is not yet a mark.</h1>
+    <p class="lede">
+      Production currently ships one frozen geometry: two perfectly symmetric stadiums
+      and a centered sphere. Independent review called that the failure we were
+      guarding against — a corporate H / clean-tech aperture. This board is the
+      missing 4–6 study. It does not replace <code>brand/logos/</code>. Newsreader
+      is a candidate wordmark, not canon.
+    </p>
+
+    <h2>04 criteria (from the board, not from our prose)</h2>
+    <div class="criteria">
+      <div>
+        <p class="label">01 Silhouette</p>
+        <p>Two vertical members and a sphere in the aperture. Not a letter H, not a planet, not a glow. The members should feel carved or worn, not extruded UI pills.</p>
+      </div>
+      <div>
+        <p class="label">02 Tension</p>
+        <p>The sphere is held. It sits in a gap that is about a shaft-width, filling it. It should not read as a bullet pasted on a crossbar.</p>
+      </div>
+      <div>
+        <p class="label">03 Word</p>
+        <p>The name is thin, inscriptional, high-contrast, archaeological-future. Canela on the board. Any substitute must keep that cut, not a newspaper body face.</p>
+      </div>
+      <div>
+        <p class="label">04 Material</p>
+        <p>In colour, 04 is matte metal and stone. In one colour, that has to become silhouette: scoop, taper, mass, or a pocket. Direction 02 may inform only spacing and negative space — never bloom.</p>
+      </div>
+      <div>
+        <p class="label">05 Scale</p>
+        <p>Must survive 16 / 24 / 32 px, a lockup at cap-height, and a monumental field. If the sphere dies at 16, say so.</p>
+      </div>
+      <div>
+        <p class="label">06 Ownability</p>
+        <p>Archaeological ↔ future at once. Dune-like artifact, not a fintech helix. Calm enough to keep for a decade.</p>
+      </div>
+    </div>
+
+    <figure class="ref">
+      <img src="reference-04.png" alt="Direction 04 Impeccable Craft board, primary visual source" />
+      <figcaption>Source of truth — Direction 04 Impeccable Craft (not our current lockup)</figcaption>
+    </figure>
+
+    <h2>Control vs six studies</h2>
+    <p class="lede">All cuts are one-colour, <code>currentColor</code>, same 120 viewBox. Control is the shipped geometry, shown as a warning, not a candidate.</p>
+    <div class="row">
+      <figure>
+        <img src="marks/0-control.svg" alt="Control" />
+        <figcaption>Control · shipped</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/a-relic.svg" alt="Relic" />
+        <figcaption>A Relic · closest to 04</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/b-throat.svg" alt="Throat" />
+        <figcaption>B Throat · pinch</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/c-menhir.svg" alt="Menhir" />
+        <figcaption>C Menhir · stones</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/d-catch.svg" alt="Catch" />
+        <figcaption>D Catch · bearing</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/e-token.svg" alt="Token" />
+        <figcaption>E Token · seal</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/f-taper.svg" alt="Taper" />
+        <figcaption>F Taper · blades</figcaption>
+      </figure>
+    </div>
+
+    <p class="label" style="margin-top:2rem">On void</p>
+    <div class="row void-row">
+      <figure><img src="marks/0-control.svg" alt="" /><figcaption>Control</figcaption></figure>
+      <figure><img src="marks/a-relic.svg" alt="" /><figcaption>A</figcaption></figure>
+      <figure><img src="marks/b-throat.svg" alt="" /><figcaption>B</figcaption></figure>
+      <figure><img src="marks/c-menhir.svg" alt="" /><figcaption>C</figcaption></figure>
+      <figure><img src="marks/d-catch.svg" alt="" /><figcaption>D</figcaption></figure>
+      <figure><img src="marks/e-token.svg" alt="" /><figcaption>E</figcaption></figure>
+      <figure><img src="marks/f-taper.svg" alt="" /><figcaption>F</figcaption></figure>
+    </div>
+
+    <h2>Scale tests · 32 / 24 / 16</h2>
+    <div class="scale-row">
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/0-control.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/0-control.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/0-control.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">Control</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/a-relic.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/a-relic.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/a-relic.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">A Relic</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/b-throat.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/b-throat.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/b-throat.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">B Throat</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/c-menhir.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/c-menhir.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/c-menhir.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">C Menhir</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/d-catch.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/d-catch.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/d-catch.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">D Catch</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/e-token.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/e-token.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/e-token.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">E Token</span>
+      </div>
+      <div class="scale-cell">
+        <div class="chip"><img src="marks/f-taper.svg" width="32" height="32" alt="" /> 32</div>
+        <div class="chip"><img src="marks/f-taper.svg" width="24" height="24" alt="" /> 24</div>
+        <div class="chip"><img src="marks/f-taper.svg" width="16" height="16" alt="" /> 16</div>
+        <span class="label">F Taper</span>
+      </div>
+    </div>
+
+    <h2>Monumental</h2>
+    <div class="row">
+      <figure style="grid-column: span 1"><img src="marks/a-relic.svg" alt="" style="max-height:280px" /><figcaption>A</figcaption></figure>
+      <figure><img src="marks/b-throat.svg" alt="" style="max-height:280px" /><figcaption>B</figcaption></figure>
+      <figure><img src="marks/c-menhir.svg" alt="" style="max-height:280px" /><figcaption>C</figcaption></figure>
+      <figure><img src="marks/d-catch.svg" alt="" style="max-height:280px" /><figcaption>D</figcaption></figure>
+      <figure><img src="marks/e-token.svg" alt="" style="max-height:280px" /><figcaption>E</figcaption></figure>
+      <figure><img src="marks/f-taper.svg" alt="" style="max-height:280px" /><figcaption>F</figcaption></figure>
+    </div>
+
+    <h2>Wordmark pairing · inscriptional cut</h2>
+    <p class="lede">04’s Canela is high-contrast, thin-haired, archaeological. Newsreader is the licensed site candidate; it is softer and more literary. Fraunces (display optical, SOFT 0) and Cormorant Garamond are the other OFL cuts on this board. Pairings use D Catch, the working recommendation, plus A Relic as the board-fidelity check.</p>
+
+    <p class="label">Newsreader · optical display</p>
+    <div class="lockups">
+      <div class="lockup"><img src="marks/d-catch.svg" alt="" /><span class="wm wm-news">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/a-relic.svg" alt="" /><span class="wm wm-news">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/f-taper.svg" alt="" /><span class="wm wm-news">Waking Matter</span></div>
+    </div>
+
+    <p class="label" style="margin-top:2rem">Fraunces · opsz 144, SOFT 0</p>
+    <div class="lockups">
+      <div class="lockup"><img src="marks/d-catch.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/a-relic.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/f-taper.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
+    </div>
+
+    <p class="label" style="margin-top:2rem">Cormorant Garamond · 500</p>
+    <div class="lockups">
+      <div class="lockup"><img src="marks/d-catch.svg" alt="" /><span class="wm wm-cormorant">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/a-relic.svg" alt="" /><span class="wm wm-cormorant">Waking Matter</span></div>
+      <div class="lockup"><img src="marks/f-taper.svg" alt="" /><span class="wm wm-cormorant">Waking Matter</span></div>
+    </div>
+
+    <h2>Grades</h2>
+    <p class="lede">Five = strong for that axis. One = fails it. These are checkpoint scores, not a brand freeze.</p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Archaeological ↔ future</th>
+          <th>Ownable</th>
+          <th>Not an H</th>
+          <th>16–32 px</th>
+          <th>Monumental</th>
+          <th>Wordmark</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Control</td>
+          <td>1 · extruded UI</td>
+          <td>1 · generic helix</td>
+          <td>1 · is an H</td>
+          <td>5 · survives</td>
+          <td>2 · a large letter</td>
+          <td>3 · sits beside type, says nothing</td>
+        </tr>
+        <tr>
+          <td>A Relic</td>
+          <td>4 · worn shafts, 04’s fill</td>
+          <td>3 · still cousin to an H</td>
+          <td>3 · waist helps, not enough</td>
+          <td>4 · sphere holds at 16</td>
+          <td>4 · column, not a logo bug</td>
+          <td>4 · calm with a sharp serif</td>
+        </tr>
+        <tr>
+          <td>B Throat</td>
+          <td>3 · clamp / magnet</td>
+          <td>3 · distinctive, a bit toy</td>
+          <td>4 · pinch kills the H</td>
+          <td>2 · sphere dies at 16</td>
+          <td>4 · strong pinch at scale</td>
+          <td>3 · heavy next to thin type</td>
+        </tr>
+        <tr>
+          <td>C Menhir</td>
+          <td>5 · gate of stones</td>
+          <td>4 · Dune without costume</td>
+          <td>5 · cannot be an H</td>
+          <td>3 · high sphere thins out</td>
+          <td>5 · landscape</td>
+          <td>4 · especially with Fraunces</td>
+        </tr>
+        <tr>
+          <td>D Catch</td>
+          <td>5 · bearing in a tool</td>
+          <td>5 · not a letter, not a trend</td>
+          <td>5 · pocket, not a bar</td>
+          <td>4 · pocket reads at 24; 16 is tight</td>
+          <td>5 · artifact</td>
+          <td>5 · the held sphere talks to the name</td>
+        </tr>
+        <tr>
+          <td>E Token</td>
+          <td>3 · seal, a little mute</td>
+          <td>3 · heavy, familiar</td>
+          <td>3 · low sphere helps</td>
+          <td>4 · mass survives</td>
+          <td>4 · as a carved block</td>
+          <td>2 · overpowers thin type</td>
+        </tr>
+        <tr>
+          <td>F Taper</td>
+          <td>5 · obelisk / stillsuit hardware</td>
+          <td>5 · ownable silhouette</td>
+          <td>5 · an A-gate, not an H</td>
+          <td>3 · sphere small at 16</td>
+          <td>5 · architecture</td>
+          <td>4 · needs a sharper serif than Newsreader</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Recommendation · not frozen</h2>
+    <div class="rec">
+      <h3>Working direction: D Catch.</h3>
+      <p>
+        It is the only cut where the sphere is structurally held — lips closer than
+        the ball, a bay cut into the shaft — which is the 04 idea that the stadium
+        H erased. It is the least like a corporate letter. It still belongs to the
+        same family as the board (two members, one matter, an aperture).
+      </p>
+      <p>
+        Keep <strong>A Relic</strong> in the room as the fidelity check: it is the
+        closest one-colour reconstruction of 04’s proportion and fill. Do not ship
+        it as-is; it still reads H at a glance. Keep <strong>F Taper</strong> as the
+        alternate if Catch’s pocket feels too clever, or if small-size needs a
+        simpler silhouette with a larger sphere.
+      </p>
+      <p>
+        Wordmark: <strong>Fraunces at display optical, SOFT 0</strong> is closer to
+        04’s inscriptional Canela than Newsreader. Newsreader remains acceptable
+        for article body. Cormorant is too costume. Do not freeze type until the
+        mark is chosen.
+      </p>
+      <p class="warn">
+        Production masters in <code>brand/logos/</code> and the site lockup are
+        unchanged. This checkpoint is for independent review. Do not merge. Do not
+        proceed to further site polish on the strength of Control.
+      </p>
+    </div>
+  </body>
+</html>
