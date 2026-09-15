@@ -1,0 +1,42 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+  return notes.map((note) => ({
+    params: { slug: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+const canonical = `https://wakingmatter.com/notes/${note.id}/`;
+---
+
+<Base
+  title={`${note.data.title} — Waking Matter`}
+  description={note.data.description}
+  canonical={canonical}
+  ogType="article"
+  published={note.data.pubDate}
+  current="notes"
+>
+  <main id="content" class="wrap">
+    <header class="article-header">
+      <p class="label">Note</p>
+      <p class="meta">{note.data.pubDate.toISOString().slice(0, 10)}</p>
+      <h1>{note.data.title}</h1>
+      <p class="dek">{note.data.description}</p>
+    </header>
+    <article class="article-body">
+      <Content />
+    </article>
+    <p class="article-end">
+      <a href="/notes/">All notes</a>
+      ·
+      <a href="mailto:hello@wakingmatter.com">hello@wakingmatter.com</a>
+    </p>
+  </main>
+</Base>

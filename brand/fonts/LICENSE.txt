@@ -1,0 +1,19 @@
+Newsreader
+Copyright 2020 The Newsreader Project Authors
+https://fonts.google.com/specimen/Newsreader
+SIL Open Font License 1.1 — https://scripts.sil.org/OFL
+
+Inter
+Copyright 2016 The Inter Project Authors
+https://rsms.me/inter/
+SIL Open Font License 1.1 — https://scripts.sil.org/OFL
+
+IBM Plex Mono
+Copyright 2017 IBM Corp.
+https://github.com/IBM/plex
+SIL Open Font License 1.1 — https://scripts.sil.org/OFL
+
+Full OFL text is in the fontsource packages under node_modules and at:
+https://scripts.sil.org/OFL
+
+These faces are self-hosted. No proprietary Canela, Neue Montreal, or Sora files are included.
