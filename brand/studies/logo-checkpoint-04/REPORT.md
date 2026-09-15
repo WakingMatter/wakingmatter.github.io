@@ -1,46 +1,39 @@
-# Logo checkpoint — Direction 04
+# Logo gate — three-cut (Source occupancy as law)
 
-**Status:** study only. Production masters in `brand/logos/` are **not** replaced. Phase B held. Independent review is the gate.
+**Status:** revise. No freeze. Phase B held. Production `brand/logos/` unchanged.
 
 Open [`index.html`](index.html). Geometry: [`generate_marks.py`](generate_marks.py).
 
-The previous parameter-tweak family (Optical / Slender / Held / Suspended) and the Catch zoo are both withdrawn. This sheet is six **visually distinct** cuts of the same 04 instrument.
+Independent review of the six-cut sheet: it was a real checkpoint, but no candidate won both **04 fidelity** and **not a corporate H**. Flare was too far from 04. Source was the honest silhouette and still a one-colour H. Asym was only an optical hint.
 
-## Control (not approved)
+This sheet is the smallest next move. Three deltas off Source. Throat, High, Catch, chrome, and the 62% Flare are out.
 
-Shipped: two stadiums 16 / gap 24 / sphere r=11 at dead centre. A corporate H. Useful as a baseline. Not a candidate.
+## Occupancy law (Source)
 
-## Family
+Parallel members. Pillar 11, gap 26.2, orb r 11.4 (87% fill), height 94, y0 13. Same as the 04 one-colour reconstruction.
 
-Two members, one suspended sphere, one colour. Nothing else.
-
-| ID | Name | What you should see |
+| ID | Cut | One change |
 | --- | --- | --- |
-| 1 | Source | Closest to the 04 image. Parallel full-round stadiums, 04 occupancy (gap/pillar ≈ 2.4, orb fills ~87%), centred. Not over-rationalised. |
-| 2 | Flare | Standing threshold. Outer foot visibly wider. Inner slit parallel. Orb suspended in the door. |
-| 3 | Throat | Ritual aperture. Inner faces pinch; sphere held at the waist. |
-| 4 | Asym | Recovered imbalance. Heavier left member, orb pulled toward it and slightly high. |
-| 5 | Tablet | Worn caps (rx 2.9, not half-circles). Cut stone, not UI pills. |
-| 6 | High | Long ritual void. Orb clearly above centre. |
+| — | Source | Law. Not a candidate. |
+| 1 | Raised Source | cy 51 (was 60) |
+| 2 | Worn Source | rx 0.4 × width (was 0.5 ×, half-pill) |
+| 3 | Optical Flare | outer foot +10% (was 0; old Flare was +62%). Inner slit parallel. |
 
-Each is shown as mark, Fraunces lockup, 16px, 32px, and 400px architectural.
+## Tests
 
-## Wordmark
+| | 04 fidelity | Not a corporate H | Both? |
+| --- | --- | --- | --- |
+| Source | Pass | Fail | No |
+| 1 Raised | Pass | Moves it at 400px; still an H at 16 | No |
+| 2 Worn | Pass | Fail | No |
+| 3 Optical Flare | Pass | Fail (optical hint) | No |
 
-04’s Canela is thin, inscriptional, high-contrast, cap-height locked to the mark.
+## Recommendation
 
-- **Fraunces** (opsz 144, SOFT 0) — lockup stand-in.
-- **Newsreader** — site candidate; too literary beside a megalith; fine for body.
-- Not locked.
+**No winner of both tests.** Do not freeze.
 
-## Recommendation (not a freeze)
+Raised is the only cut that materially moves the H-bar without leaving occupancy. It is not enough. Worn and Optical Flare stay letters with a detail.
 
-**Working direction: 2 Flare.**
+Fraunces (opsz 144, SOFT 0) still pairs best with this occupancy. Type is not frozen.
 
-It is the first cut that feels like a recovered threshold rather than a letter. The sphere is suspended in a doorway, not a crossbar. Architectural scale is a megalith. 16px holds because the foot has mass.
-
-**1 Source** stays in the room as the closest one-colour of the board. Without chrome it is still a slender H — which is why the literal reconstruction is not the winner.
-
-Fallback if Flare’s taper is too far from 04’s parallel members: **4 Asym**. Do not take High (planet) or Throat (gadget). Control is not approved.
-
-Do not write this into `brand/logos/`. Do not start Phase B.
+Stop for independent re-review. No Phase B.

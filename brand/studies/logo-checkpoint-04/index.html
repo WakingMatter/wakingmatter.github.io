@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>Waking Matter — Logo checkpoint</title>
+    <title>Waking Matter — Logo gate, three-cut</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -18,9 +18,7 @@
         --ivory: #f7f6f3;
         --hair: rgba(10, 10, 10, 0.12);
         --fraunces: "Fraunces", "Times New Roman", serif;
-        --news: "Newsreader", "Iowan Old Style", serif;
         --sans: Inter, system-ui, sans-serif;
-        --mono: "IBM Plex Mono", ui-monospace, monospace;
       }
       * { box-sizing: border-box; }
       html, body { margin: 0; background: var(--ivory); color: var(--void); font-family: var(--sans); }
@@ -36,10 +34,10 @@
       h1 {
         font-family: var(--fraunces);
         font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
-        font-feature-settings: "lnum" 1, "tnum" 1;
+        font-feature-settings: "lnum" 1;
         font-variant-numeric: lining-nums;
         font-weight: 400;
-        font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+        font-size: clamp(1.7rem, 3.2vw, 2.4rem);
         letter-spacing: -0.03em;
         line-height: 1.08;
         margin: 1.1rem 0 0.45rem;
@@ -50,46 +48,45 @@
         font-family: var(--fraunces);
         font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
         font-weight: 400;
-        font-size: 1.35rem;
+        font-size: 1.3rem;
         letter-spacing: -0.02em;
-        margin: 2.1rem 0 0.7rem;
-        padding-top: 1.1rem;
+        margin: 1.9rem 0 0.65rem;
+        padding-top: 1rem;
         border-top: 1px solid var(--hair);
       }
-      .refs { display: grid; grid-template-columns: 1.4fr 0.7fr 0.7fr; gap: 0.75rem; align-items: start; }
+      .refs { display: grid; grid-template-columns: 1.5fr 0.7fr; gap: 0.75rem; align-items: start; }
       .ref { margin: 0; border: 1px solid var(--hair); padding: 0.6rem; background: #fff; }
       .ref img { width: 100%; height: auto; display: block; }
-      .row { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.85rem; margin-top: 0.9rem; align-items: end; }
+      .row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.9rem; margin-top: 0.85rem; align-items: end; }
       figure { margin: 0; }
       figure img { display: block; width: 100%; height: auto; object-fit: contain; }
       figcaption { margin-top: 0.4rem; }
-      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 0.8rem; }
+      .law { opacity: 0.78; }
+      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 0.75rem; }
       .card { border: 1px solid var(--hair); padding: 0.85rem 0.9rem 1rem; background: #fff; }
       .card h3 {
         font-family: var(--fraunces);
         font-variation-settings: "opsz" 24, "SOFT" 0, "WONK" 0;
         font-weight: 400;
-        font-size: 1.15rem;
-        margin: 0 0 0.2rem;
-        letter-spacing: -0.02em;
+        font-size: 1.12rem;
+        margin: 0 0 0.25rem;
       }
-      .card .why { color: var(--charcoal); font-size: 0.82rem; line-height: 1.4; margin: 0 0 0.7rem; min-height: 2.6em; }
-      .card .mark { width: 112px; height: 112px; margin: 0 auto 0.65rem; }
+      .card .why { color: var(--charcoal); font-size: 0.82rem; line-height: 1.4; margin: 0 0 0.65rem; min-height: 2.8em; }
+      .card .mark { width: 120px; height: 120px; margin: 0 auto 0.6rem; display: block; }
       .sizes {
         display: flex;
         align-items: center;
         gap: 0.85rem;
-        margin: 0.55rem 0 0.7rem;
+        margin: 0.5rem 0 0.65rem;
         padding: 0.45rem 0.55rem;
         background: #eceae6;
       }
-      .sizes img { image-rendering: pixelated; width: auto; height: auto; }
+      .sizes img { image-rendering: pixelated; }
       .lockup {
         display: flex;
         align-items: baseline;
         gap: 0.38em;
         font-size: 1.55rem;
-        margin-top: 0.35rem;
       }
       .lockup img { height: 0.72em; width: auto; flex: none; }
       .wm-f {
@@ -98,240 +95,198 @@
         letter-spacing: -0.03em;
         line-height: 1;
       }
-      .wm-n {
-        font-family: var(--news);
-        font-optical-sizing: auto;
-        letter-spacing: -0.03em;
-        line-height: 1;
-      }
-      .arch { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.6rem; }
-      .arch img { width: 100%; max-width: 280px; margin: 0 auto; display: block; }
-      .type-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0.6rem; }
-      .type-row .lockup { font-size: 2.15rem; }
+      .arch { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-top: 0.55rem; }
+      .arch img { width: 100%; max-width: 260px; margin: 0 auto; display: block; }
+      table { width: 100%; border-collapse: collapse; margin-top: 0.7rem; font-size: 0.88rem; }
+      th, td { border-top: 1px solid var(--hair); padding: 0.65rem 0.5rem; text-align: left; vertical-align: top; }
+      th { color: var(--charcoal); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
       .rec { border: 1px solid var(--hair); padding: 1.1rem 1.2rem; margin-top: 0.8rem; max-width: 46rem; }
       .rec h3 {
         font-family: var(--fraunces);
         font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
         font-weight: 400;
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         margin: 0 0 0.4rem;
       }
       .warn { color: var(--charcoal); font-size: 0.9rem; }
-      .reject { opacity: 0.72; }
-      @media (max-width: 900px) {
+      @media (max-width: 800px) {
         body { padding: 1.1rem; }
-        .row, .cards, .arch, .refs, .type-row { grid-template-columns: 1fr 1fr; }
+        .row, .cards, .arch, .refs { grid-template-columns: 1fr 1fr; }
       }
     </style>
   </head>
   <body>
     <div class="top">
-      <span class="kicker">Internal · Logo gate · Do not freeze</span>
-      <span class="kicker">Phase B held · One-colour study</span>
+      <span class="kicker">Internal · Logo gate · Revise · No freeze</span>
+      <span class="kicker">Phase B held · Three-cut only</span>
     </div>
 
-    <h1>Six cuts of the instrument. Not one corporate letter.</h1>
+    <h1>Three cuts. Source occupancy is law.</h1>
     <p class="lede">
-      The shipped two-stadiums-plus-centred-sphere is a baseline, not approved.
-      These six are visually distinct from each other and still the 04 family:
-      two members, one suspended sphere, one colour. No glow. Direction 02 only
-      for spacing. Production masters unchanged.
+      Independent review: the last sheet was a real checkpoint, but no candidate won both
+      Direction 04 fidelity and the not-a-corporate-H test. Flare was too far from 04.
+      Source was the honest silhouette and still a one-colour H. This sheet is the smallest
+      next move: three deltas off Source, nothing else. Throat, High, Catch, chrome, and
+      the 62% Flare stay out. Production masters unchanged.
     </p>
 
     <div class="refs">
       <figure class="ref">
         <img src="reference-04-lockup.png" alt="Direction 04 lockup" />
-        <figcaption>04 source — mark and Canela are one object</figcaption>
+        <figcaption>04 lockup crop — source of truth</figcaption>
       </figure>
       <figure class="ref">
-        <img src="reference-04-icon.png" alt="Direction 04 icon" />
-        <figcaption>04 icon</figcaption>
-      </figure>
-      <figure class="ref">
-        <img src="reference-04-mono.png" alt="Direction 04 mono" />
-        <figcaption>04 carved mono</figcaption>
+        <img src="reference-04-mark.png" alt="Direction 04 mark" />
+        <figcaption>04 mark</figcaption>
       </figure>
     </div>
 
-    <h2>Family at logo scale</h2>
+    <h2>Occupancy law</h2>
+    <p class="lede">
+      Parallel members. Pillar 11, gap 26.2, orb r 11.4 (87% fill), height 94.
+      Same numbers as Source. Each cut moves one thing.
+    </p>
     <div class="row">
-      <figure class="reject">
-        <img src="marks/0-control.svg" alt="Control" />
-        <figcaption>0 Control · not approved</figcaption>
+      <figure>
+        <img src="reference-04-mark.png" alt="04" />
+        <figcaption>04 board</figcaption>
+      </figure>
+      <figure class="law">
+        <img src="marks/0-source.svg" alt="Source" />
+        <figcaption>Source · law, not a candidate</figcaption>
       </figure>
       <figure>
-        <img src="marks/1-source.svg" alt="Source" />
-        <figcaption>1 Source · closest to 04</figcaption>
+        <img src="marks/1-raised.svg" alt="Raised" />
+        <figcaption>1 Raised · cy 51</figcaption>
       </figure>
       <figure>
-        <img src="marks/2-flare.svg" alt="Flare" />
-        <figcaption>2 Flare · threshold</figcaption>
+        <img src="marks/2-worn.svg" alt="Worn" />
+        <figcaption>2 Worn · rx 0.4w</figcaption>
       </figure>
       <figure>
-        <img src="marks/3-throat.svg" alt="Throat" />
-        <figcaption>3 Throat · aperture</figcaption>
-      </figure>
-      <figure>
-        <img src="marks/4-asym.svg" alt="Asym" />
-        <figcaption>4 Asym · recovered</figcaption>
-      </figure>
-      <figure>
-        <img src="marks/5-tablet.svg" alt="Tablet" />
-        <figcaption>5 Tablet · worn caps</figcaption>
-      </figure>
-      <figure>
-        <img src="marks/6-high.svg" alt="High" />
-        <figcaption>6 High · long slit</figcaption>
+        <img src="marks/3-optical-flare.svg" alt="Optical Flare" />
+        <figcaption>3 Optical Flare · +10% foot</figcaption>
       </figure>
     </div>
 
     <h2>Each cut · mark, 16 / 32, lockup</h2>
-    <p class="lede">Wordmark is Fraunces, opsz 144, SOFT 0 — the inscriptional stand-in for 04’s Canela. Newsreader is tested below; it is a candidate, not locked.</p>
+    <p class="lede">Fraunces, opsz 144, SOFT 0. Review already noted it pairs with Source best. Type is not frozen.</p>
     <div class="cards">
       <div class="card">
-        <h3>1 Source</h3>
-        <p class="why">Closest to the board. Parallel stadiums, 04 occupancy, orb centred. Not over-rationalised.</p>
-        <img class="mark" src="marks/1-source.svg" alt="" />
+        <h3>1 Raised Source</h3>
+        <p class="why">Identical members and orb. Only the sphere moves to cy 51 — suspended, not a crossbar.</p>
+        <img class="mark" src="marks/1-raised.svg" alt="" />
         <div class="sizes">
-          <img src="raster/1-source-16.png" width="16" height="16" alt="16" />
-          <img src="raster/1-source-32.png" width="32" height="32" alt="32" />
+          <img src="raster/1-raised-16.png" width="16" height="16" alt="16" />
+          <img src="raster/1-raised-32.png" width="32" height="32" alt="32" />
           <span class="label">16 / 32</span>
         </div>
-        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/1-raised.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
       </div>
       <div class="card">
-        <h3>2 Flare</h3>
-        <p class="why">Standing threshold. Outer foot wider, inner slit parallel, orb suspended in the door.</p>
-        <img class="mark" src="marks/2-flare.svg" alt="" />
+        <h3>2 Worn Source</h3>
+        <p class="why">Identical occupancy. Terminals rx 0.4 × width — between half-pill and Tablet brick.</p>
+        <img class="mark" src="marks/2-worn.svg" alt="" />
         <div class="sizes">
-          <img src="raster/2-flare-16.png" width="16" height="16" alt="16" />
-          <img src="raster/2-flare-32.png" width="32" height="32" alt="32" />
+          <img src="raster/2-worn-16.png" width="16" height="16" alt="16" />
+          <img src="raster/2-worn-32.png" width="32" height="32" alt="32" />
           <span class="label">16 / 32</span>
         </div>
-        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/2-worn.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
       </div>
       <div class="card">
-        <h3>3 Throat</h3>
-        <p class="why">Ritual aperture. Inner faces pinch; the sphere is held at the waist, not pasted.</p>
-        <img class="mark" src="marks/3-throat.svg" alt="" />
+        <h3>3 Optical Flare</h3>
+        <p class="why">Inner slit parallel. Outer foot +10%, not Flare’s +62%. Occupancy otherwise Source.</p>
+        <img class="mark" src="marks/3-optical-flare.svg" alt="" />
         <div class="sizes">
-          <img src="raster/3-throat-16.png" width="16" height="16" alt="16" />
-          <img src="raster/3-throat-32.png" width="32" height="32" alt="32" />
+          <img src="raster/3-optical-flare-16.png" width="16" height="16" alt="16" />
+          <img src="raster/3-optical-flare-32.png" width="32" height="32" alt="32" />
           <span class="label">16 / 32</span>
         </div>
-        <div class="lockup"><img src="marks/3-throat.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-      </div>
-      <div class="card">
-        <h3>4 Asym</h3>
-        <p class="why">Recovered, not machined. Heavier left member, orb pulled toward it and slightly high.</p>
-        <img class="mark" src="marks/4-asym.svg" alt="" />
-        <div class="sizes">
-          <img src="raster/4-asym-16.png" width="16" height="16" alt="16" />
-          <img src="raster/4-asym-32.png" width="32" height="32" alt="32" />
-          <span class="label">16 / 32</span>
-        </div>
-        <div class="lockup"><img src="marks/4-asym.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-      </div>
-      <div class="card">
-        <h3>5 Tablet</h3>
-        <p class="why">Worn caps. Same 04 proportion without the extruded-pill terminals that make a UI H.</p>
-        <img class="mark" src="marks/5-tablet.svg" alt="" />
-        <div class="sizes">
-          <img src="raster/5-tablet-16.png" width="16" height="16" alt="16" />
-          <img src="raster/5-tablet-32.png" width="32" height="32" alt="32" />
-          <span class="label">16 / 32</span>
-        </div>
-        <div class="lockup"><img src="marks/5-tablet.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-      </div>
-      <div class="card">
-        <h3>6 High</h3>
-        <p class="why">Long ritual void. The orb is clearly suspended; the slit below is the character.</p>
-        <img class="mark" src="marks/6-high.svg" alt="" />
-        <div class="sizes">
-          <img src="raster/6-high-16.png" width="16" height="16" alt="16" />
-          <img src="raster/6-high-32.png" width="32" height="32" alt="32" />
-          <span class="label">16 / 32</span>
-        </div>
-        <div class="lockup"><img src="marks/6-high.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/3-optical-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
       </div>
     </div>
 
     <h2>Architectural · 400px</h2>
-    <p class="lede">This is where a neat H becomes a letter on a wall, and where an artifact either holds or turns into a diagram.</p>
     <div class="arch">
-      <figure>
-        <img src="raster/1-source-400.png" alt="Source 400" />
-        <figcaption>1 Source — 04 doorway, still a bar</figcaption>
+      <figure class="law">
+        <img src="raster/0-source-400.png" alt="Source 400" />
+        <figcaption>Source · law</figcaption>
       </figure>
       <figure>
-        <img src="raster/2-flare-400.png" alt="Flare 400" />
-        <figcaption>2 Flare — megalith, orb in the door</figcaption>
+        <img src="raster/1-raised-400.png" alt="Raised 400" />
+        <figcaption>1 Raised</figcaption>
       </figure>
       <figure>
-        <img src="raster/3-throat-400.png" alt="Throat 400" />
-        <figcaption>3 Throat — held at the pinch</figcaption>
+        <img src="raster/2-worn-400.png" alt="Worn 400" />
+        <figcaption>2 Worn</figcaption>
       </figure>
       <figure>
-        <img src="raster/4-asym-400.png" alt="Asym 400" />
-        <figcaption>4 Asym — recovered instrument</figcaption>
-      </figure>
-      <figure>
-        <img src="raster/5-tablet-400.png" alt="Tablet 400" />
-        <figcaption>5 Tablet — cut stone, still an H</figcaption>
-      </figure>
-      <figure>
-        <img src="raster/6-high-400.png" alt="High 400" />
-        <figcaption>6 High — hanging, almost a planet</figcaption>
+        <img src="raster/3-optical-flare-400.png" alt="Optical Flare 400" />
+        <figcaption>3 Optical Flare</figcaption>
       </figure>
     </div>
 
-    <h2>Wordmark test · inscriptional vs literary</h2>
-    <p class="lede">04’s Canela is thin, high-contrast, archaeological. Fraunces at display optical is the OFL stand-in. Newsreader is the site candidate — softer, more literary. Not locked.</p>
-    <div class="type-row">
-      <div>
-        <p class="label">Fraunces · opsz 144, SOFT 0</p>
-        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-        <div class="lockup"><img src="marks/0-control.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
-      </div>
-      <div>
-        <p class="label">Newsreader · display optical</p>
-        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
-        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
-        <div class="lockup"><img src="marks/0-control.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
-      </div>
-    </div>
+    <h2>Both tests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>04 fidelity</th>
+          <th>Not a corporate H</th>
+          <th>16 / 32</th>
+          <th>Both?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Source (law)</td>
+          <td>Pass — the silhouette</td>
+          <td>Fail — one-colour crossbar</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>1 Raised</td>
+          <td>Pass — occupancy unchanged</td>
+          <td>Moves it at 400px. Still an H at 16.</td>
+          <td>High bar, still a letter</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2 Worn</td>
+          <td>Pass — occupancy unchanged</td>
+          <td>Fail — centred orb is still the bar</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>3 Optical Flare</td>
+          <td>Pass — parallel slit, 04 fill</td>
+          <td>Fail — 10% foot is an optical hint</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2>Recommendation · not frozen</h2>
+    <h2>For re-review · not frozen</h2>
     <div class="rec">
-      <h3>Working direction: 2 Flare.</h3>
+      <h3>No winner of both tests.</h3>
       <p>
-        It is the first cut in this family that feels like a recovered threshold rather than a
-        corporate H. Two standing members, a suspended orb in the doorway, a foot that has
-        weight. At architectural scale it is a megalith. At 16px the flare actually helps —
-        there is mass to rasterise. The sphere is held by the gate, not decorating a letter.
-      </p>
-      <p>
-        <strong>1 Source</strong> is the closest one-colour of the board, as requested: parallel
-        stadiums, 04 occupancy, orb centred. Keep it in the room. In one colour, without chrome,
-        it still reads as a slender H. That is why we did not stop at the literal reconstruction.
+        Raised is the only cut that materially moves the H-bar without leaving Source occupancy.
+        At 400px the orb is an object in a doorway. At 16px it is still a letter with a high bar.
+        That is not a freeze.
       </p>
       <p>
-        If Flare’s taper feels too far from 04’s parallel members, the fallback is
-        <strong>4 Asym</strong> — still stadiums, but recovered rather than machined.
-        <strong>5 Tablet</strong> kills the UI-pill caps and stays closest to Source.
-        Do not take <strong>6 High</strong> (planet at scale) or <strong>3 Throat</strong>
-        (a held sphere, but a gadget). Control remains not approved.
+        Worn and Optical Flare stay one-colour H’s with a detail — the same class of hint
+        independent review already rejected in Asym. Do not pick them to have a winner.
       </p>
       <p>
-        Wordmark: <strong>Fraunces, opsz 144, SOFT 0</strong> with Flare. Newsreader is too
-        literary beside a megalith; keep it for article body. Do not freeze type until the mark
-        is chosen.
+        Type stays Fraunces at display optical, unfrozen. Production
+        <code>brand/logos/</code> unchanged. Phase B held. Stop here.
       </p>
-      <p class="warn">
-        Production masters in <code>brand/logos/</code> are unchanged. Do not start Phase B.
-        Independent review of this sheet is the gate.
-      </p>
+      <p class="warn">Independent re-review of this three-cut sheet is the gate.</p>
     </div>
   </body>
 </html>
