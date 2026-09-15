@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Logo finish pass 2 — modeled bead</title>
+<title>Logo finish pass 3 — inner face and bead object</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
@@ -40,9 +40,9 @@
 </style>
 </head>
 <body>
-  <div class="kicker">Internal · Finish pass 2 · Revise finish · Geometry frozen · Phase B held</div>
-  <h1>Modeled bead. Inner-edge columns.</h1>
-  <p class="lede">One finish pass. Source occupancy unchanged (pillar 11 / gap 26.2 / r 11.4 / height 94). Bead is a matte sphere — pole, body, terminator — not a flat disk. Members are columns around a slot: one inner-edge value step, not chrome tubes. No glow, no teal. 1-bit members+ring is mono fallback only. Type is not frozen.</p>
+  <div class="kicker">Internal · Finish pass 3 · Revise finish · Geometry frozen · Phase B held</div>
+  <h1>Wider inner face. Bead as object.</h1>
+  <p class="lede">Final finish-only pass. Source occupancy unchanged (pillar 11 / gap 26.2 / r 11.4 / height 94). Two corrections only: the slot-facing inner plane is a ~40% Charcoal / Mist face, wide enough to read at 180/400 without becoming chrome; the bead is the object in the slot on both grounds — brighter matte pole, lighter-than-column on void, pewter body and terminator. No glow, no teal. 1-bit members+ring is mono fallback only. Type is not frozen.</p>
 
   <h2>On ivory · 04 vs candidate</h2>
   <div class="pair">
@@ -52,11 +52,11 @@
     </figure>
     <figure>
       <div class="panel"><img class="mark" src="finish/mark-on-ivory.svg" alt="Modeled ivory mark"/></div>
-      <figcaption>Candidate · pewter bead, inner-edge step</figcaption>
+      <figcaption>Candidate · Charcoal inner plane, pewter bead</figcaption>
     </figure>
   </div>
 
-  <h2>16 / 32 / 400 · ivory vs 04</h2>
+  <h2>16 / 32 / 180 / 400 · ivory vs 04</h2>
   <div class="szrow">
     <div class="lab">16</div>
     <div class="chip"><img class="photo" src="reference-04-mark.png" width="16" height="16" alt="04 16" style="object-fit:contain"/><span>04</span></div>
@@ -69,6 +69,16 @@
   </div>
   <div class="pair">
     <figure>
+      <div class="panel tight"><img class="mark" src="reference-04-mark.png" alt="04 180" style="width:180px;height:180px;object-fit:contain"/></div>
+      <figcaption>04 · 180</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img class="mark" src="finish/raster/ivory-180.png" alt="Ivory 180" style="width:180px;height:180px"/></div>
+      <figcaption>Candidate · 180</figcaption>
+    </figure>
+  </div>
+  <div class="pair">
+    <figure>
       <div class="panel tight"><img class="mark" src="reference-04-mark.png" alt="04 400" style="width:220px;height:220px;object-fit:contain"/></div>
       <figcaption>04 · 400</figcaption>
     </figure>
@@ -78,7 +88,7 @@
     </figure>
   </div>
 
-  <h2>On void / app · 04 vs candidate</h2>
+  <h2>On void / app · 16 / 32 / 180 / 400</h2>
   <div class="pair">
     <figure>
       <div class="panel void"><img class="ref" src="reference-04-icon.png" alt="Direction 04 icon"/></div>
@@ -98,6 +108,16 @@
     <div class="lab">32</div>
     <div class="chip void"><img class="photo" src="reference-04-icon.png" width="32" height="32" alt="04 void 32" style="object-fit:contain"/></div>
     <div class="chip void"><img src="finish/raster/void-32.png" width="32" height="32" alt="void 32"/></div>
+  </div>
+  <div class="pair">
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/void-180.png" alt="Void 180" style="width:180px;height:180px"/></div>
+      <figcaption>Void mark · 180</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/icon-180.png" alt="Icon 180" style="width:180px;height:180px"/></div>
+      <figcaption>App icon · 180</figcaption>
+    </figure>
   </div>
   <div class="pair">
     <figure>
@@ -139,12 +159,12 @@
       <figcaption>mark-mono · members + ring</figcaption>
     </figure>
   </div>
-  <p class="notes">Parent master is the modeled two-value mark, not the ring. Hole-in-aperture is still invisible at Source occupancy.</p>
+  <p class="notes">Parent master is the modeled two-value mark, not the ring. Hole-in-aperture is still invisible at Source occupancy. Mono fallback is unchanged this pass.</p>
 
   <h2>For independent re-review</h2>
   <div class="rec">
-    <p><strong>Finish pass 2. Geometry still frozen. Finish not frozen.</strong></p>
-    <p class="lede" style="margin:8px 0 0">Ask whether the bead now reads as matter, and whether the inner-edge step reads as columns around a slot, without chrome, glow, or teal. Do not reopen geometry. Do not resume Phase B. Live <code>main</code> is untouched.</p>
+    <p><strong>Finish pass 3. Geometry still frozen. Finish not frozen.</strong></p>
+    <p class="lede" style="margin:8px 0 0">Ask whether the inner face now reads at 180/400 as columns around a slot, and whether the bead is the object on both grounds, without chrome, glow, or teal. Do not reopen geometry. Do not resume Phase B. Live <code>main</code> is untouched.</p>
   </div>
 </body>
 </html>

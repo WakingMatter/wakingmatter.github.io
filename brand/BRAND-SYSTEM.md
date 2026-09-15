@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Logo finish pass 2 (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is matte modeled two-value: columns around a slot, pewter bead with pole / body / terminator. Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html). Phase B held.
+> **Logo finish pass 3 (production candidate, not frozen).** Geometry search is stopped. Source occupancy is frozen **in plan**: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is matte modeled two-value: a ~40% slot-facing inner plane so members read as columns around a slot, and a pewter bead that is the object in the slot on both grounds. Independent review of [`studies/logo-checkpoint-04/finish.html`](studies/logo-checkpoint-04/finish.html). Phase B held.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -67,8 +67,8 @@ Matte modeled finish. No chrome tubes, no glow, no teal. One inner-edge value st
 
 | File | Ground | Treatment |
 | --- | --- | --- |
-| `mark.svg` / `mark-on-ivory.svg` / `mark-small.svg` | Ivory | **Parent master.** Void columns with a slot-facing inner step (`#1C1C1C`). Pewter bead: pole `#8B918D` / body `#3A3E3C` / terminator `#1A1C1B`. |
-| `mark-on-void.svg` | Void | Dim-Mist outer, Mist inner step. Dark bead: dim Mist pole `#9A9E9C` / body `#2E3230` / terminator `#0E1010`. |
+| `mark.svg` / `mark-on-ivory.svg` / `mark-small.svg` | Ivory | **Parent master.** Void columns with a ~40% slot-facing Charcoal inner plane (`#2A2A2A`). Pewter bead: pole `#B8BCBA` / body `#3A3E3C` / terminator `#1A1C1B`. |
+| `mark-on-void.svg` | Void | Outer `#8E928F`, Mist inner plane. Bead is the object: pole `#E2E4E1` (lighter than the column) / body `#3A3E3C` / terminator `#1A1C1B`. |
 | `mark-mono.svg` / `lockup-mono.svg` / `icon-app-mono.svg` | any | **Mono fallback only.** Members filled + ring. Never the parent master. |
 | `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + Newsreader outlines (stand-in; type not frozen) |
 | `lockup-on-void.svg` | Void | Modeled void mark + Newsreader outlines |

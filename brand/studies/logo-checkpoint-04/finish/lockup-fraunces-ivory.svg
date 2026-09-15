@@ -3,17 +3,19 @@
   <defs>
     <linearGradient id="fiColL" x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0A0A0A"/>
-      <stop offset="0.86" stop-color="#0A0A0A"/>
-      <stop offset="1" stop-color="#1C1C1C"/>
+      <stop offset="0.58" stop-color="#0A0A0A"/>
+      <stop offset="0.62" stop-color="#2A2A2A"/>
+      <stop offset="1" stop-color="#2A2A2A"/>
     </linearGradient>
     <linearGradient id="fiColR" x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#1C1C1C"/>
-      <stop offset="0.14" stop-color="#0A0A0A"/>
+      <stop offset="0" stop-color="#2A2A2A"/>
+      <stop offset="0.38" stop-color="#2A2A2A"/>
+      <stop offset="0.42" stop-color="#0A0A0A"/>
       <stop offset="1" stop-color="#0A0A0A"/>
     </linearGradient>
-    <radialGradient id="fiBead" cx="36%" cy="30%" r="68%">
-      <stop offset="0" stop-color="#8B918D"/>
-      <stop offset="0.38" stop-color="#3A3E3C"/>
+    <radialGradient id="fiBead" cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#B8BCBA"/>
+      <stop offset="0.36" stop-color="#3A3E3C"/>
       <stop offset="1" stop-color="#1A1C1B"/>
     </radialGradient>
   </defs>

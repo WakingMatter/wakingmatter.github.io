@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Logo finish pass 2. Source geometry frozen in plan.
+"""Logo finish pass 3. Source geometry frozen in plan.
 
-Matte modeled bead (pole / body / terminator) and a single inner-edge
-column step. No chrome tubes, no glow, no teal. 1-bit members+ring is
-mono fallback only — never the parent master.
+Wider slot-facing inner plane; bead is the object in the slot on both
+grounds (brighter matte pole; void pole lighter than the column).
+No chrome tubes, no glow, no teal. 1-bit members+ring is mono fallback
+only. Type not frozen.
 
 Shipping lockups keep Newsreader outlines (type not frozen).
 Candidate lockups this pass outline Fraunces (opsz 144, SOFT 0).
@@ -40,20 +41,25 @@ VOID = "#0A0A0A"
 CHARCOAL = "#2A2A2A"
 IVORY = "#F7F6F3"
 MIST = "#D6D9D7"
-# Inner-edge step on ivory: whisper lighter than Void on the slot face, not Charcoal-stripe.
-IVORY_INNER = "#1C1C1C"
-# Inner-edge step on void: Mist on the slot, one step dimmer on the outer face.
+# Inner plane ~40% of pillar, slot-facing. Distinct value, not a chrome roll.
+IVORY_INNER = CHARCOAL
 VOID_INNER = MIST
-VOID_OUTER = "#B8BCBA"
+VOID_OUTER = "#8E928F"
 
-# Ivory bead — heavier pewter/charcoal-stone than the rejected flat #7A7F7C
-IVORY_POLE = "#8B918D"
+# Bead: pewter body/terminator kept; brighter matte pole. Void pole lighter
+# than the column so the bead is the object in the slot, not a hole.
+IVORY_POLE = "#B8BCBA"
 IVORY_BODY = "#3A3E3C"
 IVORY_TERM = "#1A1C1B"
-# Void bead — dark body, dim Mist pole, no glow
-VOID_POLE = "#9A9E9C"
-VOID_BODY = "#2E3230"
-VOID_TERM = "#0E1010"
+VOID_POLE = "#E2E4E1"
+VOID_BODY = "#3A3E3C"
+VOID_TERM = "#1A1C1B"
+
+# Column: outer plane then inner plane. Short join, no vertical metal.
+COL_L_OUTER_END = "0.58"
+COL_L_INNER_START = "0.62"
+COL_R_INNER_END = "0.38"
+COL_R_OUTER_START = "0.42"
 
 MEMBERS = (
     f'<rect x="{L:.2f}" y="{Y:.2f}" width="{W:.2f}" height="{H:.2f}" rx="{RX:.2f}"/>\n'
@@ -95,24 +101,7 @@ def modeled(
         head += f"  <title>{title}</title>\n"
     if desc:
         head += f"  <desc>{desc}</desc>\n"
-    defs = f'''  <defs>
-    <linearGradient id="{prefix}ColL" x1="{L:.2f}" y1="{Y:.2f}" x2="{L + W:.2f}" y2="{Y:.2f}" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="{outer}"/>
-      <stop offset="0.86" stop-color="{outer}"/>
-      <stop offset="1" stop-color="{inner}"/>
-    </linearGradient>
-    <linearGradient id="{prefix}ColR" x1="{R_X:.2f}" y1="{Y:.2f}" x2="{R_X + W:.2f}" y2="{Y:.2f}" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="{inner}"/>
-      <stop offset="0.14" stop-color="{outer}"/>
-      <stop offset="1" stop-color="{outer}"/>
-    </linearGradient>
-    <radialGradient id="{prefix}Bead" cx="36%" cy="30%" r="68%">
-      <stop offset="0" stop-color="{pole}"/>
-      <stop offset="0.38" stop-color="{body}"/>
-      <stop offset="1" stop-color="{term}"/>
-    </radialGradient>
-  </defs>
-'''
+    defs = defs_block(prefix, outer, inner, pole, body, term)
     body_el = (
         f'  <rect x="{L:.2f}" y="{Y:.2f}" width="{W:.2f}" height="{H:.2f}" '
         f'rx="{RX:.2f}" fill="url(#{prefix}ColL)"/>\n'
@@ -147,17 +136,19 @@ def defs_block(prefix: str, outer: str, inner: str, pole: str, body: str, term: 
     return f'''  <defs>
     <linearGradient id="{prefix}ColL" x1="{L:.2f}" y1="{Y:.2f}" x2="{L + W:.2f}" y2="{Y:.2f}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="{outer}"/>
-      <stop offset="0.86" stop-color="{outer}"/>
+      <stop offset="{COL_L_OUTER_END}" stop-color="{outer}"/>
+      <stop offset="{COL_L_INNER_START}" stop-color="{inner}"/>
       <stop offset="1" stop-color="{inner}"/>
     </linearGradient>
     <linearGradient id="{prefix}ColR" x1="{R_X:.2f}" y1="{Y:.2f}" x2="{R_X + W:.2f}" y2="{Y:.2f}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="{inner}"/>
-      <stop offset="0.14" stop-color="{outer}"/>
+      <stop offset="{COL_R_INNER_END}" stop-color="{inner}"/>
+      <stop offset="{COL_R_OUTER_START}" stop-color="{outer}"/>
       <stop offset="1" stop-color="{outer}"/>
     </linearGradient>
-    <radialGradient id="{prefix}Bead" cx="36%" cy="30%" r="68%">
+    <radialGradient id="{prefix}Bead" cx="34%" cy="28%" r="72%">
       <stop offset="0" stop-color="{pole}"/>
-      <stop offset="0.38" stop-color="{body}"/>
+      <stop offset="0.36" stop-color="{body}"/>
       <stop offset="1" stop-color="{term}"/>
     </radialGradient>
   </defs>

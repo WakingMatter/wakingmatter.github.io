@@ -3,19 +3,21 @@
   <g transform="translate(33.87 33.87) scale(3.70213)">
   <defs>
     <linearGradient id="icColL" x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#B8BCBA"/>
-      <stop offset="0.86" stop-color="#B8BCBA"/>
+      <stop offset="0" stop-color="#8E928F"/>
+      <stop offset="0.58" stop-color="#8E928F"/>
+      <stop offset="0.62" stop-color="#D6D9D7"/>
       <stop offset="1" stop-color="#D6D9D7"/>
     </linearGradient>
     <linearGradient id="icColR" x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#D6D9D7"/>
-      <stop offset="0.14" stop-color="#B8BCBA"/>
-      <stop offset="1" stop-color="#B8BCBA"/>
+      <stop offset="0.38" stop-color="#D6D9D7"/>
+      <stop offset="0.42" stop-color="#8E928F"/>
+      <stop offset="1" stop-color="#8E928F"/>
     </linearGradient>
-    <radialGradient id="icBead" cx="36%" cy="30%" r="68%">
-      <stop offset="0" stop-color="#9A9E9C"/>
-      <stop offset="0.38" stop-color="#2E3230"/>
-      <stop offset="1" stop-color="#0E1010"/>
+    <radialGradient id="icBead" cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#E2E4E1"/>
+      <stop offset="0.36" stop-color="#3A3E3C"/>
+      <stop offset="1" stop-color="#1A1C1B"/>
     </radialGradient>
   </defs>
   <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#icColL)"/>
