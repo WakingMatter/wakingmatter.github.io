@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>Waking Matter — Logo checkpoint 04</title>
+    <title>Waking Matter — Logo checkpoint</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -16,532 +16,321 @@
         --void: #0a0a0a;
         --charcoal: #2a2a2a;
         --ivory: #f7f6f3;
-        --mist: #d6d9d7;
         --hair: rgba(10, 10, 10, 0.12);
-        --serif-news: "Newsreader", "Iowan Old Style", serif;
-        --serif-fraunces: "Fraunces", "Times New Roman", serif;
+        --fraunces: "Fraunces", "Times New Roman", serif;
+        --news: "Newsreader", "Iowan Old Style", serif;
         --sans: Inter, system-ui, sans-serif;
         --mono: "IBM Plex Mono", ui-monospace, monospace;
       }
       * { box-sizing: border-box; }
-      html, body {
-        margin: 0;
-        background: var(--ivory);
-        color: var(--void);
-        font-family: var(--sans);
-      }
-      body { padding: 2.5rem 3rem 5rem; }
-      .kicker, .label, figcaption, th {
+      html, body { margin: 0; background: var(--ivory); color: var(--void); font-family: var(--sans); }
+      body { padding: 2rem 2.25rem 4rem; }
+      .kicker, .label, figcaption {
         font-size: 0.6875rem;
         letter-spacing: 0.16em;
         text-transform: uppercase;
         font-weight: 500;
-      }
-      .top {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid var(--hair);
         color: var(--charcoal);
       }
+      .top { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--hair); }
       h1 {
-        font-family: var(--serif-fraunces);
-        font-weight: 400;
+        font-family: var(--fraunces);
         font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
-        font-size: clamp(2rem, 4vw, 3.1rem);
-        letter-spacing: -0.035em;
-        line-height: 1.05;
-        margin: 1.5rem 0 0.6rem;
-        max-width: 18ch;
-      }
-      .lede {
-        max-width: 44rem;
-        color: var(--charcoal);
-        font-size: 1.05rem;
-        line-height: 1.55;
-      }
-      h2 {
-        font-family: var(--serif-fraunces);
+        font-feature-settings: "lnum" 1, "tnum" 1;
+        font-variant-numeric: lining-nums;
         font-weight: 400;
-        font-variation-settings: "opsz" 36, "SOFT" 0;
-        font-size: 1.65rem;
+        font-size: clamp(1.8rem, 3.4vw, 2.6rem);
         letter-spacing: -0.03em;
-        margin: 3rem 0 0.8rem;
-        padding-top: 1.4rem;
+        line-height: 1.08;
+        margin: 1.1rem 0 0.45rem;
+        max-width: 22ch;
+      }
+      .lede { max-width: 44rem; color: var(--charcoal); font-size: 0.98rem; line-height: 1.5; margin: 0 0 1rem; }
+      h2 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.35rem;
+        letter-spacing: -0.02em;
+        margin: 2.1rem 0 0.7rem;
+        padding-top: 1.1rem;
         border-top: 1px solid var(--hair);
       }
-      .criteria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem 2rem;
-        margin: 1.5rem 0 0;
-      }
-      .criteria p { margin: 0.35rem 0 0; color: var(--charcoal); font-size: 0.92rem; line-height: 1.45; }
-      .refs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin: 1.5rem 0 0;
-        align-items: start;
-      }
-      .refs .span2 { grid-column: 1 / -1; }
-      .ref {
-        margin: 0;
-        border: 1px solid var(--hair);
-        padding: 0.75rem;
-        background: #fff;
-      }
+      .refs { display: grid; grid-template-columns: 1.4fr 0.7fr 0.7fr; gap: 0.75rem; align-items: start; }
+      .ref { margin: 0; border: 1px solid var(--hair); padding: 0.6rem; background: #fff; }
       .ref img { width: 100%; height: auto; display: block; }
-      .row {
-        display: grid;
-        grid-template-columns: repeat(7, minmax(0, 1fr));
-        gap: 1rem;
-        margin-top: 1.25rem;
-        align-items: end;
-      }
-      .row figure img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: contain;
-        margin: 0 auto;
-      }
+      .row { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.85rem; margin-top: 0.9rem; align-items: end; }
       figure { margin: 0; }
-      figure img, figure svg { display: block; width: 100%; height: auto; color: var(--void); }
-      figcaption { margin-top: 0.55rem; color: var(--charcoal); }
-      .void-row figure {
-        background: var(--void);
-        color: var(--ivory);
-        padding: 1.1rem 0.8rem 0.9rem;
+      figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+      figcaption { margin-top: 0.4rem; }
+      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 0.8rem; }
+      .card { border: 1px solid var(--hair); padding: 0.85rem 0.9rem 1rem; background: #fff; }
+      .card h3 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 24, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.15rem;
+        margin: 0 0 0.2rem;
+        letter-spacing: -0.02em;
       }
-      .void-row img.invert { filter: invert(1); }
-      .scale-row {
-        display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 1.25rem;
-        align-items: end;
-        margin-top: 1rem;
-      }
-      .scale-cell {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-        align-items: flex-start;
-      }
-      .chip {
+      .card .why { color: var(--charcoal); font-size: 0.82rem; line-height: 1.4; margin: 0 0 0.7rem; min-height: 2.6em; }
+      .card .mark { width: 112px; height: 112px; margin: 0 auto 0.65rem; }
+      .sizes {
         display: flex;
         align-items: center;
-        gap: 0.55rem;
-        color: var(--charcoal);
-        font-family: var(--mono);
-        font-size: 0.7rem;
+        gap: 0.85rem;
+        margin: 0.55rem 0 0.7rem;
+        padding: 0.45rem 0.55rem;
+        background: #eceae6;
       }
-      .chip img { display: block; image-rendering: pixelated; }
-      .arch {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-top: 1rem;
-      }
-      .arch figure {
-        border: 1px solid var(--hair);
-        padding: 2rem 1.5rem 1rem;
-        background: #fff;
-      }
-      .arch img { width: 100%; max-width: 420px; margin: 0 auto; }
-      .arch .on-void {
-        background: var(--void);
-        color: var(--ivory);
-      }
-      .arch .on-void img { filter: none; }
-      .lockups { display: grid; gap: 1.6rem; margin-top: 1rem; }
+      .sizes img { image-rendering: pixelated; width: auto; height: auto; }
       .lockup {
         display: flex;
         align-items: baseline;
-        gap: 0.42em;
-        font-size: clamp(2.2rem, 5vw, 3.35rem);
-      }
-      .lockup img {
-        height: 0.72em;
-        width: auto;
-        flex: none;
-        position: relative;
-        top: 0.02em;
-      }
-      .wm { line-height: 1; letter-spacing: -0.03em; font-size: 1em; }
-      .wm-news {
-        font-family: var(--serif-news);
-        font-size: clamp(2.2rem, 5vw, 3.4rem);
-        font-optical-sizing: auto;
-      }
-      .wm-fraunces {
-        font-family: var(--serif-fraunces);
-        font-size: clamp(2.2rem, 5vw, 3.35rem);
-        font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
-        font-weight: 400;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-        font-size: 0.88rem;
-      }
-      th, td {
-        border-top: 1px solid var(--hair);
-        padding: 0.7rem 0.55rem;
-        vertical-align: top;
-        text-align: left;
-      }
-      th { color: var(--charcoal); font-weight: 500; }
-      .rec {
-        border: 1px solid var(--hair);
-        padding: 1.4rem 1.5rem;
-        margin-top: 1rem;
-        max-width: 46rem;
-      }
-      .rec h3 {
-        font-family: var(--serif-fraunces);
-        font-weight: 400;
-        font-variation-settings: "opsz" 36, "SOFT" 0;
+        gap: 0.38em;
         font-size: 1.55rem;
-        margin: 0 0 0.5rem;
+        margin-top: 0.35rem;
+      }
+      .lockup img { height: 0.72em; width: auto; flex: none; }
+      .wm-f {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
         letter-spacing: -0.03em;
+        line-height: 1;
       }
-      .warn { color: var(--charcoal); font-size: 0.92rem; }
-      .note {
-        font-size: 0.9rem;
-        color: var(--charcoal);
-        max-width: 44rem;
+      .wm-n {
+        font-family: var(--news);
+        font-optical-sizing: auto;
+        letter-spacing: -0.03em;
+        line-height: 1;
       }
-      code { font-family: var(--mono); font-size: 0.85em; }
+      .arch { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.6rem; }
+      .arch img { width: 100%; max-width: 280px; margin: 0 auto; display: block; }
+      .type-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0.6rem; }
+      .type-row .lockup { font-size: 2.15rem; }
+      .rec { border: 1px solid var(--hair); padding: 1.1rem 1.2rem; margin-top: 0.8rem; max-width: 46rem; }
+      .rec h3 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin: 0 0 0.4rem;
+      }
+      .warn { color: var(--charcoal); font-size: 0.9rem; }
+      .reject { opacity: 0.72; }
       @media (max-width: 900px) {
-        body { padding: 1.25rem; }
-        .row, .scale-row, .criteria, .refs, .arch { grid-template-columns: 1fr 1fr; }
+        body { padding: 1.1rem; }
+        .row, .cards, .arch, .refs, .type-row { grid-template-columns: 1fr 1fr; }
       }
     </style>
   </head>
   <body>
     <div class="top">
-      <span class="kicker">Internal · Logo checkpoint · Do not freeze</span>
-      <span class="kicker">Direction 04 north star · Controlled family</span>
+      <span class="kicker">Internal · Logo gate · Do not freeze</span>
+      <span class="kicker">Phase B held · One-colour study</span>
     </div>
 
-    <h1>The 04 mark is the thing. This is the family around it.</h1>
+    <h1>Six cuts of the instrument. Not one corporate letter.</h1>
     <p class="lede">
-      A previous study wandered into new silhouettes (Catch, Menhir, Relic). That is withdrawn.
-      Direction 04’s two members and one suspended sphere are the mark. The shipped construction
-      is a useful baseline — two stadiums, one circle — and it is not frozen just because the
-      math is neat. These six cuts stay extremely simple and one-colour. They only move pillar
-      proportion, slit, sphere, a whisper of taper. One-screen sheet: <a href="sheet.html">sheet.html</a>.
+      The shipped two-stadiums-plus-centred-sphere is a baseline, not approved.
+      These six are visually distinct from each other and still the 04 family:
+      two members, one suspended sphere, one colour. No glow. Direction 02 only
+      for spacing. Production masters unchanged.
     </p>
-    <p class="lede">
-      Production masters in <code>brand/logos/</code> are unchanged. Do not resume website work
-      on the strength of this board.
-    </p>
-
-    <h2>What 04 actually is</h2>
-    <div class="criteria">
-      <div>
-        <p class="label">01 Instrument</p>
-        <p>Two slender monuments and a large orb in the doorway. Recovered hardware, not a letter H, not a clean-tech helix, not a planet with a glow.</p>
-      </div>
-      <div>
-        <p class="label">02 Occupancy</p>
-        <p>Measured from the 04 icon (chrome visible on void): pillar 13, gap 31, sphere Ø 27 — the ball fills ~87% of the slit, 2px hair each side. Inner light is metal. In one colour that mass is fill, not void.</p>
-      </div>
-      <div>
-        <p class="label">03 Suspension</p>
-        <p>On the board the orb is centred because it is a 3D object. In one colour a dead-centre ball becomes an H-bar. Keep it held in space, not pasted on a glyph.</p>
-      </div>
-      <div>
-        <p class="label">04 Word</p>
-        <p>Canela, thin, inscriptional, cap-height locked to the mark. The type is not a caption for the mark. Fraunces (opsz 144, SOFT 0) is the OFL stand-in. Newsreader is too literary for the lockup.</p>
-      </div>
-      <div>
-        <p class="label">05 Scale</p>
-        <p>Logo, 16px favicon, architectural. If a cut is only good at one scale, say so. Direction 02 may inform spacing and negative space — never bloom.</p>
-      </div>
-      <div>
-        <p class="label">06 Ritual</p>
-        <p>Monumental, quiet, slightly uncanny. A threshold you could carve in stone or machine from a single billet. Severe enough to keep.</p>
-      </div>
-    </div>
 
     <div class="refs">
-      <figure class="ref span2">
-        <img src="reference-04-lockup.png" alt="Direction 04 primary lockup" />
-        <figcaption>04 lockup — mark and Canela are one object</figcaption>
+      <figure class="ref">
+        <img src="reference-04-lockup.png" alt="Direction 04 lockup" />
+        <figcaption>04 source — mark and Canela are one object</figcaption>
       </figure>
       <figure class="ref">
-        <img src="reference-04-icon.png" alt="Direction 04 icon on void" />
-        <figcaption>04 icon — chrome is pillar mass</figcaption>
+        <img src="reference-04-icon.png" alt="Direction 04 icon" />
+        <figcaption>04 icon</figcaption>
       </figure>
       <figure class="ref">
-        <img src="reference-04-mono.png" alt="Direction 04 monochrome carved variant" />
-        <figcaption>04 mono — carved instrument, still parallel</figcaption>
+        <img src="reference-04-mono.png" alt="Direction 04 mono" />
+        <figcaption>04 carved mono</figcaption>
       </figure>
     </div>
 
-    <h2 id="family">Family at logo scale</h2>
-    <p class="lede">
-      Same 120 viewBox, <code>currentColor</code>, nothing but two members and a sphere.
-      04 on the left is the source, not a seventh cut.
-    </p>
+    <h2>Family at logo scale</h2>
     <div class="row">
-      <figure>
-        <img src="reference-04-mark.png" alt="Direction 04 mark" />
-        <figcaption>04 board</figcaption>
+      <figure class="reject">
+        <img src="marks/0-control.svg" alt="Control" />
+        <figcaption>0 Control · not approved</figcaption>
       </figure>
       <figure>
-        <img src="marks/0-baseline.svg" alt="Baseline" />
-        <figcaption>0 Baseline · shipped</figcaption>
+        <img src="marks/1-source.svg" alt="Source" />
+        <figcaption>1 Source · closest to 04</figcaption>
       </figure>
       <figure>
-        <img src="marks/1-optical.svg" alt="Optical" />
-        <figcaption>1 Optical · 04 centred</figcaption>
+        <img src="marks/2-flare.svg" alt="Flare" />
+        <figcaption>2 Flare · threshold</figcaption>
       </figure>
       <figure>
-        <img src="marks/2-suspended.svg" alt="Suspended" />
-        <figcaption>2 Suspended · orb lifted</figcaption>
+        <img src="marks/3-throat.svg" alt="Throat" />
+        <figcaption>3 Throat · aperture</figcaption>
       </figure>
       <figure>
-        <img src="marks/3-held.svg" alt="Held" />
-        <figcaption>3 Held · hair slit</figcaption>
+        <img src="marks/4-asym.svg" alt="Asym" />
+        <figcaption>4 Asym · recovered</figcaption>
       </figure>
       <figure>
-        <img src="marks/4-slender.svg" alt="Slender" />
-        <figcaption>4 Slender · monolith</figcaption>
+        <img src="marks/5-tablet.svg" alt="Tablet" />
+        <figcaption>5 Tablet · worn caps</figcaption>
       </figure>
       <figure>
-        <img src="marks/5-threshold.svg" alt="Threshold" />
-        <figcaption>5 Threshold · whisper foot</figcaption>
+        <img src="marks/6-high.svg" alt="High" />
+        <figcaption>6 High · long slit</figcaption>
       </figure>
     </div>
 
-    <p class="label" style="margin-top:2rem">On void</p>
-    <div class="row void-row">
-      <figure><img src="reference-04-icon.png" alt="" /><figcaption>04 icon</figcaption></figure>
-      <figure><img class="invert" src="marks/0-baseline.svg" alt="" /><figcaption>0</figcaption></figure>
-      <figure><img class="invert" src="marks/1-optical.svg" alt="" /><figcaption>1</figcaption></figure>
-      <figure><img class="invert" src="marks/2-suspended.svg" alt="" /><figcaption>2</figcaption></figure>
-      <figure><img class="invert" src="marks/3-held.svg" alt="" /><figcaption>3</figcaption></figure>
-      <figure><img class="invert" src="marks/4-slender.svg" alt="" /><figcaption>4</figcaption></figure>
-      <figure><img class="invert" src="marks/5-threshold.svg" alt="" /><figcaption>5</figcaption></figure>
+    <h2>Each cut · mark, 16 / 32, lockup</h2>
+    <p class="lede">Wordmark is Fraunces, opsz 144, SOFT 0 — the inscriptional stand-in for 04’s Canela. Newsreader is tested below; it is a candidate, not locked.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>1 Source</h3>
+        <p class="why">Closest to the board. Parallel stadiums, 04 occupancy, orb centred. Not over-rationalised.</p>
+        <img class="mark" src="marks/1-source.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/1-source-16.png" width="16" height="16" alt="16" />
+          <img src="raster/1-source-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>2 Flare</h3>
+        <p class="why">Standing threshold. Outer foot wider, inner slit parallel, orb suspended in the door.</p>
+        <img class="mark" src="marks/2-flare.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/2-flare-16.png" width="16" height="16" alt="16" />
+          <img src="raster/2-flare-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>3 Throat</h3>
+        <p class="why">Ritual aperture. Inner faces pinch; the sphere is held at the waist, not pasted.</p>
+        <img class="mark" src="marks/3-throat.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/3-throat-16.png" width="16" height="16" alt="16" />
+          <img src="raster/3-throat-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/3-throat.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>4 Asym</h3>
+        <p class="why">Recovered, not machined. Heavier left member, orb pulled toward it and slightly high.</p>
+        <img class="mark" src="marks/4-asym.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/4-asym-16.png" width="16" height="16" alt="16" />
+          <img src="raster/4-asym-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/4-asym.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>5 Tablet</h3>
+        <p class="why">Worn caps. Same 04 proportion without the extruded-pill terminals that make a UI H.</p>
+        <img class="mark" src="marks/5-tablet.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/5-tablet-16.png" width="16" height="16" alt="16" />
+          <img src="raster/5-tablet-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/5-tablet.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>6 High</h3>
+        <p class="why">Long ritual void. The orb is clearly suspended; the slit below is the character.</p>
+        <img class="mark" src="marks/6-high.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/6-high-16.png" width="16" height="16" alt="16" />
+          <img src="raster/6-high-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/6-high.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
     </div>
 
-    <p class="note" style="margin-top:1.25rem">
-      Construction vs the 04 icon (pillar / gap / fill / height). Baseline 16 · 24 · 92% · 88.
-      Optical 11.5 · 25 · 87% · 92. Suspended = Optical with cy 49. Held 12 · 21.6 · 94% · 92.
-      Slender 10.4 · 25.2 · 87% · 96, cy 53. Threshold = Optical slit, outer foot +2, inner faces parallel, cy 52.
-    </p>
-
-    <h2 id="favicon">Favicon scale · actual 16 / 24 / 32 raster</h2>
-    <p class="lede">These are resvg pixels, not scaled SVG in the page. 16px is a favicon. If the sphere dies, it dies here.</p>
-    <div class="scale-row">
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/0-baseline-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/0-baseline-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/0-baseline-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">0 Baseline</span>
-      </div>
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/1-optical-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/1-optical-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/1-optical-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">1 Optical</span>
-      </div>
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/2-suspended-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/2-suspended-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/2-suspended-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">2 Suspended</span>
-      </div>
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/3-held-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/3-held-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/3-held-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">3 Held</span>
-      </div>
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/4-slender-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/4-slender-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/4-slender-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">4 Slender</span>
-      </div>
-      <div class="scale-cell">
-        <div class="chip"><img src="raster/5-threshold-32.png" width="32" height="32" alt="" /> 32</div>
-        <div class="chip"><img src="raster/5-threshold-24.png" width="24" height="24" alt="" /> 24</div>
-        <div class="chip"><img src="raster/5-threshold-16.png" width="16" height="16" alt="" /> 16</div>
-        <span class="label">5 Threshold</span>
-      </div>
-    </div>
-
-    <h2 id="architecture">Architectural scale</h2>
-    <p class="lede">Four hundred pixels. This is where a neat H becomes a letter on a building, and where a ritual object either holds or looks like a diagram.</p>
+    <h2>Architectural · 400px</h2>
+    <p class="lede">This is where a neat H becomes a letter on a wall, and where an artifact either holds or turns into a diagram.</p>
     <div class="arch">
       <figure>
-        <img src="raster/0-baseline-400.png" alt="Baseline at 400px" />
-        <figcaption>0 Baseline — a large letter</figcaption>
+        <img src="raster/1-source-400.png" alt="Source 400" />
+        <figcaption>1 Source — 04 doorway, still a bar</figcaption>
       </figure>
       <figure>
-        <img src="raster/1-optical-400.png" alt="Optical at 400px" />
-        <figcaption>1 Optical — 04’s doorway, still a crossbar</figcaption>
+        <img src="raster/2-flare-400.png" alt="Flare 400" />
+        <figcaption>2 Flare — megalith, orb in the door</figcaption>
       </figure>
       <figure>
-        <img src="raster/4-slender-400.png" alt="Slender at 400px" />
-        <figcaption>4 Slender — instrument in a slit</figcaption>
+        <img src="raster/3-throat-400.png" alt="Throat 400" />
+        <figcaption>3 Throat — held at the pinch</figcaption>
       </figure>
       <figure>
-        <img src="raster/5-threshold-400.png" alt="Threshold at 400px" />
-        <figcaption>5 Threshold — gate, feet slightly wider</figcaption>
+        <img src="raster/4-asym-400.png" alt="Asym 400" />
+        <figcaption>4 Asym — recovered instrument</figcaption>
       </figure>
-      <figure class="on-void">
-        <img src="raster/2-suspended-400-void.png" alt="Suspended on void" />
-        <figcaption>2 Suspended on void — hanging, almost a planet</figcaption>
+      <figure>
+        <img src="raster/5-tablet-400.png" alt="Tablet 400" />
+        <figcaption>5 Tablet — cut stone, still an H</figcaption>
       </figure>
-      <figure class="on-void">
-        <img src="raster/4-slender-400-void.png" alt="Slender on void" />
-        <figcaption>4 Slender on void — recovered, quiet</figcaption>
+      <figure>
+        <img src="raster/6-high-400.png" alt="High 400" />
+        <figcaption>6 High — hanging, almost a planet</figcaption>
       </figure>
     </div>
 
-    <h2 id="wordmark">Wordmark · 04’s cut is first-class</h2>
-    <p class="lede">
-      The board that got him is a lockup, not a symbol with a caption. Canela is proprietary.
-      Fraunces at display optical, SOFT 0, is the inscriptional OFL stand-in — high contrast, thin
-      hair, slightly severe. Newsreader remains the body candidate; it is too literary here.
-      Mark height is locked to cap height, gap ~0.42em, the way 04 sits.
-    </p>
-
-    <p class="label">04 source</p>
-    <figure class="ref" style="max-width:42rem;margin-top:0.8rem">
-      <img src="reference-04-lockup.png" alt="Direction 04 lockup" />
-    </figure>
-
-    <p class="label" style="margin-top:2rem">Fraunces · opsz 144, SOFT 0</p>
-    <div class="lockups">
-      <div class="lockup"><img src="marks/4-slender.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
-      <div class="lockup"><img src="marks/1-optical.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
-      <div class="lockup"><img src="marks/5-threshold.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
-      <div class="lockup"><img src="marks/0-baseline.svg" alt="" /><span class="wm wm-fraunces">Waking Matter</span></div>
-    </div>
-    <p class="note">Baseline’s thick stems fight the hairlines of the word. Slender’s shafts are in the same weight world as the type. That is why 04 feels inseparable.</p>
-
-    <p class="label" style="margin-top:2rem">Newsreader · display optical (site candidate, not the lockup)</p>
-    <div class="lockups">
-      <div class="lockup"><img src="marks/4-slender.svg" alt="" /><span class="wm wm-news">Waking Matter</span></div>
-      <div class="lockup"><img src="marks/0-baseline.svg" alt="" /><span class="wm wm-news">Waking Matter</span></div>
+    <h2>Wordmark test · inscriptional vs literary</h2>
+    <p class="lede">04’s Canela is thin, high-contrast, archaeological. Fraunces at display optical is the OFL stand-in. Newsreader is the site candidate — softer, more literary. Not locked.</p>
+    <div class="type-row">
+      <div>
+        <p class="label">Fraunces · opsz 144, SOFT 0</p>
+        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/0-control.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div>
+        <p class="label">Newsreader · display optical</p>
+        <div class="lockup"><img src="marks/2-flare.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/1-source.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
+        <div class="lockup"><img src="marks/0-control.svg" alt="" /><span class="wm-n">Waking Matter</span></div>
+      </div>
     </div>
 
-    <h2>Grades</h2>
-    <p class="lede">Five = strong for that axis. One = fails it. Checkpoint scores, not a freeze. Catch / Menhir / Relic from the earlier zoo are not on this table.</p>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Archaeological ↔ future</th>
-          <th>Not an H</th>
-          <th>Suspended orb</th>
-          <th>16px</th>
-          <th>Monumental</th>
-          <th>With 04 type</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>0 Baseline</td>
-          <td>1 · extruded UI pills</td>
-          <td>1 · is the letter</td>
-          <td>2 · large, but a crossbar</td>
-          <td>5 · survives as H</td>
-          <td>2 · a large letter</td>
-          <td>2 · stems overpower Canela-weight</td>
-        </tr>
-        <tr>
-          <td>1 Optical</td>
-          <td>4 · 04’s doorway, one colour</td>
-          <td>3 · still a centred bar</td>
-          <td>3 · occupancy is right, position is glyph</td>
-          <td>3 · thin, readable</td>
-          <td>4 · parallel instrument</td>
-          <td>4 · shafts match the word</td>
-        </tr>
-        <tr>
-          <td>2 Suspended</td>
-          <td>3 · hanging, a bit planetary</td>
-          <td>5 · cannot be an H</td>
-          <td>5 · clearly held in the upper slit</td>
-          <td>3 · high bar still reads</td>
-          <td>3 · long void below gets loud</td>
-          <td>3 · uncanny next to quiet type</td>
-        </tr>
-        <tr>
-          <td>3 Held</td>
-          <td>2 · tense logo, not an artifact</td>
-          <td>2 · tighter counter = more letter</td>
-          <td>3 · almost welded</td>
-          <td>4 · mass holds</td>
-          <td>3 · a clamped H</td>
-          <td>3 · heavy beside thin type</td>
-        </tr>
-        <tr>
-          <td>4 Slender</td>
-          <td>5 · recovered instrument</td>
-          <td>4 · lift + needles break the glyph</td>
-          <td>5 · in the door, slightly high</td>
-          <td>2 · fragile; small-size would thicken later</td>
-          <td>5 · two members, one matter</td>
-          <td>5 · same weight world as the inscription</td>
-        </tr>
-        <tr>
-          <td>5 Threshold</td>
-          <td>5 · standing gate</td>
-          <td>4 · taper kills the letter</td>
-          <td>4 · held, slightly high</td>
-          <td>3 · taper vanishes; reads as Optical</td>
-          <td>5 · ritual aperture</td>
-          <td>4 · a little more costume than 04</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2 id="recommendation">Recommendation · not frozen</h2>
+    <h2>Recommendation · not frozen</h2>
     <div class="rec">
-      <h3>Working direction: 4 Slender.</h3>
+      <h3>Working direction: 2 Flare.</h3>
       <p>
-        It preserves Direction 04 better than the shipped baseline because it keeps 04’s actual
-        construction — slender parallel monuments, a large orb occupying ~87% of the slit — and
-        discards the thing that turned that construction into a corporate H: thick letter-stems
-        (16 vs ~11) with the ball glued to the crossbar.
+        It is the first cut in this family that feels like a recovered threshold rather than a
+        corporate H. Two standing members, a suspended orb in the doorway, a foot that has
+        weight. At architectural scale it is a megalith. At 16px the flare actually helps —
+        there is mass to rasterise. The sphere is held by the gate, not decorating a letter.
       </p>
       <p>
-        Baseline’s sphere was already large. Shrinking it made a thinner H. The 04 icon on void
-        is the measurement: the chrome inner faces are mass, the remaining doorway is a hair
-        beyond the ball, the members are tall and thin. Slender is that cut, one unit taller,
-        with the orb a whisper above centre so that in one colour it stays an object in a
-        threshold instead of a glyph.
+        <strong>1 Source</strong> is the closest one-colour of the board, as requested: parallel
+        stadiums, 04 occupancy, orb centred. Keep it in the room. In one colour, without chrome,
+        it still reads as a slender H. That is why we did not stop at the literal reconstruction.
       </p>
       <p>
-        That slight lift is the one-colour compensation for lost metal. It is not Suspended’s
-        jump into the upper third, which at architectural scale starts to read as a planet or a
-        head — Direction 02 language we were told not to borrow. Held tightens the counter and
-        becomes more of a letter, not less. Optical is the 04-literal centred reconstruction;
-        keep it in the room as the fidelity check. Threshold’s whisper foot is the ritual-gate
-        alternate if the parallel stadiums still feel too extruded; it is a step off the board
-        (04’s mono variant is still parallel) and a little more costume beside the word.
+        If Flare’s taper feels too far from 04’s parallel members, the fallback is
+        <strong>4 Asym</strong> — still stadiums, but recovered rather than machined.
+        <strong>5 Tablet</strong> kills the UI-pill caps and stays closest to Source.
+        Do not take <strong>6 High</strong> (planet at scale) or <strong>3 Throat</strong>
+        (a held sphere, but a gadget). Control remains not approved.
       </p>
       <p>
-        Wordmark: <strong>Fraunces, opsz 144, SOFT 0</strong> with Slender. The needles and the
-        inscription are one weight. Newsreader for article body only. Do not freeze type until
-        the mark is chosen.
-      </p>
-      <p>
-        Honest cost: 16px is fragile. A later small-size master can thicken. Do not thicken the
-        display cut to save the favicon.
+        Wordmark: <strong>Fraunces, opsz 144, SOFT 0</strong> with Flare. Newsreader is too
+        literary beside a megalith; keep it for article body. Do not freeze type until the mark
+        is chosen.
       </p>
       <p class="warn">
-        Production masters in <code>brand/logos/</code> and the site lockup are unchanged.
-        This checkpoint is for independent review. Do not merge. Do not start Phase B.
+        Production masters in <code>brand/logos/</code> are unchanged. Do not start Phase B.
+        Independent review of this sheet is the gate.
       </p>
     </div>
   </body>

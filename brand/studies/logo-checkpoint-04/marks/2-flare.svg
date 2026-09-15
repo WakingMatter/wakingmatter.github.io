@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Flare — standing threshold, outer foot wider">
+  <g fill="currentColor">
+    <polygon points="37.25,16.50 47.25,16.50 47.25,100.40 31.05,100.40"/>
+    <circle cx="42.25" cy="16.50" r="5.00"/>
+    <circle cx="39.15" cy="100.40" r="8.10"/>
+    <polygon points="82.75,16.50 72.75,16.50 72.75,100.40 88.95,100.40"/>
+    <circle cx="77.75" cy="16.50" r="5.00"/>
+    <circle cx="80.85" cy="100.40" r="8.10"/>
+    <circle cx="60.00" cy="50.00" r="10.80"/>
+  </g>
+</svg>

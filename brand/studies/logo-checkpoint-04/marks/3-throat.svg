@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="Throat — slit pinches; sphere held at the waist">
+  <g fill="currentColor">
+    <polygon points="34.60,18.20 46.00,18.20 49.40,52.00 46.00,101.80 34.60,101.80"/>
+    <circle cx="40.30" cy="18.20" r="5.70"/>
+    <circle cx="40.30" cy="101.80" r="5.70"/>
+    <polygon points="85.40,18.20 74.00,18.20 70.60,52.00 74.00,101.80 85.40,101.80"/>
+    <circle cx="79.70" cy="18.20" r="5.70"/>
+    <circle cx="79.70" cy="101.80" r="5.70"/>
+    <circle cx="60.00" cy="52.00" r="10.10"/>
+  </g>
+</svg>
