@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Geometry and finish provisionally frozen.** Source occupancy: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is the modeled two-value in `logos/mark.svg` (pass 3). **Type is not frozen.** Wordmark gate: [`studies/wordmark-gate-01/index.html`](studies/wordmark-gate-01/index.html). Phase B held.
+> **Geometry and finish provisionally frozen.** Source occupancy: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is the modeled two-value in `logos/mark.svg` (pass 3). **Type is not frozen.** Type revise: [`studies/wordmark-gate-01/revise.html`](studies/wordmark-gate-01/revise.html). Phase B held.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -85,7 +85,7 @@ A boolean hole in the aperture would be the preferred 1-bit bead, but Source occ
 
 **Type is not frozen.** Direction 04 (Canela, proprietary) is the source: thin, severe, inscriptional, archaeological-future. Fraunces was closer than Newsreader and is still too calligraphic/soft. Shipping SVG lockups still carry Newsreader outlines as a stand-in and must not be treated as a candidate or a freeze.
 
-Current gate: [`studies/wordmark-gate-01/index.html`](studies/wordmark-gate-01/index.html). Recommendation pending independent review: **Gloock** (OFL), 04-tight lockup, outlined. It is not Canela, Sora, or Neue Montreal.
+Current gate: [`studies/wordmark-gate-01/revise.html`](studies/wordmark-gate-01/revise.html). Gloock Regular was the closest structure and is the wrong cut (too inky). One outlined recut from that structure is in review. It is not Canela, Sora, or Neue Montreal.
 
 Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height` unless the wordmark gate explicitly adopts Direction 02 air.
 

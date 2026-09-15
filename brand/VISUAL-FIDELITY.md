@@ -38,7 +38,7 @@ This document is for the independent critic. It is not a public page.
 ## Honest limits
 
 - No commissioned photography yet. The hero uses the mark at architectural scale instead of a stock interior.
-- Newsreader stands in for Canela in shipping lockups only (not a candidate). Type gate is open: see `brand/studies/wordmark-gate-01/`. Inter stands in for the board sans. Neue Montreal and Sora are not used.
+- Newsreader stands in for Canela in shipping lockups only (not a candidate). Type revise is open: see `brand/studies/wordmark-gate-01/revise.html`. Inter stands in for the board sans. Neue Montreal and Sora are not used.
 - Resonance is not in the mark. If a later composition looks teal, it has drifted.
 
 ## Institution vs template

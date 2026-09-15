@@ -28,6 +28,7 @@ const slugs = [
   "cinzel",
   "fraunces",
   "newsreader",
+  "gloock-recut",
 ];
 
 for (const slug of slugs) {

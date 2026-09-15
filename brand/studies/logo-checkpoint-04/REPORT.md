@@ -2,7 +2,7 @@
 
 **Status:** PASS GEOMETRY + FINISH TO PROVISIONAL FREEZE. Type is not frozen. Phase B held.
 
-Open [`finish.html`](finish.html). Wordmark gate: [`../wordmark-gate-01/index.html`](../wordmark-gate-01/index.html).
+Open [`finish.html`](finish.html). Type revise: [`../wordmark-gate-01/revise.html`](../wordmark-gate-01/revise.html).
 
 Independent finish-gate verdict on pass 3: **PASS**. Source occupancy and the modeled two-value finish are frozen. Do not reopen geometry, small-size occupancy, color, or mono fallback.
 

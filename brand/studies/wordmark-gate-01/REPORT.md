@@ -1,48 +1,36 @@
-# Wordmark gate — type only
+# Wordmark gate — type revise (one recut)
 
-**Status:** type not frozen. Geometry and finish provisionally frozen. Phase B held.
+**Status:** REVISE TYPE. Geometry and finish provisionally frozen. Type not frozen. Phase B held.
 
-Open [`index.html`](index.html). Generator: [`generate_wordmark.py`](generate_wordmark.py).
+Open [`revise.html`](revise.html). Generator: [`generate_recut.py`](generate_recut.py). Previous zoo: [`index.html`](index.html) (closed).
 
-Independent finish-gate verdict on pass 3: **PASS GEOMETRY + FINISH TO PROVISIONAL FREEZE.** This sheet does not reopen occupancy, small-size occupancy, color, or mono fallback.
+Independent type-gate verdict: Gloock is the closest **structure** and the Regular **cut** is too fashion-editorial / inky beside the frozen matte mark. Bellefair too light. Noto too university-press. Bodoni generic luxury. Cinzel costume-Dune. Newsreader and Fraunces remain controls only.
+
+## This pass (smallest next step)
+
+One OFL outlined recut derived from Gloock Regular. Not a second face. Not a spacing-only Gloock.
+
+| | Gloock Regular (rejected cut) | Recut |
+| --- | --- | --- |
+| Width / ink | Wide, inky verticals | 0.85 × horizontal scale — narrower, less inky stems |
+| `g` | Large loop, fashion ear | Contained closed loop, ear retracted |
+| `a` | Two-story | Held |
+| `W` / `M` | High crotch | Held |
+| Case | Mixed | Mixed |
+| Gap | 0.38 × cap | 0.38 × cap (04-tight) |
+| License | OFL 1.1 | OFL modification, outlined; not a font named Gloock |
 
 ## Frozen (do not touch)
 
-Source occupancy: pillar 11 / gap 26.2 / r 11.4 / height 94. Modeled two-value finish in `brand/logos/mark.svg`. 1-bit members+ring remains mono-only.
-
-## Not candidates
-
-- Shipping Newsreader outlines in `brand/logos/lockup*.svg`
-- Fraunces (opsz 144, SOFT 0) — closer than Newsreader, still too calligraphic / soft
-- Canela — proprietary, cannot ship
-- Playfair / generic luxury-fashion Didone as the answer
-- Sci-fi display / Orbitron-class gimmick
-
-## Six production paths
-
-All OFL 1.1. Outlined. Mixed-case except Cinzel.
-
-| # | Path | Why it is here | Risk |
-| --- | --- | --- | --- |
-| 01 | **Gloock** | Deliberately closest to 04 Canela. *W a g M* match. 04-tight gap. | Editorial-fashion adjacency |
-| 02 | **Gloock + 02 air** | Same wordmark, restrained spacing only (tracking −0.01, gap 0.58 × cap) | Looser than 04 |
-| 03 | Bodoni Moda opsz 96 | Thin / severe carved Didone pole | Generic luxury-fashion |
-| 04 | Bellefair | Inscriptional mixed-case, archaeological, not Trajan | Light against the columns |
-| 05 | Noto Serif Display | Institutional high-contrast display, not a fashion face | Book-display, less 04 |
-| 06 | Cinzel caps | Dune / Trajan inscriptional pole | Costume; not 04 mixed-case |
-
-## Recommendation
-
-**Gloock, 04-tight lockup.** Outline as the production wordmark if critic passes. Do not freeze until that review. Do not replace shipping Newsreader lockups in this pass.
-
-If Gloock is too editorial-fashion: Bellefair (archaeological) then Noto (institutional). Not Bodoni. Not Cinzel.
+Source occupancy. Modeled two-value finish. Mono fallback. Small-size occupancy. Color.
 
 ## Not this pass
 
-- Geometry / finish recut
+- Type zoo
+- Spacing-only second Gloock
 - Phase B / `src/`
-- Editorial copy must-fixes
+- Editorial copy
 - Type freeze
 - Merge / live `main`
 
-Stop for independent design-critic review of this wordmark gate only.
+Stop for independent re-review of this recut only.
