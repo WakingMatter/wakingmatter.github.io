@@ -1,211 +1,144 @@
 #!/usr/bin/env python3
-"""One-color mark studies for the Direction 04 checkpoint.
+"""Controlled one-colour refinements of the Direction 04 stadium + sphere.
 
-These geometries are for the study board only. They do not replace
-brand/logos production masters.
+Family rule: two vertical members, one suspended sphere, nothing else.
+The shipped stadium is the baseline, not a freeze. These cuts only move
+proportion, slit, sphere, a whisper of taper. They do not invent a new mark.
+
+04 icon (chrome visible on void) measured:
+  pillar 13, gap 31, height ~112, sphere Ø 27 (87% of gap), 2px hair
+  each side, sphere on the vertical centre. Pillars are monuments, not
+  letter-stems. Baseline's failure is thick stems (16 vs 11) making an H,
+  not a too-small orb.
+
+Study only. Does not replace brand/logos/.
 """
 
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent / "marks"
 OUT.mkdir(parents=True, exist_ok=True)
-
 VB = 120
 
 
 def wrap(name, inner: str) -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {VB} {VB}" fill="none" role="img" aria-label="{name}">
-  <g fill="currentColor">
-{inner}
-  </g>
-</svg>
-'''
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {VB} {VB}" '
+        f'fill="none" role="img" aria-label="{name}">\n'
+        f'  <g fill="currentColor">\n{inner}  </g>\n</svg>\n'
+    )
+
+
+def stadium(x, y, w, h, rx=None):
+    if rx is None:
+        rx = w / 2
+    return (
+        f'    <rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" '
+        f'height="{h:.2f}" rx="{rx:.2f}"/>\n'
+    )
 
 
 def circle(cx, cy, r):
-    return f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}"/>'
+    return f'    <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r:.2f}"/>\n'
 
 
-# ---------------------------------------------------------------------------
-# CONTROL — current production (stadium + centered sphere). Not a candidate.
-# ---------------------------------------------------------------------------
-control = """    <rect x="32" y="16" width="16" height="88" rx="8"/>
-    <rect x="72" y="16" width="16" height="88" rx="8"/>
-    <circle cx="60" cy="60" r="11"/>"""
+def pair(pillar_w, gap, height, y0, sphere_r, sphere_cy, rx=None):
+    """Two stadiums, optically centered on 60."""
+    total = pillar_w * 2 + gap
+    x0 = (VB - total) / 2
+    left = stadium(x0, y0, pillar_w, height, rx)
+    right = stadium(x0 + pillar_w + gap, y0, pillar_w, height, rx)
+    return left + right + circle(VB / 2, sphere_cy, sphere_r)
 
 
-# ---------------------------------------------------------------------------
-# A RELIC — closest reconstruction of the 04 board in one colour.
-# Parallel outer edges, slight inner scoop around a large sphere sitting
-# a little above geometric centre. Caps are columns, not cartoon pills:
-# the end radius is less than half the shaft width. Gap ≈ shaft width.
-# ---------------------------------------------------------------------------
-def relic():
-    # Outer edges bow in 1.2 units (worn shaft, not a stadium).
-    # Inner edges scoop 3.5 units toward the sphere. Gap at the waist
-    # is only a hair wider than the sphere — 04's fill-the-aperture read.
-    left = """    <path d="M34.2 21.0
-      C34.2 16.0 37.8 13.5 41.2 13.5
-      C44.6 13.5 47.8 16.0 47.8 21.0
-      C47.8 30.0 49.6 41.0 50.4 54.0
-      C49.6 67.0 47.8 80.0 47.8 99.0
-      C47.8 104.0 44.6 106.5 41.2 106.5
-      C37.8 106.5 34.2 104.0 34.2 99.0
-      C33.0 80.0 33.0 40.0 34.2 21.0
-      Z"/>"""
-    right = """    <path d="M85.8 21.0
-      C85.8 16.0 82.2 13.5 78.8 13.5
-      C75.4 13.5 72.2 16.0 72.2 21.0
-      C72.2 30.0 70.4 41.0 69.6 54.0
-      C70.4 67.0 72.2 80.0 72.2 99.0
-      C72.2 104.0 75.4 106.5 78.8 106.5
-      C82.2 106.5 85.8 104.0 85.8 99.0
-      C87.0 80.0 87.0 40.0 85.8 21.0
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 54, 9.4)
+def tapered_outer(pillar_top, pillar_bot, gap, y0, y1, sphere_r, sphere_cy):
+    """Whisper taper: extra mass goes to the outer edges. Inner slit stays parallel.
+
+    Caps are true circles so this remains a stadium, not a wedge.
+    """
+
+    def pillar(out_t, in_t, out_b, in_b):
+        wt = abs(in_t - out_t)
+        wb = abs(in_b - out_b)
+        rt, rb = wt / 2, wb / 2
+        top_cx = (out_t + in_t) / 2
+        bot_cx = (out_b + in_b) / 2
+        # shaft: outer and inner edges between cap tangent heights
+        poly = (
+            f'    <polygon points="'
+            f'{out_t:.2f},{y0 + rt:.2f} {in_t:.2f},{y0 + rt:.2f} '
+            f'{in_b:.2f},{y1 - rb:.2f} {out_b:.2f},{y1 - rb:.2f}"/>\n'
+        )
+        caps = circle(top_cx, y0 + rt, rt) + circle(bot_cx, y1 - rb, rb)
+        return poly + caps
+
+    total_top = pillar_top * 2 + gap
+    total_bot = pillar_bot * 2 + gap
+    left_out_t = (VB - total_top) / 2
+    left_in_t = left_out_t + pillar_top
+    right_in_t = left_in_t + gap
+    right_out_t = right_in_t + pillar_top
+    left_out_b = (VB - total_bot) / 2
+    left_in_b = left_out_b + pillar_bot
+    right_in_b = left_in_b + gap
+    right_out_b = right_in_b + pillar_bot
+    return (
+        pillar(left_out_t, left_in_t, left_out_b, left_in_b)
+        + pillar(right_out_t, right_in_t, right_out_b, right_in_b)
+        + circle(VB / 2, sphere_cy, sphere_r)
+    )
 
 
-# ---------------------------------------------------------------------------
-# B THROAT — aperture pinches; sphere is held at the narrowest point.
-# Top and bottom flare open. The sphere cannot slide without deforming
-# the throat. This is the tension variant.
-# ---------------------------------------------------------------------------
-def throat():
-    left = """    <path d="M30.0 23.0
-      C30.0 16.8 34.8 13.0 40.2 13.0
-      C45.4 13.0 49.0 16.6 49.0 23.0
-      C49.0 32.0 52.6 42.0 53.2 52.5
-      C52.6 63.0 49.0 74.0 49.0 97.0
-      C49.0 103.4 45.2 107.0 40.2 107.0
-      C34.8 107.0 30.0 103.2 30.0 97.0
-      Z"/>"""
-    right = """    <path d="M90.0 23.0
-      C90.0 16.8 85.2 13.0 79.8 13.0
-      C74.6 13.0 71.0 16.6 71.0 23.0
-      C71.0 32.0 67.4 42.0 66.8 52.5
-      C67.4 63.0 71.0 74.0 71.0 97.0
-      C71.0 103.4 74.8 107.0 79.8 107.0
-      C85.2 107.0 90.0 103.2 90.0 97.0
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 52.5, 6.4)
+# Parent for the 04-derived cuts. Slightly thicker than the 10.7 true-scale
+# icon so 16px has a chance; ratio still monument, not letter.
+#   04 icon:  pillar 13 / gap 31 / Ø 27 / fill 87% / height 112  (gap/p = 2.38)
+#   parent:   pillar 11.5 / gap 25 / Ø 21.8 / fill 87% / height 92 (gap/p = 2.17)
 
+# 0 BASELINE — shipped production. Mathematically neat. Useful. Not frozen.
+# Thick stems (16) + centered ball = corporate H, even with a large sphere.
+baseline = pair(16, 24, 88, 16, 11, 60)
 
-# ---------------------------------------------------------------------------
-# C MENHIR — standing stones. Wider at the base, round only at the head.
-# Right stone slightly heavier. Sphere high, like something caught in a
-# lintel-less gate. Asymmetry is small enough to survive 24px, large
-# enough to kill a corporate H at lockup size.
-# ---------------------------------------------------------------------------
-def menhir():
-    # Heads close; bases step outward. Sphere is the lintel — wedged
-    # where the stones are nearest, not floating in a wide sky-gap.
-    left = """    <path d="M35.5 19.5
-      C35.5 15.0 39.2 12.8 42.8 12.8
-      C46.4 12.8 50.6 15.0 50.6 19.5
-      L53.8 99.0
-      C53.8 103.4 50.6 106.2 46.2 106.2
-      L34.0 106.2
-      C29.8 106.2 27.2 103.4 27.2 99.0
-      Z"/>"""
-    right = """    <path d="M85.2 20.4
-      C85.2 15.6 81.4 13.4 77.6 13.4
-      C73.8 13.4 69.2 15.6 69.2 20.4
-      L65.6 99.4
-      C65.6 103.8 68.8 106.8 73.4 106.8
-      L86.8 106.8
-      C91.0 106.8 93.4 103.8 93.4 99.4
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 35.0, 9.0)
+# 1 OPTICAL — 04 reconstruction in one colour. Slender monuments, large
+# orb occupying the doorway, still on the vertical centre like the board.
+optical = pair(11.5, 25, 92, 14, 10.9, 60)
 
+# 2 SUSPENDED — same 04 cut, sphere lifted off the letter's crossbar.
+# One-colour has no chrome to say "this is an object in space"; lift is
+# how the orb stays a hanging instrument rather than an H-bar.
+suspended = pair(11.5, 25, 92, 14, 10.9, 49)
 
-# ---------------------------------------------------------------------------
-# D CATCH — inner bays. Straight outer shafts; the inner faces are
-# scalloped so the sphere sits in a carved pocket. The pocket is the
-# holding, not a crossbar. Sphere slightly below centre (gravity + catch).
-# ---------------------------------------------------------------------------
-def catch():
-    # Lips closer than the sphere's diameter: a captured bearing.
-    # The bay cuts into the shaft, not out into the gap.
-    left = """    <path d="M31.0 21.5
-      C31.0 16.4 35.0 13.6 39.4 13.6
-      C43.8 13.6 47.6 16.4 47.6 21.5
-      L50.8 52.0
-      C51.0 57.0 47.4 61.0 47.2 66.0
-      C47.4 71.0 51.0 75.0 50.8 80.0
-      L47.6 98.5
-      C47.6 103.6 43.8 106.4 39.4 106.4
-      C35.0 106.4 31.0 103.6 31.0 98.5
-      Z"/>"""
-    right = """    <path d="M89.0 21.5
-      C89.0 16.4 85.0 13.6 80.6 13.6
-      C76.2 13.6 72.4 16.4 72.4 21.5
-      L69.2 52.0
-      C69.0 57.0 72.6 61.0 72.8 66.0
-      C72.6 71.0 69.0 75.0 69.2 80.0
-      L72.4 98.5
-      C72.4 103.6 76.2 106.4 80.6 106.4
-      C85.0 106.4 89.0 103.6 89.0 98.5
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 66, 10.4)
+# 3 HELD — tighter slit, hair clearance. Compensates for lost 3D metal
+# with structural tension. Sphere slightly high so it is held, not pasted.
+held = pair(12, 21.6, 92, 14, 10.2, 54)
 
+# 4 SLENDER — even more monolith. Narrower shafts, same filling orb,
+# a little more height. Tests whether 04's archaeological read is mostly
+# the pillar:height ratio.
+slender = pair(10.4, 25.2, 96, 12, 10.9, 53)
 
-# ---------------------------------------------------------------------------
-# E TOKEN — heavy, short, close. A carved seal rather than a letter.
-# Small sphere, low in a tight well. Monumental as mass, not as type.
-# ---------------------------------------------------------------------------
-def token():
-    left = """    <path d="M24.0 30.0
-      C24.0 22.8 29.6 18.5 36.0 18.5
-      C42.4 18.5 49.6 22.8 49.6 30.0
-      L51.0 92.0
-      C51.0 99.4 45.4 103.5 38.5 103.5
-      C31.4 103.5 24.0 99.4 24.0 92.0
-      Z"/>"""
-    right = """    <path d="M96.0 30.0
-      C96.0 22.8 90.4 18.5 84.0 18.5
-      C77.6 18.5 70.4 22.8 70.4 30.0
-      L69.0 92.0
-      C69.0 99.4 74.6 103.5 81.5 103.5
-      C88.6 103.5 96.0 99.4 96.0 92.0
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 74, 8.6)
-
-
-# ---------------------------------------------------------------------------
-# F TAPER — blades. Outer edges slant in toward the head; inner faces
-# nearly vertical. Sphere high-mid. Reads as two worn obelisks, not an H.
-# ---------------------------------------------------------------------------
-def taper():
-    left = """    <path d="M39.0 18.0
-      C39.0 14.2 42.2 12.4 45.2 12.4
-      C48.2 12.4 51.2 14.2 51.2 18.0
-      C51.6 32.0 52.4 44.0 52.8 48.5
-      L53.4 97.0
-      C53.4 102.8 48.6 107.4 41.4 107.4
-      L29.0 107.4
-      C23.8 107.4 21.0 103.0 21.0 98.2
-      Z"/>"""
-    right = """    <path d="M81.0 18.0
-      C81.0 14.2 77.8 12.4 74.8 12.4
-      C71.8 12.4 68.8 14.2 68.8 18.0
-      C68.4 32.0 67.6 44.0 67.2 48.5
-      L66.6 97.0
-      C66.6 102.8 71.4 107.4 78.6 107.4
-      L91.0 107.4
-      C96.2 107.4 99.0 103.0 99.0 98.2
-      Z"/>"""
-    return left + "\n" + right + "\n" + circle(60, 48.5, 7.2)
-
+# 5 THRESHOLD — 04 slit with a 2-unit wider foot on the outer edges only.
+# Inner faces stay a parallel doorway. Ritual gate, not a menhir.
+threshold = tapered_outer(
+    pillar_top=11.4,
+    pillar_bot=13.4,
+    gap=25.0,
+    y0=13.5,
+    y1=107.5,
+    sphere_r=10.9,
+    sphere_cy=52,
+)
 
 files = {
-    "0-control.svg": wrap("Control — current production, not a candidate", control),
-    "a-relic.svg": wrap("Study A — Relic", relic()),
-    "b-throat.svg": wrap("Study B — Throat", throat()),
-    "c-menhir.svg": wrap("Study C — Menhir", menhir()),
-    "d-catch.svg": wrap("Study D — Catch", catch()),
-    "e-token.svg": wrap("Study E — Token", token()),
-    "f-taper.svg": wrap("Study F — Taper", taper()),
+    "0-baseline.svg": wrap("Baseline — shipped stadium construction", baseline),
+    "1-optical.svg": wrap("Optical — 04 reconstruction, centred", optical),
+    "2-suspended.svg": wrap("Suspended — 04 cut, sphere off the crossbar", suspended),
+    "3-held.svg": wrap("Held — tighter slit, hair clearance", held),
+    "4-slender.svg": wrap("Slender — narrower monolith", slender),
+    "5-threshold.svg": wrap("Threshold — 04 slit plus whisper outer taper", threshold),
 }
+
+for old in OUT.glob("*.svg"):
+    old.unlink()
 
 for name, svg in files.items():
     (OUT / name).write_text(svg)
