@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <rect width="1200" height="630" fill="#0A0A0A"/>
-  <g transform="translate(72, 268) scale(1.48)">
+  <g transform="translate(80, 247) scale(2.15)">
     
   <g transform="translate(0, 1.944) scale(0.555319148936) translate(-35.90, -13.00)">
 <defs>
@@ -39,33 +39,6 @@
   <path fill="#F7F6F3" transform="translate(46.602 54.144) scale(0.06960000 -0.06960000) translate(4675.00 0)" d="M184.45 -14Q140.25 -14 112.2 19.0Q84.14999999999999 52 84.14999999999999 105V490H11.9V503Q70.55 508 116.875 547.0Q163.2 586 192.95 652H206.54999999999998V508H319.59999999999997L311.09999999999997 490H206.54999999999998V127Q206.54999999999998 47 252.45 47Q267.75 47 287.72499999999997 58.0Q307.7 69 325.55 87V77Q297.5 35 259.25 10.5Q221.0 -14 184.45 -14Z"/>
   <path fill="#F7F6F3" transform="translate(46.602 54.144) scale(0.06960000 -0.06960000) translate(4986.10 0)" d="M228.65 -12Q170.0 -12 124.52499999999999 22.0Q79.05 56 53.55 116.5Q28.05 177 28.05 255Q28.05 335 56.1 395.0Q84.14999999999999 455 133.025 488.5Q181.9 522 243.95 522Q295.8 522 336.175 498.0Q376.55 474 400.775 430.5Q425.0 387 428.4 330L429.25 315H143.65V310Q143.65 204 183.6 140.5Q223.54999999999998 77 290.7 77Q331.5 77 368.47499999999997 100.5Q405.45 124 428.4 164L436.05 161Q421.59999999999997 110 391.0 71.0Q360.4 32 318.75 10.0Q277.09999999999997 -12 228.65 -12ZM144.5 330H317.05Q317.05 409 295.375 458.0Q273.7 507 234.6 507Q197.2 507 172.54999999999998 459.0Q147.9 411 144.5 330Z"/>
   <path fill="#F7F6F3" transform="translate(46.602 54.144) scale(0.06960000 -0.06960000) translate(5417.05 0)" d="M5.1 0V10H5.95Q36.55 10 55.25 32.0Q73.95 54 73.95 90V418Q73.95 456 60.775 477.0Q47.6 498 5.1 498V508H89.25Q134.29999999999998 508 157.25 518.5Q180.2 529 189.54999999999998 546H193.79999999999998L194.65 382Q205.7 412 223.125 445.0Q240.54999999999998 478 267.325 500.5Q294.09999999999997 523 331.5 523Q344.25 523 358.7 520.0Q373.15 517 389.3 509L356.15 392Q325.55 412 303.025 420.0Q280.5 428 263.5 428Q234.6 428 220.575 407.0Q206.54999999999998 386 196.35 357V90Q196.35 54 215.04999999999998 32.0Q233.75 10 264.34999999999997 10H265.2V0Z"/>
-
-
-  </g>
-  <g transform="translate(868, 168) scale(2.45)">
-    
-  <defs>
-    <linearGradient id="vdColL" x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#8E928F"/>
-      <stop offset="0.58" stop-color="#8E928F"/>
-      <stop offset="0.62" stop-color="#D6D9D7"/>
-      <stop offset="1" stop-color="#D6D9D7"/>
-    </linearGradient>
-    <linearGradient id="vdColR" x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#D6D9D7"/>
-      <stop offset="0.38" stop-color="#D6D9D7"/>
-      <stop offset="0.42" stop-color="#8E928F"/>
-      <stop offset="1" stop-color="#8E928F"/>
-    </linearGradient>
-    <radialGradient id="vdBead" cx="34%" cy="28%" r="72%">
-      <stop offset="0" stop-color="#E2E4E1"/>
-      <stop offset="0.36" stop-color="#3A3E3C"/>
-      <stop offset="1" stop-color="#1A1C1B"/>
-    </radialGradient>
-  </defs>
-  <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#vdColL)"/>
-  <rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50" fill="url(#vdColR)"/>
-  <circle cx="60.00" cy="60.00" r="11.40" fill="url(#vdBead)"/>
 
 
   </g>

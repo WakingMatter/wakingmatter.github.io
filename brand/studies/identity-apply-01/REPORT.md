@@ -28,4 +28,6 @@ Open [`index.html`](index.html).
 
 1440 and 390 home (void header + architectural mark) and About (ivory header). Then favicon, app icon, OG. Compare explicitly to Direction 04 (north star), 03 (grid discipline), 01 (editorial air). Borrow 02 only for cleanliness / negative space.
 
+At 390 the lockup keeps its own row and nav sits underneath — 02 air around the inscription, not extra tracking. OG is the recut lockup on void at inscription scale (no second mark, no Newsreader).
+
 Stop here.

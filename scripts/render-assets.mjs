@@ -54,16 +54,12 @@ render(iconApp, 512, join(out, "icon-512.png"));
 render(iconApp, 512, join(out, "avatar-512.png"));
 
 const lockupInner = inner(readFileSync(join(logos, "lockup-on-void.svg"), "utf8"));
-const markVoidInner = inner(readFileSync(join(logos, "mark-on-void.svg"), "utf8"));
 
 const og = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <rect width="1200" height="630" fill="#0A0A0A"/>
-  <g transform="translate(72, 268) scale(1.48)">
+  <g transform="translate(80, 247) scale(2.15)">
     ${lockupInner}
-  </g>
-  <g transform="translate(868, 168) scale(2.45)">
-    ${markVoidInner}
   </g>
 </svg>`;
 writeFileSync(join(out, "og-image.svg"), og);
