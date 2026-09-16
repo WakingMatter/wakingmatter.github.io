@@ -34,7 +34,7 @@ npm run preview
 
 See [`brand/BRAND-SYSTEM.md`](brand/BRAND-SYSTEM.md). Masters live in `brand/logos/`. Public copies are in `public/brand/` and at the site root for icons.
 
-Type: Newsreader, Inter, and IBM Plex Mono, all SIL OFL 1.1, self-hosted. See `brand/fonts/LICENSE.txt`. There is no Canela dependency.
+Wordmark: outlined Gloock-derived recut (OFL modification, not a live font). Site text: Newsreader, Inter, and IBM Plex Mono, all SIL OFL 1.1, self-hosted. See `brand/fonts/LICENSE.txt`. There is no Canela dependency.
 
 ## GitHub Pages
 

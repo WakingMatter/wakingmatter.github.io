@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Geometry and finish provisionally frozen.** Source occupancy: parallel full stadiums, centred orb, pillar 11 / gap 26.2 / r 11.4 / height 94. Finish is the modeled two-value in `logos/mark.svg` (pass 3). **Type is not frozen.** Type revise: [`studies/wordmark-gate-01/revise.html`](studies/wordmark-gate-01/revise.html). Phase B held.
+> **Geometry, finish, and wordmark provisionally frozen together.** Source occupancy + modeled two-value finish + outlined Gloock-derived recut at 04-tight 0.38×cap. Do not reopen geometry, finish, color, mono fallback, or type. Phase B is **identity application only**. Editorial copy is still held.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 
@@ -70,12 +70,12 @@ Matte modeled finish. No chrome tubes, no glow, no teal. One inner-edge value st
 | `mark.svg` / `mark-on-ivory.svg` / `mark-small.svg` | Ivory | **Parent master.** Void columns with a ~40% slot-facing Charcoal inner plane (`#2A2A2A`). Pewter bead: pole `#B8BCBA` / body `#3A3E3C` / terminator `#1A1C1B`. |
 | `mark-on-void.svg` | Void | Outer `#8E928F`, Mist inner plane. Bead is the object: pole `#E2E4E1` (lighter than the column) / body `#3A3E3C` / terminator `#1A1C1B`. |
 | `mark-mono.svg` / `lockup-mono.svg` / `icon-app-mono.svg` | any | **Mono fallback only.** Members filled + ring. Never the parent master. |
-| `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + Newsreader outlines (**stand-in, not a candidate**; type not frozen) |
-| `lockup-on-void.svg` | Void | Modeled void mark + Newsreader outlines (stand-in) |
+| `lockup.svg` / `lockup-on-ivory.svg` | Ivory | Modeled mark + outlined Gloock-derived recut (parent lockup) |
+| `lockup-on-void.svg` | Void | Modeled void mark + recut in Ivory |
 | `icon-app.svg` | Void rounded square | Same void finish; mark scaled up in the square (placement only) |
 | `favicon.svg` | Ivory | Same modeled parent geometry |
 
-Candidate Fraunces lockups remain in the finish study only. They are not shipping masters. Current type recommendation lives in the wordmark gate.
+The recut is an OFL modification of Gloock structure, outlined, not a font named Gloock. Do not substitute Newsreader, Fraunces, or live webfonts into the lockup.
 
 A boolean hole in the aperture would be the preferred 1-bit bead, but Source occupancy does not overlap, so the hole would vanish. Ring is the honest mono fallback.
 
@@ -83,13 +83,13 @@ A boolean hole in the aperture would be the preferred 1-bit bead, but Source occ
 
 ## 2. Wordmark
 
-**Type is not frozen.** Direction 04 (Canela, proprietary) is the source: thin, severe, inscriptional, archaeological-future. Fraunces was closer than Newsreader and is still too calligraphic/soft. Shipping SVG lockups still carry Newsreader outlines as a stand-in and must not be treated as a candidate or a freeze.
+**Wordmark is provisionally frozen.** Direction 04 (Canela, proprietary) remains the north star: thin, severe, inscriptional, archaeological-future. Shipping lockups use an outlined recut derived from Gloock Regular — narrower and less inky than the parent cut, mixed-case, high contrast, two-story *a*, contained closed *g*, high-crotch *W/M*, tracking −0.03. It is not Canela, Sora, Neue Montreal, Newsreader, or Fraunces.
 
-Current gate: [`studies/wordmark-gate-01/revise.html`](studies/wordmark-gate-01/revise.html). Gloock Regular was the closest structure and is the wrong cut (too inky). One outlined recut from that structure is in review. It is not Canela, Sora, or Neue Montreal.
+Study (historical): [`studies/wordmark-gate-01/revise.html`](studies/wordmark-gate-01/revise.html). Do not reopen type.
 
-Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height` unless the wordmark gate explicitly adopts Direction 02 air.
+Primary lockup: mark to the left of the wordmark. Align the mark to the **cap height** of the type, not to the descender of *g*. Gap = `0.38 × cap-height` (04-tight). Direction 02 is borrowed only for cleanliness / negative space around the lockup in a layout — not as extra letterspacing inside the word.
 
-Do not extra-letterspace or stack the words except in a display setting where the name is the headline (and then it is typesetting, not the logo). Outlined custom wordmarks are allowed once a face is chosen; they are the lockup, not a second type family.
+Do not extra-letterspace or stack the words except in a display setting where the name is the headline (and then it is typesetting, not the logo). The outlined recut **is** the lockup, not a second type family for page text.
 
 ---
 
@@ -115,7 +115,8 @@ Hairlines: `rgba(10,10,10,0.12)` on Ivory, `rgba(247,246,243,0.14)` on Void.
 
 | Role | Face | License | Notes |
 | --- | --- | --- | --- |
-| Display, wordmark, article body | [Newsreader](https://fonts.google.com/specimen/Newsreader) | SIL OFL 1.1 | Optical size on. Regular for display; italic for emphasis. |
+| Wordmark / lockup | Outlined Gloock-derived recut | SIL OFL 1.1 modification | Frozen SVG. Not a live font. |
+| Display, article body | [Newsreader](https://fonts.google.com/specimen/Newsreader) | SIL OFL 1.1 | Optical size on. Site text only — not the lockup. |
 | UI, navigation, decks, labels | [Inter](https://rsms.me/inter/) | SIL OFL 1.1 | Variable weight 400–500. |
 | Metadata, dates, codes | [IBM Plex Mono](https://github.com/IBM/plex) | SIL OFL 1.1 | Optional. 400/500 only. |
 
@@ -210,13 +211,13 @@ All masters live in `brand/logos/`. Site copies of the public marks live in `pub
 
 | File | Use |
 | --- | --- |
-| `mark.svg` | Master, `currentColor` |
+| `mark.svg` | Master, modeled two-value on ivory |
 | `mark-mono.svg` | Same, production mono |
 | `mark-small.svg` | 16–32 px |
 | `mark-on-ivory.svg` | Color mark on light |
 | `mark-on-void.svg` | Color mark on dark |
 | `wordmark.svg` | Name, no mark |
-| `lockup.svg` | Primary logo, `currentColor` |
+| `lockup.svg` | Primary logo, modeled ivory |
 | `lockup-mono.svg` | Primary, single color |
 | `lockup-on-ivory.svg` | Primary on light |
 | `lockup-on-void.svg` | Primary on dark |

@@ -1,6 +1,6 @@
 # Logo finish pass 3 — provisionally frozen
 
-**Status:** PASS GEOMETRY + FINISH TO PROVISIONAL FREEZE. Type is not frozen. Phase B held.
+**Status:** PASS GEOMETRY + FINISH TO PROVISIONAL FREEZE. Wordmark later PASSed. Frozen together. Phase B identity-only.
 
 Open [`finish.html`](finish.html). Type revise: [`../wordmark-gate-01/revise.html`](../wordmark-gate-01/revise.html).
 
@@ -12,7 +12,7 @@ Parallel full stadiums. Centred orb. Pillar 11 / gap 26.2 / r 11.4 / height 94. 
 
 ## Next gate
 
-Type / wordmark only. See the wordmark study. Do not resume Phase B. Do not touch editorial copy. Live `main` is untouched.
+Wordmark PASSed: outlined Gloock-derived recut, 04-tight 0.38×cap. Do not reopen geometry, finish, or type. Identity application: [`../identity-apply-01/`](../identity-apply-01/). Editorial copy still held. Live `main` is untouched.
 
 ## This finish (historical)
 

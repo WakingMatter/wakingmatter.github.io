@@ -1,6 +1,6 @@
 # Wordmark gate — type revise (one recut)
 
-**Status:** REVISE TYPE. Geometry and finish provisionally frozen. Type not frozen. Phase B held.
+**Status:** PASS WORDMARK TO PROVISIONAL FREEZE. Geometry + finish + recut frozen together. Phase B identity-only.
 
 Open [`revise.html`](revise.html). Generator: [`generate_recut.py`](generate_recut.py). Previous zoo: [`index.html`](index.html) (closed).
 
@@ -28,9 +28,8 @@ Source occupancy. Modeled two-value finish. Mono fallback. Small-size occupancy.
 
 - Type zoo
 - Spacing-only second Gloock
-- Phase B / `src/`
-- Editorial copy
-- Type freeze
+- Broader page restyle / editorial copy
+- Reopening geometry, finish, color, mono, or type
 - Merge / live `main`
 
-Stop for independent re-review of this recut only.
+Independent critic returned **PASS WORDMARK TO PROVISIONAL FREEZE**. Shipping lockups now carry this recut. Identity application: [`../identity-apply-01/`](../identity-apply-01/).

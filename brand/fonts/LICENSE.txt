@@ -16,4 +16,9 @@ SIL Open Font License 1.1 — https://scripts.sil.org/OFL
 Full OFL text is in the fontsource packages under node_modules and at:
 https://scripts.sil.org/OFL
 
+Wordmark / lockup outlines are a modification of Gloock Regular
+Copyright 2022 The Gloock Project Authors
+https://github.com/duartp/gloock
+SIL Open Font License 1.1 — not redistributed as a font named Gloock.
+
 These faces are self-hosted. No proprietary Canela, Neue Montreal, or Sora files are included.

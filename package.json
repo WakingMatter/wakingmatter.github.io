@@ -9,7 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "assets": "node scripts/render-assets.mjs"
+    "assets": "python3 scripts/promote-lockups.py && node scripts/render-assets.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

@@ -6,8 +6,8 @@ This document is for the independent critic. It is not a public page.
 
 ## From Direction 04
 
-- Aperture mark: two stadium pillars and a sphere in the gap. Matte, not luminous.
-- Primary lockup: mark + editorial serif wordmark on Ivory.
+- Aperture mark: two stadium pillars and a sphere in the gap. Matte modeled two-value, not luminous.
+- Primary lockup: frozen mark + outlined Gloock-derived recut on Ivory / Void.
 - Void / Charcoal / Ivory / Resonance / Mist. The mark is two-value matte (structure vs bead). Resonance is not a mark identity.
 - Dark homepage hero, large Newsreader headline, tracked uppercase nav and eyebrows.
 - Traits: Precision, Depth, Composure, numbered.
@@ -38,7 +38,8 @@ This document is for the independent critic. It is not a public page.
 ## Honest limits
 
 - No commissioned photography yet. The hero uses the mark at architectural scale instead of a stock interior.
-- Newsreader stands in for Canela in shipping lockups only (not a candidate). Type revise is open: see `brand/studies/wordmark-gate-01/revise.html`. Inter stands in for the board sans. Neue Montreal and Sora are not used.
+- Wordmark is the outlined Gloock-derived recut (provisional freeze). Newsreader remains site display/article type, not the lockup. Inter stands in for the board sans. Neue Montreal and Sora are not used.
+- Identity application (Phase B, this pass): shipping lockups, nav, favicon, app, and social use the frozen mark+recut. Editorial copy is still held. See `brand/studies/identity-apply-01/`.
 - Resonance is not in the mark. If a later composition looks teal, it has drifted.
 
 ## Institution vs template
