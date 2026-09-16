@@ -1,8 +1,8 @@
 # Identity application — Phase B identity-only
 
-**Status:** REVISE APPLICATION — 390 hero hierarchy. Frozen core closed. Hide architectural aperture below 900px. STOP for re-review.
+**Status:** HISTORICAL. This sheet recorded the identity-application gate (including the 390 aperture omission). It is not current shipping truth. Design later returned **PASS PHASE B IDENTITY APPLICATION** and **PASS BROADER SITE APPLICATION**. Frozen core remains closed. See [`../../VISUAL-FIDELITY.md`](../../VISUAL-FIDELITY.md).
 
-Geometry + modeled two-value finish + outlined Gloock-derived recut (04-tight 0.38×cap) are provisionally frozen together. This pass replaces shipping Newsreader lockups and site identity surfaces only.
+Geometry + modeled two-value finish + outlined Gloock-derived recut (04-tight 0.38×cap) are frozen together. This pass replaced shipping Newsreader lockups and site identity surfaces only.
 
 Open [`index.html`](index.html).
 
@@ -17,12 +17,11 @@ Open [`index.html`](index.html).
 | Favicon / app / apple-touch / 192 / 512 | Frozen mark rasters |
 | `public/og-image.svg` | Void + recut lockup at inscription scale. No teal. No Newsreader outlines. |
 
-## Held (do not touch)
+## Held at the time of this sheet (do not treat as current site status)
 
-- Geometry, finish, color, mono fallback, type
-- Editorial copy (including the unresolved PR comment)
-- Broader page typography, spacing of body copy, Notes essay
-- Merge / live `main`
+- Geometry, finish, color, mono fallback, type — still closed.
+- Editorial copy and broader pages were later completed on the same PR; this sheet does not document them.
+- Merge / live `main` remain human-gated.
 
 ## Inspect first
 
@@ -30,4 +29,4 @@ Open [`index.html`](index.html).
 
 Compare 390 home to Direction 04 (inscription first), 03 (no logo splash), 01 (editorial air). Then stop.
 
-Stop here.
+Historical. Do not use this sheet as the live site.

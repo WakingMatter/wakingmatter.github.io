@@ -40,7 +40,7 @@ const themeColor = tone === "void" ? "#0A0A0A" : "#F7F6F3";
     {noindex && <meta name="robots" content="noindex" />}
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {!noindex && <link rel="canonical" href={canonical} />}
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content={ogType} />
@@ -59,6 +59,7 @@ const themeColor = tone === "void" ? "#0A0A0A" : "#F7F6F3";
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Waking Matter — Building systems for cumulative intelligence." />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />

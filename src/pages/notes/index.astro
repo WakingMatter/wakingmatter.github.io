@@ -27,7 +27,7 @@ const notes = (await getCollection("notes")).sort(
     <div class="prose-page">
       <div class="note-index">
         {notes.map((note) => (
-          <a href={`/notes/${note.id}/`}>
+          <a href={`/notes/${note.slug}/`}>
             <span class="meta">{note.data.pubDate.toISOString().slice(0, 10)}</span>
             <span>
               <h2>{note.data.title}</h2>

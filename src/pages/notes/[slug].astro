@@ -5,14 +5,14 @@ import { getCollection, render } from "astro:content";
 export async function getStaticPaths() {
   const notes = await getCollection("notes");
   return notes.map((note) => ({
-    params: { slug: note.id },
+    params: { slug: note.slug },
     props: { note },
   }));
 }
 
 const { note } = Astro.props;
 const { Content } = await render(note);
-const canonical = `https://wakingmatter.com/notes/${note.id}/`;
+const canonical = `https://wakingmatter.com/notes/${note.slug}/`;
 ---
 
 <Base

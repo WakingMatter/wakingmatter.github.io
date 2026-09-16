@@ -15,7 +15,7 @@ export async function GET(context) {
       title: note.data.title,
       description: note.data.description,
       pubDate: note.data.pubDate,
-      link: `/notes/${note.id}/`,
+      link: `/notes/${note.slug}/`,
     })),
     customData: `<language>en-us</language>`,
   });

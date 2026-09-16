@@ -75,7 +75,7 @@ const featured = notes[0];
       <section class="band notes-teaser" aria-labelledby="notes-label">
         <div class="wrap">
           <p class="label" id="notes-label">Notes</p>
-          <a class="note-card" href={`/notes/${featured.id}/`}>
+          <a class="note-card" href={`/notes/${featured.slug}/`}>
             <span class="meta">{featured.data.pubDate.toISOString().slice(0, 10)}</span>
             <span class="note-card-title">{featured.data.title}</span>
             <p>{featured.data.description}</p>
