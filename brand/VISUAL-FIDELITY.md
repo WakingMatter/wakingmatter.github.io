@@ -25,7 +25,7 @@ This document is for the independent critic. It is not a public page.
 
 - Ivory interiors, long measure, editorial air.
 - About and Notes as writing, not a studio pitch.
-- Vertical aside on the hero (“Matter / learns / …”) kept small.
+- Hero mark at architectural scale on 1440; omitted below 900px. No campaign caption.
 - No people page, because we do not have a public roster.
 
 ## Rejected from Direction 02
@@ -39,7 +39,7 @@ This document is for the independent critic. It is not a public page.
 
 - No commissioned photography yet. The hero uses the mark at architectural scale instead of a stock interior.
 - Wordmark is the outlined Gloock-derived recut (provisional freeze). Newsreader remains site display/article type, not the lockup. Inter stands in for the board sans. Neue Montreal and Sora are not used.
-- Identity application (Phase B, this pass): shipping lockups, nav, favicon, app, and social use the frozen mark+recut. Editorial copy is still held. See `brand/studies/identity-apply-01/`.
+- Identity application (Phase B): shipping lockups, nav, favicon, app, and social use the frozen mark+recut. Editorial must-fixes from the open COMMENT are in this pass.
 - Resonance is not in the mark. If a later composition looks teal, it has drifted.
 
 ## Institution vs template

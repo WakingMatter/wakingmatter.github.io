@@ -12,7 +12,13 @@ Science is the obvious example, and it is not a metaphor we should lean on too h
 
 Many of the systems now called intelligent are designed as if that cost were negligible. Each agent session is a sealed room. Each model version is a new population. Each organization that fine-tunes, prompts, or evaluates a model does so in artifacts that do not travel well: notebooks, dashboards, tribal knowledge, a handful of evaluation scores. The intelligence is real enough in the moment. It does not accumulate.
 
-We take that to be a design problem, not a slogan. Waking Matter exists to explore systems that can preserve, inherit, and compound useful learning across agents, models, and time. We do not claim that this framing is original, and we do not report results here. The aim of this note is only to make the problem specific enough to work on.
+The problem already has names. Continual and lifelong learning ask how a model can take on new tasks without erasing old ones. Distillation and adapters move capability from one network into another, or into a small patch that can be swapped. Retrieval and external memory keep facts and traces outside the weights. Replay re-exposes a learner to earlier data so it does not forget. Model merging tries to combine separately trained parameters into one. Cumulative culture — the human analogue — is the slower process by which later people do not have to rediscover what earlier people kept.
+
+Neighbors exist. The gap is not that no one has noticed accumulation. It is that these lines of work are still mostly separate, and that much of what is called intelligence in practice still throws the traces away.
+
+Several questions remain open. We will not close them here. What should stay local — private traces, a failed path that ought to die, a distinction that is only true in one room? What should travel? How would we tell compounding from a pile of memories that only makes later work slower? Those are joints, not slogans.
+
+We take the gap to be a design problem. Waking Matter exists to explore systems that can preserve, inherit, and compound useful learning across agents, models, and time. We do not claim that this framing is original, and we do not report results here. The aim of this note is only to make the problem specific enough to work on.
 
 ## Preservation is not storage
 
@@ -23,6 +29,8 @@ A checkpoint is a snapshot of a particular mind in a particular training regime.
 It is also where most systems quietly fail. They keep everything and transmit almost nothing. Or they transmit a summary so compressed that the next agent must reconstruct the work from a slogan.
 
 The difficulty is not only technical. What counts as *useful* learning is a judgment, and judgments go stale. A preserved distinction that was right for last year's task can become a prejudice. Preservation without a way to revise is how institutions calcify. The design problem is therefore double: keep what is worth keeping, and keep it in a form that can be disagreed with.
+
+Locality is not the same problem as revision. A preserved distinction can go stale and still have been worth keeping for a while. Some learning should never leave the room: privacy, a failed path that should die rather than be inherited, a fact that is only true here. We do not have an account of that boundary. We leave it open.
 
 ## Inheritance has to be the default
 
@@ -42,7 +50,7 @@ The third term is compounding. It is the reason the first two are worth the trou
 
 Compounding can fail even when storage and retrieval succeed. A growing pile of memories can make an agent slower, more cautious, or more confused. An inherited procedure can ossify. A model adapted to yesterday's tasks can punish tomorrow's. Accumulation without selection is drift. Selection without memory is amnesia. The useful region is narrow, and it is a property of the whole arrangement — representations, incentives, evaluation, time — not of a single component.
 
-This is why we speak of systems rather than of a model, a memory module, or a product. The question is whether a configuration of agents, models, and human work can get better at getting better, in a way that survives replacement of any one part.
+This is why we speak of systems rather than of a model, a memory module, or a product. The question is whether later work is cheaper or clearer because earlier work was kept — and whether that remains true when any one part of the arrangement is replaced.
 
 Evaluation, in that light, cannot only ask whether a system can do a task from a cold start. Cold-start competence is real, and it is what most public numbers measure. Cumulative intelligence would also have to show that a second, third, and tenth encounter with a related world is not billed at full price — in tokens, in human attention, or in repeated mistakes. We do not offer such a measure here. We note only that without one, it is easy to mistake a sequence of impressive debuts for a tradition.
 
