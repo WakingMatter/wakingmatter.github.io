@@ -15,7 +15,7 @@ Open [`index.html`](index.html).
 | `src/components/Aperture.astro` | Void modeled mark at architectural scale |
 | `src/components/Header.astro` | Frozen lockup SVG (not Newsreader word) |
 | Favicon / app / apple-touch / 192 / 512 | Frozen mark rasters |
-| `public/og-image.svg` | Void + recut lockup + modeled mark. No teal. No Newsreader outlines. |
+| `public/og-image.svg` | Void + recut lockup at inscription scale. No teal. No Newsreader outlines. |
 
 ## Held (do not touch)
 
