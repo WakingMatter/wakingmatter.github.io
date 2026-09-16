@@ -311,17 +311,9 @@ a {
     padding-bottom: 3rem;
   }
 
+  /* Recut lockup already carries identity. Do not splash a 12rem H above the headline. */
   .hero-figure {
-    min-height: 16rem;
-    order: -1;
-  }
-
-  .hero-aside {
     display: none;
-  }
-
-  .hero-aperture {
-    width: min(100%, 12rem);
   }
 }
 

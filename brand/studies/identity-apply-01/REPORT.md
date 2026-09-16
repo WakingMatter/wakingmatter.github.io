@@ -1,6 +1,6 @@
 # Identity application — Phase B identity-only
 
-**Status:** Applied. STOP for critic review. Do not proceed to broader page/copy work.
+**Status:** REVISE APPLICATION — 390 hero hierarchy. Frozen core closed. Hide architectural aperture below 900px. STOP for re-review.
 
 Geometry + modeled two-value finish + outlined Gloock-derived recut (04-tight 0.38×cap) are provisionally frozen together. This pass replaces shipping Newsreader lockups and site identity surfaces only.
 
@@ -26,8 +26,8 @@ Open [`index.html`](index.html).
 
 ## Inspect first
 
-1440 and 390 home (void header + architectural mark) and About (ivory header). Then favicon, app icon, OG. Compare explicitly to Direction 04 (north star), 03 (grid discipline), 01 (editorial air). Borrow 02 only for cleanliness / negative space.
+1440 home keeps the architectural mark beside the headline. Below 900px `.hero-figure` is omitted: the recut lockup in the header already carries identity, so a 12rem centered H above the headline is not used. Never `order: -1`.
 
-At 390 the lockup keeps its own row and nav sits underneath — 02 air around the inscription, not extra tracking. OG is the recut lockup on void at inscription scale (no second mark, no Newsreader).
+Compare 390 home to Direction 04 (inscription first), 03 (no logo splash), 01 (editorial air). Then stop.
 
 Stop here.
