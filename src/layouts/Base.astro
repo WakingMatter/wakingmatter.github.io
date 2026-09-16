@@ -11,7 +11,6 @@ interface Props {
   published?: Date;
   tone?: "ivory" | "void";
   current?: "home" | "about" | "research" | "notes";
-  jsonLd?: Record<string, unknown>;
   noindex?: boolean;
 }
 
@@ -23,7 +22,6 @@ const {
   published,
   tone = "ivory",
   current,
-  jsonLd,
   noindex = false,
 } = Astro.props;
 
@@ -67,10 +65,6 @@ const themeColor = tone === "void" ? "#0A0A0A" : "#F7F6F3";
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title="Waking Matter Notes" href="/rss.xml" />
-
-    {jsonLd && (
-      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-    )}
   </head>
   <body>
     <Header tone={tone} current={current} />

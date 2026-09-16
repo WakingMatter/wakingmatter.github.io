@@ -1,6 +1,6 @@
 # Waking Matter brand system
 
-> **Geometry, finish, and wordmark provisionally frozen together.** Source occupancy + modeled two-value finish + outlined Gloock-derived recut at 04-tight 0.38×cap. Do not reopen geometry, finish, color, mono fallback, or type. Phase B is **identity application only**. Editorial copy is still held.
+> **Geometry, finish, and wordmark provisionally frozen together.** Source occupancy + modeled two-value finish + outlined Gloock-derived recut at 04-tight 0.38×cap. Do not reopen geometry, finish, color, mono fallback, or type. Identity application has passed. Editorial must-fixes are in this tree; do not merge until editorial re-read, and until Pages is switched from branch/root to GitHub Actions.
 
 This is the first production identity we can credibly keep. It is not a campaign, a product UI kit, or a speculative future state.
 

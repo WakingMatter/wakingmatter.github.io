@@ -8,15 +8,15 @@ Most computational work treats intelligence as a performance that can be repeate
 
 This is a strange way to spend effort. In almost every other domain where learning matters, the point is not to demonstrate capability once. It is to keep it.
 
-Science is the obvious example, and it is not a metaphor we should lean on too heavily. Papers, instruments, and negative results are imperfect vessels. Still, the institutional bet is clear: later work should be cheaper, sharper, or more ambitious because earlier work was kept in a form that others can use. Firms, crafts, and legal systems make the same bet in different materials. A tradition is, among other things, a way of not paying the full cost of understanding a second time.
+Science is the obvious example, and it is not a metaphor we should lean on too heavily. Still, the institutional bet is clear: later work should be cheaper, sharper, or more ambitious because earlier work was kept in a form that others can use. Firms, crafts, and legal systems make the same bet in different materials. A tradition is, among other things, a way of not paying the full cost of understanding a second time.
 
 Many of the systems now called intelligent are designed as if that cost were negligible. Each agent session is a sealed room. Each model version is a new population. Each organization that fine-tunes, prompts, or evaluates a model does so in artifacts that do not travel well: notebooks, dashboards, tribal knowledge, a handful of evaluation scores. The intelligence is real enough in the moment. It does not accumulate.
 
-The problem already has names. Continual and lifelong learning ask how a model can take on new tasks without erasing old ones. Distillation and adapters move capability from one network into another, or into a small patch that can be swapped. Retrieval and external memory keep facts and traces outside the weights. Replay re-exposes a learner to earlier data so it does not forget. Model merging tries to combine separately trained parameters into one. Cumulative culture — the human analogue — is the slower process by which later people do not have to rediscover what earlier people kept.
+The problem already has names. Continual and lifelong learning: new tasks without erasing old ones. Distillation and adapters: capability moved into another network, or a small patch that can be swapped. Retrieval and external memory: facts and traces kept outside the weights. Replay: re-exposure so a learner does not forget. Model merging: separately trained parameters combined into one. Cumulative culture, the human analogue: later people do not rediscover what earlier people kept.
 
 Neighbors exist. The gap is not that no one has noticed accumulation. It is that these lines of work are still mostly separate, and that much of what is called intelligence in practice still throws the traces away.
 
-Several questions remain open. We will not close them here. What should stay local — private traces, a failed path that ought to die, a distinction that is only true in one room? What should travel? How would we tell compounding from a pile of memories that only makes later work slower? Those are joints, not slogans.
+Several questions remain open. We will not close them here. What should stay local, and what should travel? How would we tell compounding from a pile of memories that only makes later work slower? Those are joints, not slogans.
 
 We take the gap to be a design problem. Waking Matter exists to explore systems that can preserve, inherit, and compound useful learning across agents, models, and time. We do not claim that this framing is original, and we do not report results here. The aim of this note is only to make the problem specific enough to work on.
 
@@ -30,7 +30,7 @@ It is also where most systems quietly fail. They keep everything and transmit al
 
 The difficulty is not only technical. What counts as *useful* learning is a judgment, and judgments go stale. A preserved distinction that was right for last year's task can become a prejudice. Preservation without a way to revise is how institutions calcify. The design problem is therefore double: keep what is worth keeping, and keep it in a form that can be disagreed with.
 
-Locality is not the same problem as revision. A preserved distinction can go stale and still have been worth keeping for a while. Some learning should never leave the room: privacy, a failed path that should die rather than be inherited, a fact that is only true here. We do not have an account of that boundary. We leave it open.
+Locality is not the same problem as revision. Some learning should never leave the room: privacy, a failed path that should die rather than be inherited, a fact that is only true here. We do not have an account of that boundary. We leave it open.
 
 ## Inheritance has to be the default
 
