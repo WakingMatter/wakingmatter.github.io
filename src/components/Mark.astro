@@ -1,0 +1,51 @@
+---
+interface Props {
+  class?: string;
+  tone?: "ivory" | "void";
+}
+
+const { class: className, tone = "ivory" } = Astro.props;
+const uid = `${tone}-${(className || "mark").replace(/[^a-z0-9]+/gi, "")}`;
+const ivory = tone !== "void";
+const colL = ivory
+  ? { outer: "#0A0A0A", inner: "#2A2A2A" }
+  : { outer: "#8E928F", inner: "#D6D9D7" };
+const colR = ivory
+  ? { inner: "#2A2A2A", outer: "#0A0A0A" }
+  : { inner: "#D6D9D7", outer: "#8E928F" };
+const bead = ivory
+  ? { pole: "#B8BCBA", body: "#3A3E3C", term: "#1A1C1B" }
+  : { pole: "#E2E4E1", body: "#3A3E3C", term: "#1A1C1B" };
+---
+
+<svg
+  class={className}
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 120 120"
+  fill="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  <defs>
+    <linearGradient id={`${uid}-colL`} x1="35.90" y1="13.00" x2="46.90" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color={colL.outer}></stop>
+      <stop offset="0.58" stop-color={colL.outer}></stop>
+      <stop offset="0.62" stop-color={colL.inner}></stop>
+      <stop offset="1" stop-color={colL.inner}></stop>
+    </linearGradient>
+    <linearGradient id={`${uid}-colR`} x1="73.10" y1="13.00" x2="84.10" y2="13.00" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color={colR.inner}></stop>
+      <stop offset="0.38" stop-color={colR.inner}></stop>
+      <stop offset="0.42" stop-color={colR.outer}></stop>
+      <stop offset="1" stop-color={colR.outer}></stop>
+    </linearGradient>
+    <radialGradient id={`${uid}-bead`} cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color={bead.pole}></stop>
+      <stop offset="0.36" stop-color={bead.body}></stop>
+      <stop offset="1" stop-color={bead.term}></stop>
+    </radialGradient>
+  </defs>
+  <rect x="35.90" y="13.00" width="11.00" height="94.00" rx="5.50" fill={`url(#${uid}-colL)`}></rect>
+  <rect x="73.10" y="13.00" width="11.00" height="94.00" rx="5.50" fill={`url(#${uid}-colR)`}></rect>
+  <circle cx="60.00" cy="60.00" r="11.40" fill={`url(#${uid}-bead)`}></circle>
+</svg>

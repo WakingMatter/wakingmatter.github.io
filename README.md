@@ -1,69 +1,59 @@
-# Waking Matter — standalone landing site
+# Waking Matter
 
-A sparse, typography-first identity page for **Waking Matter**. It is a static folder of HTML, CSS, and a few assets. It is not part of the existing Next.js application in this repository.
+Public site for [wakingmatter.com](https://wakingmatter.com). Building systems for cumulative intelligence.
 
-Copy:
+This repository is a **static** Astro project. The build emits HTML, CSS, SVG, and font files. There is no client framework, no React, and no tracker.
 
-- **Waking Matter**
-- Building systems for cumulative intelligence.
-- Intelligence should accumulate.
+## Pages and copy
+
+- `/` — identity and current definition
+- `/about/` — what this effort is, without a team or a catalogue
+- `/research/` — questions, not findings
+- `/notes/` — essays, with RSS at `/rss.xml`
 - Contact: [hello@wakingmatter.com](mailto:hello@wakingmatter.com)
 
-The page does not describe products, a team, funding, customers, or research results.
+The site does not describe products, customers, funding, partnerships, a roster, or research results.
 
-## Isolation
-
-This site lives only in `waking-matter-site/`. Nothing elsewhere in `avs-io/Website` needs to change for it to work. The Next.js app does not route or compile this folder.
-
-The page is static: HTML, CSS, and assets. There is no JavaScript and no build step.
-
-To publish it, transplant **the contents of this folder** (not the parent Website repo) into a dedicated GitHub Pages repository or onto `wakingmatter.com`.
-
-## Local preview
-
-From this directory:
+## Local
 
 ```bash
-cd waking-matter-site
-python3 -m http.server 4173
+npm install
+npm run dev
 ```
 
-Then open [http://127.0.0.1:4173/](http://127.0.0.1:4173/).
+Production build:
 
-Any other static server is equivalent (`npx serve`, Caddy, nginx). Open `index.html` as a file if you only need a glance; a local server is better for fonts, the manifest, and paths.
+```bash
+npm run build
+npm run preview
+```
 
-## Deploy to GitHub Pages
+`npm run assets` regenerates favicons, the app icon, and the Open Graph image from `brand/logos/`.
 
-1. Create a repository (for example `wakingmatter/wakingmatter.github.io` or a project Pages repo).
-2. Copy every file in this folder to the repository **root**. Keep `index.html` at `/index.html`.
-3. In the repo settings, enable GitHub Pages from the default branch, `/ (root)`.
-4. `CNAME` is already set to `wakingmatter.com`. Point the domain’s DNS to GitHub Pages and wait for HTTPS.
-5. `.nojekyll` is included so GitHub will not process the files through Jekyll.
+## Brand
 
-After transplant, Open Graph tags assume the public origin `https://wakingmatter.com/`. If you serve the site from a project URL instead (for example `https://user.github.io/repo/`), update:
+See [`brand/BRAND-SYSTEM.md`](brand/BRAND-SYSTEM.md). Masters live in `brand/logos/`. Public copies are in `public/brand/` and at the site root for icons.
 
-- `link rel="canonical"`
-- `og:url`, `og:image`, `twitter:image`
-- `robots.txt` sitemap URL
-- `sitemap.xml`
-- JSON-LD `url`
+Wordmark: outlined Gloock-derived recut (OFL modification, not a live font). Site text: Newsreader, Inter, and IBM Plex Mono, all SIL OFL 1.1, self-hosted. See `brand/fonts/LICENSE.txt`. There is no Canela dependency.
 
-## Files
+## GitHub Pages
 
-| Path | Role |
-| --- | --- |
-| `index.html` | Identity page |
-| `404.html` | Sparse not-found page |
-| `styles.css` | Type, layout, motion, reduced-motion |
-| `assets/` | Favicon, Open Graph image, grain, self-hosted fonts |
-| `robots.txt`, `sitemap.xml`, `site.webmanifest` | Discovery metadata |
-| `CNAME` | Custom domain for GitHub Pages |
+The live site on `main` is still the previous root-static folder, deployed with Pages **legacy / branch** hosting (`main`, `/`). This Astro tree must be published with **GitHub Actions**.
 
-## Identity notes
+The workflow in `.github/workflows/pages.yml` builds on pull requests and deploys only from `main`.
 
-- Wordmark is the name set in Newsreader. There is no logo mark.
-- Palette: warm off-white paper, near-black ink, one muted mineral-teal accent.
-- The right-hand column is an abstract core of accumulating layers, not a product diagram.
-- Motion is a slight rise of the type and a bottom-up settling of the layers. It is disabled when `prefers-reduced-motion: reduce`.
+**Before merging this architecture to `main`:** in the repository Pages settings, set the source to **GitHub Actions**. If `main` is updated while Pages is still “Deploy from a branch / root”, GitHub will serve `package.json` instead of the site.
 
-Fonts are [Newsreader](https://fonts.google.com/specimen/Newsreader) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans), both SIL Open Font License, self-hosted as Latin and Latin-ext `woff2` files under `assets/fonts/`.
+`public/CNAME` keeps the custom domain `wakingmatter.com`. HTTPS stays with GitHub Pages. `.nojekyll` is in `public/` so the `_astro` directory is not ignored.
+
+## Notes
+
+Essays are Markdown in `src/content/notes/`. Frontmatter:
+
+```yaml
+title: ...
+description: ...
+pubDate: YYYY-MM-DD
+```
+
+Rebuild to refresh `/notes/`, RSS, and the sitemap.

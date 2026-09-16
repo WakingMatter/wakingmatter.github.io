@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Waking Matter — Logo gate, three-cut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=IBM+Plex+Mono:wght@400&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --void: #0a0a0a;
+        --charcoal: #2a2a2a;
+        --ivory: #f7f6f3;
+        --hair: rgba(10, 10, 10, 0.12);
+        --fraunces: "Fraunces", "Times New Roman", serif;
+        --sans: Inter, system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: var(--ivory); color: var(--void); font-family: var(--sans); }
+      body { padding: 2rem 2.25rem 4rem; }
+      .kicker, .label, figcaption {
+        font-size: 0.6875rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: var(--charcoal);
+      }
+      .kicker a { color: inherit; }
+      .top { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.85rem; border-bottom: 1px solid var(--hair); }
+      h1 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
+        font-feature-settings: "lnum" 1;
+        font-variant-numeric: lining-nums;
+        font-weight: 400;
+        font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+        letter-spacing: -0.03em;
+        line-height: 1.08;
+        margin: 1.1rem 0 0.45rem;
+        max-width: 22ch;
+      }
+      .lede { max-width: 44rem; color: var(--charcoal); font-size: 0.98rem; line-height: 1.5; margin: 0 0 1rem; }
+      h2 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.3rem;
+        letter-spacing: -0.02em;
+        margin: 1.9rem 0 0.65rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--hair);
+      }
+      .refs { display: grid; grid-template-columns: 1.5fr 0.7fr; gap: 0.75rem; align-items: start; }
+      .ref { margin: 0; border: 1px solid var(--hair); padding: 0.6rem; background: #fff; }
+      .ref img { width: 100%; height: auto; display: block; }
+      .row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.9rem; margin-top: 0.85rem; align-items: end; }
+      figure { margin: 0; }
+      figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+      figcaption { margin-top: 0.4rem; }
+      .law { opacity: 0.78; }
+      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 0.75rem; }
+      .card { border: 1px solid var(--hair); padding: 0.85rem 0.9rem 1rem; background: #fff; }
+      .card h3 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 24, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.12rem;
+        margin: 0 0 0.25rem;
+      }
+      .card .why { color: var(--charcoal); font-size: 0.82rem; line-height: 1.4; margin: 0 0 0.65rem; min-height: 2.8em; }
+      .card .mark { width: 120px; height: 120px; margin: 0 auto 0.6rem; display: block; }
+      .sizes {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        margin: 0.5rem 0 0.65rem;
+        padding: 0.45rem 0.55rem;
+        background: #eceae6;
+      }
+      .sizes img { image-rendering: pixelated; }
+      .lockup {
+        display: flex;
+        align-items: baseline;
+        gap: 0.38em;
+        font-size: 1.55rem;
+      }
+      .lockup img { height: 0.72em; width: auto; flex: none; }
+      .wm-f {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+      .arch { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; margin-top: 0.55rem; }
+      .arch img { width: 100%; max-width: 260px; margin: 0 auto; display: block; }
+      table { width: 100%; border-collapse: collapse; margin-top: 0.7rem; font-size: 0.88rem; }
+      th, td { border-top: 1px solid var(--hair); padding: 0.65rem 0.5rem; text-align: left; vertical-align: top; }
+      th { color: var(--charcoal); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
+      .rec { border: 1px solid var(--hair); padding: 1.1rem 1.2rem; margin-top: 0.8rem; max-width: 46rem; }
+      .rec h3 {
+        font-family: var(--fraunces);
+        font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
+        font-weight: 400;
+        font-size: 1.35rem;
+        margin: 0 0 0.4rem;
+      }
+      .warn { color: var(--charcoal); font-size: 0.9rem; }
+      @media (max-width: 800px) {
+        body { padding: 1.1rem; }
+        .row, .cards, .arch, .refs { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <span class="kicker">Internal · Logo gate · Superseded three-cut</span>
+      <span class="kicker"><a href="../wordmark-gate-01/revise.html">Type revise · one recut</a> · Finish frozen · Phase B held</span>
+    </div>
+
+    <h1>Three cuts. Source occupancy is law.</h1>
+    <p class="lede">
+      Independent review: the last sheet was a real checkpoint, but no candidate won both
+      Direction 04 fidelity and the not-a-corporate-H test. Flare was too far from 04.
+      Source was the honest silhouette and still a one-colour H. This sheet is the smallest
+      next move: three deltas off Source, nothing else. Throat, High, Catch, chrome, and
+      the 62% Flare stay out. Production masters unchanged.
+    </p>
+
+    <div class="refs">
+      <figure class="ref">
+        <img src="reference-04-lockup.png" alt="Direction 04 lockup" />
+        <figcaption>04 lockup crop — source of truth</figcaption>
+      </figure>
+      <figure class="ref">
+        <img src="reference-04-mark.png" alt="Direction 04 mark" />
+        <figcaption>04 mark</figcaption>
+      </figure>
+    </div>
+
+    <h2>Occupancy law</h2>
+    <p class="lede">
+      Parallel members. Pillar 11, gap 26.2, orb r 11.4 (87% fill), height 94.
+      Same numbers as Source. Each cut moves one thing.
+    </p>
+    <div class="row">
+      <figure>
+        <img src="reference-04-mark.png" alt="04" />
+        <figcaption>04 board</figcaption>
+      </figure>
+      <figure class="law">
+        <img src="marks/0-source.svg" alt="Source" />
+        <figcaption>Source · law, not a candidate</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/1-raised.svg" alt="Raised" />
+        <figcaption>1 Raised · cy 51</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/2-worn.svg" alt="Worn" />
+        <figcaption>2 Worn · rx 0.4w</figcaption>
+      </figure>
+      <figure>
+        <img src="marks/3-optical-flare.svg" alt="Optical Flare" />
+        <figcaption>3 Optical Flare · +10% foot</figcaption>
+      </figure>
+    </div>
+
+    <h2>Each cut · mark, 16 / 32, lockup</h2>
+    <p class="lede">Fraunces, opsz 144, SOFT 0. Review already noted it pairs with Source best. Type is not frozen.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>1 Raised Source</h3>
+        <p class="why">Identical members and orb. Only the sphere moves to cy 51 — suspended, not a crossbar.</p>
+        <img class="mark" src="marks/1-raised.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/1-raised-16.png" width="16" height="16" alt="16" />
+          <img src="raster/1-raised-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/1-raised.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>2 Worn Source</h3>
+        <p class="why">Identical occupancy. Terminals rx 0.4 × width — between half-pill and Tablet brick.</p>
+        <img class="mark" src="marks/2-worn.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/2-worn-16.png" width="16" height="16" alt="16" />
+          <img src="raster/2-worn-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/2-worn.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+      <div class="card">
+        <h3>3 Optical Flare</h3>
+        <p class="why">Inner slit parallel. Outer foot +10%, not Flare’s +62%. Occupancy otherwise Source.</p>
+        <img class="mark" src="marks/3-optical-flare.svg" alt="" />
+        <div class="sizes">
+          <img src="raster/3-optical-flare-16.png" width="16" height="16" alt="16" />
+          <img src="raster/3-optical-flare-32.png" width="32" height="32" alt="32" />
+          <span class="label">16 / 32</span>
+        </div>
+        <div class="lockup"><img src="marks/3-optical-flare.svg" alt="" /><span class="wm-f">Waking Matter</span></div>
+      </div>
+    </div>
+
+    <h2>Architectural · 400px</h2>
+    <div class="arch">
+      <figure class="law">
+        <img src="raster/0-source-400.png" alt="Source 400" />
+        <figcaption>Source · law</figcaption>
+      </figure>
+      <figure>
+        <img src="raster/1-raised-400.png" alt="Raised 400" />
+        <figcaption>1 Raised</figcaption>
+      </figure>
+      <figure>
+        <img src="raster/2-worn-400.png" alt="Worn 400" />
+        <figcaption>2 Worn</figcaption>
+      </figure>
+      <figure>
+        <img src="raster/3-optical-flare-400.png" alt="Optical Flare 400" />
+        <figcaption>3 Optical Flare</figcaption>
+      </figure>
+    </div>
+
+    <h2>Both tests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>04 fidelity</th>
+          <th>Not a corporate H</th>
+          <th>16 / 32</th>
+          <th>Both?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Source (law)</td>
+          <td>Pass — the silhouette</td>
+          <td>Fail — one-colour crossbar</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>1 Raised</td>
+          <td>Pass — occupancy unchanged</td>
+          <td>Moves it at 400px. Still an H at 16.</td>
+          <td>High bar, still a letter</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2 Worn</td>
+          <td>Pass — occupancy unchanged</td>
+          <td>Fail — centred orb is still the bar</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>3 Optical Flare</td>
+          <td>Pass — parallel slit, 04 fill</td>
+          <td>Fail — 10% foot is an optical hint</td>
+          <td>H</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>For re-review · not frozen</h2>
+    <div class="rec">
+      <h3>No winner of both tests.</h3>
+      <p>
+        Raised is the only cut that materially moves the H-bar without leaving Source occupancy.
+        At 400px the orb is an object in a doorway. At 16px it is still a letter with a high bar.
+        That is not a freeze.
+      </p>
+      <p>
+        Worn and Optical Flare stay one-colour H’s with a detail — the same class of hint
+        independent review already rejected in Asym. Do not pick them to have a winner.
+      </p>
+      <p>
+        Type stays Fraunces at display optical, unfrozen. This three-cut sheet is closed.
+        The next checkpoint is the <a href="finish.html">two-value finish</a>. Phase B held.
+      </p>
+      <p class="warn">Independent re-review decided one-colour was the wrong test. Geometry search stopped.</p>
+    </div>
+  </body>
+</html>

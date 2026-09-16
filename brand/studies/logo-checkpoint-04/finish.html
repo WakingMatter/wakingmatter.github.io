@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Logo finish pass 3 — inner face and bead object</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root { --void:#0A0A0A; --ivory:#F7F6F3; --charcoal:#2A2A2A; --mist:#D6D9D7; --hair:rgba(10,10,10,.12); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--ivory); color:var(--void); font-family:Inter,system-ui,sans-serif; }
+  body { padding:28px 32px 48px; }
+  .kicker { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--charcoal); font-weight:500; }
+  h1 { font-family:Fraunces,serif; font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0; font-feature-settings:"lnum" 1; font-weight:400; font-size:30px; letter-spacing:-.03em; margin:12px 0 6px; }
+  h2 { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0,"WONK" 0; font-weight:400; font-size:18px; margin:28px 0 12px; padding-top:16px; border-top:1px solid var(--hair); }
+  .lede { color:var(--charcoal); font-size:14px; line-height:1.5; max-width:48rem; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:760px; }
+  .triple { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; max-width:760px; }
+  figure { margin:0; text-align:center; }
+  figcaption { margin-top:8px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); }
+  .panel { border:1px solid var(--hair); background:#fff; padding:16px; display:flex; align-items:center; justify-content:center; min-height:168px; }
+  .panel.void { background:var(--void); border-color:#1c1c1c; }
+  .panel.tight { min-height:0; padding:12px; }
+  .panel img.mark { width:140px; height:140px; object-fit:contain; display:block; }
+  .panel img.ref { height:140px; width:auto; display:block; }
+  .panel img.lock { width:100%; height:auto; display:block; }
+  .szrow { display:grid; grid-template-columns:80px 1fr 1fr; gap:8px; align-items:center; max-width:520px; margin:8px 0; }
+  .szrow .lab { font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); }
+  .chip { display:flex; align-items:center; justify-content:center; gap:10px; padding:8px; background:#eceae6; }
+  .chip.void { background:var(--void); }
+  .chip img { image-rendering:pixelated; }
+  .chip img.photo { image-rendering:auto; }
+  .lockup { display:flex; align-items:center; gap:.38em; font-size:28px; }
+  .lockup img { height:.78em; width:auto; }
+  .wm { font-family:Fraunces,serif; font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0; letter-spacing:-.03em; line-height:1; }
+  .rec { border:1px solid var(--hair); padding:14px 16px; max-width:48rem; }
+  .rec strong { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0; font-size:18px; font-weight:400; }
+  .notes { font-size:13px; line-height:1.5; color:var(--charcoal); max-width:48rem; }
+</style>
+</head>
+<body>
+  <div class="kicker">Internal · Finish pass 3 · Provisionally frozen · Wordmark frozen · <a href="../identity-apply-01/">Identity application</a></div>
+  <h1>Wider inner face. Bead as object.</h1>
+  <p class="lede">Final finish-only pass. Source occupancy unchanged (pillar 11 / gap 26.2 / r 11.4 / height 94). Two corrections only: the slot-facing inner plane is a ~40% Charcoal / Mist face, wide enough to read at 180/400 without becoming chrome; the bead is the object in the slot on both grounds — brighter matte pole, lighter-than-column on void, pewter body and terminator. No glow, no teal. 1-bit members+ring is mono fallback only. Type is not frozen.</p>
+
+  <h2>On ivory · 04 vs candidate</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="ref" src="reference-04-mark.png" alt="Direction 04 mark"/></div>
+      <figcaption>04 board</figcaption>
+    </figure>
+    <figure>
+      <div class="panel"><img class="mark" src="finish/mark-on-ivory.svg" alt="Modeled ivory mark"/></div>
+      <figcaption>Candidate · Charcoal inner plane, pewter bead</figcaption>
+    </figure>
+  </div>
+
+  <h2>16 / 32 / 180 / 400 · ivory vs 04</h2>
+  <div class="szrow">
+    <div class="lab">16</div>
+    <div class="chip"><img class="photo" src="reference-04-mark.png" width="16" height="16" alt="04 16" style="object-fit:contain"/><span>04</span></div>
+    <div class="chip"><img src="finish/raster/ivory-16.png" width="16" height="16" alt="candidate 16"/><span>cand</span></div>
+  </div>
+  <div class="szrow">
+    <div class="lab">32</div>
+    <div class="chip"><img class="photo" src="reference-04-mark.png" width="32" height="32" alt="04 32" style="object-fit:contain"/><span>04</span></div>
+    <div class="chip"><img src="finish/raster/ivory-32.png" width="32" height="32" alt="candidate 32"/><span>cand</span></div>
+  </div>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img class="mark" src="reference-04-mark.png" alt="04 180" style="width:180px;height:180px;object-fit:contain"/></div>
+      <figcaption>04 · 180</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img class="mark" src="finish/raster/ivory-180.png" alt="Ivory 180" style="width:180px;height:180px"/></div>
+      <figcaption>Candidate · 180</figcaption>
+    </figure>
+  </div>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img class="mark" src="reference-04-mark.png" alt="04 400" style="width:220px;height:220px;object-fit:contain"/></div>
+      <figcaption>04 · 400</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img class="mark" src="finish/raster/ivory-400.png" alt="Ivory 400" style="width:220px;height:220px"/></div>
+      <figcaption>Candidate · 400</figcaption>
+    </figure>
+  </div>
+
+  <h2>On void / app · 16 / 32 / 180 / 400</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel void"><img class="ref" src="reference-04-icon.png" alt="Direction 04 icon"/></div>
+      <figcaption>04 app icon</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void"><img class="mark" src="finish/icon-app.svg" alt="Modeled app icon"/></div>
+      <figcaption>Candidate · scaled placement, not parent recut</figcaption>
+    </figure>
+  </div>
+  <div class="szrow">
+    <div class="lab">16</div>
+    <div class="chip void"><img class="photo" src="reference-04-icon.png" width="16" height="16" alt="04 void 16" style="object-fit:contain"/></div>
+    <div class="chip void"><img src="finish/raster/void-16.png" width="16" height="16" alt="void 16"/></div>
+  </div>
+  <div class="szrow">
+    <div class="lab">32</div>
+    <div class="chip void"><img class="photo" src="reference-04-icon.png" width="32" height="32" alt="04 void 32" style="object-fit:contain"/></div>
+    <div class="chip void"><img src="finish/raster/void-32.png" width="32" height="32" alt="void 32"/></div>
+  </div>
+  <div class="pair">
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/void-180.png" alt="Void 180" style="width:180px;height:180px"/></div>
+      <figcaption>Void mark · 180</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/icon-180.png" alt="Icon 180" style="width:180px;height:180px"/></div>
+      <figcaption>App icon · 180</figcaption>
+    </figure>
+  </div>
+  <div class="pair">
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/void-400.png" alt="Void 400" style="width:220px;height:220px"/></div>
+      <figcaption>Void mark · 400</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img class="mark" src="finish/raster/icon-400.png" alt="Icon 400" style="width:220px;height:220px"/></div>
+      <figcaption>App icon · 400</figcaption>
+    </figure>
+  </div>
+
+  <h2>Lockup · 04 vs Fraunces candidate</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="lock" src="reference-04-lockup.png" alt="Direction 04 lockup"/></div>
+      <figcaption>04 · Canela, proprietary</figcaption>
+    </figure>
+    <figure>
+      <div class="panel"><img class="lock" src="finish/lockup-fraunces-ivory.svg" alt="Fraunces candidate lockup"/></div>
+      <figcaption>Outlined Fraunces · type not frozen</figcaption>
+    </figure>
+  </div>
+  <p class="notes" style="margin-top:10px">Live Fraunces (opsz 144, SOFT 0) for comparison:
+    <span class="lockup" style="display:inline-flex;font-size:22px;vertical-align:middle;margin-left:.4em">
+      <img src="finish/mark-on-ivory.svg" alt=""/><span class="wm">Waking Matter</span>
+    </span>
+  </p>
+  <p class="notes">Shipping <code>brand/logos/lockup*.svg</code> now carry the outlined recut. Do not reopen finish or type.</p>
+
+  <h2>1-bit · mono fallback only</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel"><img class="mark" src="finish/rejected-one-fill.svg" alt="Rejected one-fill"/></div>
+      <figcaption>Rejected · all-one-fill</figcaption>
+    </figure>
+    <figure>
+      <div class="panel"><img class="mark" src="finish/mark-mono.svg" alt="Members plus ring"/></div>
+      <figcaption>mark-mono · members + ring</figcaption>
+    </figure>
+  </div>
+  <p class="notes">Parent master is the modeled two-value mark, not the ring. Hole-in-aperture is still invisible at Source occupancy. Mono fallback is unchanged this pass.</p>
+
+  <h2>For independent re-review</h2>
+  <div class="rec">
+    <p><strong>Finish pass 3. Geometry and finish provisionally frozen. Type not frozen.</strong></p>
+    <p class="lede" style="margin:8px 0 0">Do not reopen occupancy, small-size occupancy, color, or mono. Next gate is type only: <a href="../wordmark-gate-01/revise.html">one Gloock recut</a>. Do not resume Phase B. Live <code>main</code> is untouched.</p>
+  </div>
+</body>
+</html>

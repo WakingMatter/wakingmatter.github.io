@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Wordmark gate — type only</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root { --void:#0A0A0A; --ivory:#F7F6F3; --charcoal:#2A2A2A; --mist:#D6D9D7; --hair:rgba(10,10,10,.12); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--ivory); color:var(--void); font-family:Inter,system-ui,sans-serif; }
+  body { padding:28px 32px 56px; }
+  .kicker { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--charcoal); font-weight:500; }
+  h1 { font-family:Fraunces,serif; font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0; font-feature-settings:"lnum" 1; font-weight:400; font-size:30px; letter-spacing:-.03em; margin:12px 0 6px; }
+  h2 { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0,"WONK" 0; font-weight:400; font-size:18px; margin:32px 0 10px; padding-top:18px; border-top:1px solid var(--hair); }
+  h3 { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); font-weight:500; margin:18px 0 8px; }
+  .lede { color:var(--charcoal); font-size:14px; line-height:1.5; max-width:48rem; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:920px; }
+  figure { margin:0; }
+  figcaption { margin-top:8px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); }
+  .panel { border:1px solid var(--hair); background:#fff; padding:14px 16px; display:flex; align-items:center; min-height:120px; overflow:hidden; }
+  .panel.void { background:var(--void); border-color:#1c1c1c; }
+  .panel.tight { min-height:0; }
+  .panel img { width:100%; height:auto; display:block; }
+  .panel img.ref { width:auto; max-width:100%; height:88px; object-fit:contain; object-position:left center; }
+  .sz { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 0; }
+  .chip { border:1px solid var(--hair); background:#eceae6; padding:8px 10px; }
+  .chip.void { background:var(--void); border-color:#1c1c1c; }
+  .chip img { display:block; height:auto; }
+  .notes { font-size:13px; line-height:1.5; color:var(--charcoal); max-width:48rem; }
+  table { border-collapse:collapse; font-size:13px; max-width:56rem; }
+  th, td { text-align:left; padding:8px 10px 8px 0; border-bottom:1px solid var(--hair); vertical-align:top; }
+  th { font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); font-weight:500; }
+  .rec { border:1px solid var(--hair); padding:16px 18px; max-width:48rem; }
+  .rec strong { font-family:Fraunces,serif; font-variation-settings:"opsz" 36,"SOFT" 0; font-size:20px; font-weight:400; color:var(--void); }
+  code { font-size:12px; }
+</style>
+</head>
+<body>
+  <div class="kicker">Internal · Wordmark gate · Superseded zoo · <a href="revise.html">Current: one recut</a> · Phase B held</div>
+  <h1>Type only. Six production paths.</h1>
+  <p class="lede">Source occupancy and the modeled two-value finish are provisionally frozen. This sheet is the wordmark gate only: 4–6 legally shippable paths against Direction 04. Thin, severe, inscriptional, archaeological-future. Same artifact-world as the mark. No type zoo. No proprietary Canela. No generic luxury-fashion serif as the answer. No sci-fi display gimmick. Shipping Newsreader lockups are not candidates. Fraunces is the previous candidate — closer than Newsreader, still too calligraphic and soft.</p>
+
+  <h2>Source · Direction 04</h2>
+  <figure>
+    <div class="panel tight"><img class="ref" src="../logo-checkpoint-04/reference-04-lockup.png" alt="Direction 04 lockup, Canela"/></div>
+    <figcaption>04 · Canela, proprietary · mixed case · high contrast · tight tracking</figcaption>
+  </figure>
+  <p class="notes">04 is mixed-case, not Trajan caps. Authority is carved contrast and composure, not a movie-title unicase. Mark and word sit in one artifact-world: columns around a slot, then an inscriptional serif of similar density.</p>
+
+  <h2>Not this</h2>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/newsreader-lockup-ivory-145.png" alt="Newsreader lockup"/></div>
+      <figcaption>Newsreader opsz 72 · not a candidate</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img src="raster/fraunces-lockup-ivory-145.png" alt="Fraunces lockup"/></div>
+      <figcaption>Fraunces opsz 144 SOFT 0 · too calligraphic / soft</figcaption>
+    </figure>
+  </div>
+  <p class="notes">Newsreader is a newspaper text face at display size. Fraunces has the right optical-size idea and is closer to 04, but the <em>a</em> and <em>g</em> still write, they do not carve.</p>
+
+  <h2>01 · Gloock · closest to 04</h2>
+  <p class="notes">OFL 1.1, Duarte Pinto. Contemporary high-contrast display. Deliberate Canela stand-in: two-story <em>a</em> with a teardrop, closed-loop <em>g</em>, high-crotch <em>W</em>, wide <em>M</em>. Tracking −0.03. Mark gap 0.38 × cap (04-tight). Risk: editorial-fashion adjacency. Not Playfair; still the nearest legal 04 match.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img class="ref" src="../logo-checkpoint-04/reference-04-lockup.png" alt="04"/></div>
+      <figcaption>04</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img src="raster/gloock-lockup-ivory-145.png" alt="Gloock ivory lockup"/></div>
+      <figcaption>Gloock · large · ivory</figcaption>
+    </figure>
+  </div>
+  <div class="pair" style="margin-top:12px">
+    <figure>
+      <div class="panel void tight"><img src="raster/gloock-lockup-void-145.png" alt="Gloock void lockup"/></div>
+      <figcaption>Gloock · large · void</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img src="raster/gloock-glyphs.png" alt="Gloock W a g M"/></div>
+      <figcaption>W a g M · terminals / contrast</figcaption>
+    </figure>
+  </div>
+  <div class="sz">
+    <div class="chip"><img src="raster/gloock-lockup-ivory-200.png" width="200" alt="Gloock small ivory"/></div>
+    <div class="chip void"><img src="raster/gloock-lockup-void-200.png" width="200" alt="Gloock small void"/></div>
+  </div>
+
+  <h2>02 · Gloock + Direction 02 air</h2>
+  <p class="notes">Same outlined Gloock wordmark. Restrained modification only: tracking −0.01 and mark-to-type gap 0.58 × cap. Borrow 02 for negative space, not for sci-fi. Ask whether the frozen mark needs more air to read as an object beside the name. 04 itself is tighter.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/gloock-lockup-ivory-145.png" alt="Gloock tight"/></div>
+      <figcaption>Gloock · 04-tight</figcaption>
+    </figure>
+    <figure>
+      <div class="panel tight"><img src="raster/gloock-air-lockup-ivory-145.png" alt="Gloock with more air"/></div>
+      <figcaption>Gloock · 02 air</figcaption>
+    </figure>
+  </div>
+  <div class="sz">
+    <div class="chip"><img src="raster/gloock-air-lockup-ivory-200.png" width="200" alt="Gloock air small ivory"/></div>
+    <div class="chip void"><img src="raster/gloock-air-lockup-void-200.png" width="200" alt="Gloock air small void"/></div>
+  </div>
+
+  <h2>03 · Bodoni Moda · thin / severe</h2>
+  <p class="notes">OFL 1.1, Owen Earl. opsz 96, wght 400. Hairline Didone. The austere pole: thin, carved, vertical stress. <em>M</em> crotch stays high. Risk: generic luxury-fashion serif — the thing the brief forbids as an answer. Held so the severe pole is visible, not so it wins by default.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/bodoni-lockup-ivory-145.png" alt="Bodoni Moda ivory"/></div>
+      <figcaption>Bodoni Moda · ivory</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img src="raster/bodoni-lockup-void-145.png" alt="Bodoni Moda void"/></div>
+      <figcaption>Bodoni Moda · void</figcaption>
+    </figure>
+  </div>
+  <div class="pair" style="margin-top:12px">
+    <figure>
+      <div class="panel tight"><img src="raster/bodoni-glyphs.png" alt="Bodoni W a g M"/></div>
+      <figcaption>W a g M</figcaption>
+    </figure>
+    <figure>
+      <div class="sz" style="margin:0">
+        <div class="chip"><img src="raster/bodoni-lockup-ivory-200.png" width="200" alt="Bodoni small"/></div>
+        <div class="chip void"><img src="raster/bodoni-lockup-void-200.png" width="200" alt="Bodoni small void"/></div>
+      </div>
+      <figcaption>Small · 200</figcaption>
+    </figure>
+  </div>
+
+  <h2>04 · Bellefair · inscriptional mixed-case</h2>
+  <p class="notes">OFL 1.1. Thin, small x-height, lower contrast than 04. Reads more memorial / carved than fashion-Didone. Mixed case, so it stays in 04’s language. Weakness: the word can feel light against the frozen columns. The archaeological path that is not Trajan caps.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/bellefair-lockup-ivory-145.png" alt="Bellefair ivory"/></div>
+      <figcaption>Bellefair · ivory</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img src="raster/bellefair-lockup-void-145.png" alt="Bellefair void"/></div>
+      <figcaption>Bellefair · void</figcaption>
+    </figure>
+  </div>
+  <div class="pair" style="margin-top:12px">
+    <figure>
+      <div class="panel tight"><img src="raster/bellefair-glyphs.png" alt="Bellefair W a g M"/></div>
+      <figcaption>W a g M</figcaption>
+    </figure>
+    <figure>
+      <div class="sz" style="margin:0">
+        <div class="chip"><img src="raster/bellefair-lockup-ivory-200.png" width="200" alt="Bellefair small"/></div>
+        <div class="chip void"><img src="raster/bellefair-lockup-void-200.png" width="200" alt="Bellefair small void"/></div>
+      </div>
+      <figcaption>Small · 200</figcaption>
+    </figure>
+  </div>
+
+  <h2>05 · Noto Serif Display · institutional</h2>
+  <p class="notes">OFL 1.1, Google. High-contrast display cut, not a fashion face. Production-safe. <em>W</em> and <em>M</em> are sturdy; <em>a</em> and <em>g</em> are book-display oldstyle. Less Dune, less 04. The path if critic refuses anything Canela-adjacent as luxury.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/noto-lockup-ivory-145.png" alt="Noto ivory"/></div>
+      <figcaption>Noto Serif Display · ivory</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img src="raster/noto-lockup-void-145.png" alt="Noto void"/></div>
+      <figcaption>Noto Serif Display · void</figcaption>
+    </figure>
+  </div>
+  <div class="pair" style="margin-top:12px">
+    <figure>
+      <div class="panel tight"><img src="raster/noto-glyphs.png" alt="Noto W a g M"/></div>
+      <figcaption>W a g M</figcaption>
+    </figure>
+    <figure>
+      <div class="sz" style="margin:0">
+        <div class="chip"><img src="raster/noto-lockup-ivory-200.png" width="200" alt="Noto small"/></div>
+        <div class="chip void"><img src="raster/noto-lockup-void-200.png" width="200" alt="Noto small void"/></div>
+      </div>
+      <figcaption>Small · 200</figcaption>
+    </figure>
+  </div>
+
+  <h2>06 · Cinzel caps · Dune / Trajan pole</h2>
+  <p class="notes">OFL 1.1, Natanael Gama. Inscriptional caps, tracking +0.10. The archaeological-future / Dune experiment. It is not 04: 04 is mixed-case Canela, not movie-title Trajan. Costume risk is real. Held so the pole is visible.</p>
+  <div class="pair">
+    <figure>
+      <div class="panel tight"><img src="raster/cinzel-lockup-ivory-145.png" alt="Cinzel ivory"/></div>
+      <figcaption>Cinzel · WAKING MATTER · ivory</figcaption>
+    </figure>
+    <figure>
+      <div class="panel void tight"><img src="raster/cinzel-lockup-void-145.png" alt="Cinzel void"/></div>
+      <figcaption>Cinzel · void</figcaption>
+    </figure>
+  </div>
+  <div class="pair" style="margin-top:12px">
+    <figure>
+      <div class="panel tight"><img src="raster/cinzel-glyphs.png" alt="Cinzel W A G M"/></div>
+      <figcaption>W A G M</figcaption>
+    </figure>
+    <figure>
+      <div class="sz" style="margin:0">
+        <div class="chip"><img src="raster/cinzel-lockup-ivory-200.png" width="200" alt="Cinzel small"/></div>
+        <div class="chip void"><img src="raster/cinzel-lockup-void-200.png" width="200" alt="Cinzel small void"/></div>
+      </div>
+      <figcaption>Small · 200</figcaption>
+    </figure>
+  </div>
+
+  <h2>Letter notes</h2>
+  <table>
+    <thead>
+      <tr><th></th><th>W</th><th>a</th><th>g</th><th>M</th><th>Terminals</th><th>Contrast / width</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>04 Canela</td><td>wide, high crotch</td><td>two-story, teardrop</td><td>closed loop, small ear</td><td>wide, pointed</td><td>sharp + teardrop</td><td>high / generous</td></tr>
+      <tr><td>Gloock</td><td>closest</td><td>closest</td><td>closest</td><td>closest</td><td>teardrop, not a ball</td><td>high / close to 04</td></tr>
+      <tr><td>Bodoni Moda</td><td>hairline, severe</td><td>Didone, small</td><td>ear as a ball</td><td>high crotch</td><td>unbracketed hairline</td><td>extreme / wide</td></tr>
+      <tr><td>Bellefair</td><td>lighter</td><td>small, oldstyle</td><td>memorial loop</td><td>lighter</td><td>softer, carved</td><td>moderate / open</td></tr>
+      <tr><td>Noto Display</td><td>sturdy</td><td>book-display</td><td>oldstyle ear</td><td>sturdy</td><td>bracketed</td><td>high / wide</td></tr>
+      <tr><td>Cinzel</td><td>Trajan</td><td>—</td><td>—</td><td>Trajan</td><td>flared inscriptional</td><td>moderate / caps</td></tr>
+      <tr><td>Fraunces</td><td>softer</td><td>round, written</td><td>calligraphic ear</td><td>softer</td><td>oldstyle, soft</td><td>medium / wide</td></tr>
+    </tbody>
+  </table>
+
+  <h2>For independent re-review</h2>
+  <div class="rec">
+    <p><strong>Recommend: Gloock, 04-tight lockup.</strong></p>
+    <p class="lede" style="margin:8px 0 0">It is the only path whose <em>W a g M</em> sit in the same artifact-world as Direction 04 without becoming Trajan caps or a fashion Didone. Harder than Fraunces. OFL, outline-able, no proprietary dependency. Keep 04 mark-to-type gap. Do not take Bodoni (luxury-fashion). Do not take Cinzel (costume Dune). Bellefair and Noto are the fallbacks if Gloock is judged too editorial-fashion. Gloock+02 air is spacing-only — use it only if the frozen mark needs more object-space. Type is not frozen. Shipping Newsreader lockups stay stand-ins. Phase B held. Live <code>main</code> is untouched.</p>
+  </div>
+</body>
+</html>

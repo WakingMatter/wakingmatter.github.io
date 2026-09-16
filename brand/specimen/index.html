@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Waking Matter — Phase A specimen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --void: #0a0a0a;
+        --charcoal: #2a2a2a;
+        --ivory: #f7f6f3;
+        --resonance: #5c8f8a;
+        --mist: #d6d9d7;
+        --hair: rgba(10, 10, 10, 0.12);
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        background: var(--ivory);
+        color: var(--void);
+        font-family: Inter, system-ui, sans-serif;
+      }
+      body {
+        padding: 2.5rem 3rem 3rem;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 0.6875rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--charcoal);
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--hair);
+      }
+      .lockup {
+        margin: 3.5rem 0 0.75rem;
+        width: min(720px, 92%);
+      }
+      .lockup svg { width: 100%; height: auto; display: block; color: var(--void); }
+      .tag {
+        margin: 0 0 3rem;
+        font-size: 0.6875rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--charcoal);
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.25rem;
+        padding: 2rem 0;
+        border-top: 1px solid var(--hair);
+      }
+      .tile {
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--hair);
+      }
+      .tile.void { background: var(--void); }
+      .tile img, .tile svg { width: 42%; height: auto; }
+      .cap {
+        margin: 0.7rem 0 0;
+        font-size: 0.625rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--charcoal);
+      }
+      .palette {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+      }
+      .swatch {
+        aspect-ratio: 1;
+      }
+      .swatch-meta {
+        margin-top: 0.55rem;
+        font-size: 0.625rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--charcoal);
+      }
+      .traits {
+        display: grid;
+        gap: 1.25rem;
+      }
+      .traits h2 {
+        margin: 0 0 0.35rem;
+        font-family: Newsreader, serif;
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+      }
+      .traits p {
+        margin: 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--charcoal);
+      }
+      .num {
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.7rem;
+        margin-bottom: 0.4rem;
+        color: var(--charcoal);
+      }
+      h3.label {
+        margin: 0 0 1rem;
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .type-sample {
+        font-family: Newsreader, serif;
+        font-size: 5.5rem;
+        line-height: 0.9;
+        letter-spacing: -0.04em;
+        font-weight: 400;
+        margin: 0;
+      }
+      .aside {
+        font-size: 0.8rem;
+        line-height: 1.45;
+        color: var(--charcoal);
+        max-width: 16rem;
+      }
+      @media (max-width: 720px) {
+        body { padding: 1.25rem; }
+        .row, .palette { grid-template-columns: 1fr 1fr; }
+        .type-sample { font-size: 3.2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <span>Phase A — Identity specimen</span>
+      <span>Direction 04 north star</span>
+    </div>
+
+    <div class="lockup">
+      <img src="../logos/lockup-on-ivory.svg" alt="Waking Matter primary lockup" />
+    </div>
+    <p class="tag">Primary logo · recut lockup + modeled mark</p>
+
+    <div class="row">
+      <div>
+        <h3 class="label">Icon</h3>
+        <div class="tile void">
+          <img src="../logos/icon-app.svg" alt="App icon" />
+        </div>
+        <p class="cap">Dimensional on void</p>
+      </div>
+      <div>
+        <h3 class="label">Monochrome</h3>
+        <div class="tile void">
+          <img src="../logos/icon-app-mono.svg" alt="Monochrome icon" />
+        </div>
+        <p class="cap">Ivory on void</p>
+      </div>
+      <div>
+        <h3 class="label">Mark on ivory</h3>
+        <div class="tile">
+          <img src="../logos/mark-on-ivory.svg" alt="Mark on ivory" />
+        </div>
+        <p class="cap">Matte, not luminous</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3 class="label">Color palette</h3>
+        <div class="palette">
+          <div>
+            <div class="swatch" style="background:#0A0A0A"></div>
+            <p class="swatch-meta">Void<br />#0A0A0A</p>
+          </div>
+          <div>
+            <div class="swatch" style="background:#2A2A2A"></div>
+            <p class="swatch-meta">Charcoal<br />#2A2A2A</p>
+          </div>
+          <div>
+            <div class="swatch" style="background:#F7F6F3; border:1px solid var(--hair)"></div>
+            <p class="swatch-meta">Ivory<br />#F7F6F3</p>
+          </div>
+          <div>
+            <div class="swatch" style="background:#5C8F8A"></div>
+            <p class="swatch-meta">Resonance<br />#5C8F8A</p>
+          </div>
+          <div>
+            <div class="swatch" style="background:#D6D9D7"></div>
+            <p class="swatch-meta">Mist<br />#D6D9D7</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="label">Typography</h3>
+        <p class="type-sample">Aa</p>
+        <p class="aside">Primary — Newsreader<br />Secondary — Inter<br />Meta — IBM Plex Mono</p>
+      </div>
+      <div class="traits">
+        <h3 class="label">Key traits</h3>
+        <div>
+          <span class="num">01</span>
+          <h2>Precision</h2>
+          <p>Exact claims. No surplus.</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h2>Depth</h2>
+          <p>Stay with the hard joint of a problem.</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h2>Composure</h2>
+          <p>No heat. No launch cadence.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

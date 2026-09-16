@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+import Aperture from "../components/Aperture.astro";
+import { getCollection } from "astro:content";
+
+const notes = (await getCollection("notes")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const featured = notes[0];
+---
+
+<Base
+  title="Waking Matter"
+  description="Building systems for cumulative intelligence. We explore systems that can preserve, inherit, and compound useful learning across agents, models, and time."
+  canonical="https://wakingmatter.com/"
+  tone="void"
+  current="home"
+>
+  <main id="content">
+  <div class="hero-band">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="label hero-eyebrow">Building systems for cumulative intelligence</p>
+        <h1 id="hero-title">Intelligence should accumulate.</h1>
+        <p class="hero-deck">
+          We explore systems that can preserve, inherit, and compound useful
+          learning across agents, models, and time.
+        </p>
+        <a class="hero-cta" href="/notes/intelligence-should-accumulate/">
+          Read the note <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="hero-figure">
+        <Aperture class="hero-aperture" />
+      </div>
+    </section>
+  </div>
+
+    <section class="band" aria-labelledby="traits-label">
+      <div class="wrap">
+        <div class="band-head">
+          <p class="label" id="traits-label">Traits</p>
+          <p class="label">01 — 03</p>
+        </div>
+        <div class="trait-grid">
+          <article class="trait">
+            <span class="meta num">01</span>
+            <h2>Precision</h2>
+            <p>Exact claims. No surplus.</p>
+          </article>
+          <article class="trait">
+            <span class="meta num">02</span>
+            <h2>Depth</h2>
+            <p>Stay with the hard joint of a problem.</p>
+          </article>
+          <article class="trait">
+            <span class="meta num">03</span>
+            <h2>Composure</h2>
+            <p>No heat. No launch cadence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="define-label">
+      <div class="wrap define">
+        <p class="label" id="define-label">Definition</p>
+        <blockquote>
+          Building systems for cumulative intelligence.
+        </blockquote>
+      </div>
+    </section>
+
+    {featured && (
+      <section class="band notes-teaser" aria-labelledby="notes-label">
+        <div class="wrap">
+          <p class="label" id="notes-label">Notes</p>
+          <a class="note-card" href={`/notes/${featured.slug}/`}>
+            <span class="meta">{featured.data.pubDate.toISOString().slice(0, 10)}</span>
+            <span class="note-card-title">{featured.data.title}</span>
+            <p>{featured.data.description}</p>
+          </a>
+        </div>
+      </section>
+    )}
+  </main>
+</Base>

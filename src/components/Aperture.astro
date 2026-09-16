@@ -1,0 +1,11 @@
+---
+import Mark from "./Mark.astro";
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<Mark class={className} tone="void" />

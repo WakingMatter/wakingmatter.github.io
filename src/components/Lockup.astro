@@ -1,0 +1,20 @@
+---
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+interface Props {
+  tone?: "ivory" | "void";
+  class?: string;
+}
+
+const { tone = "ivory", class: className = "logo-lockup" } = Astro.props;
+const file = tone === "void" ? "lockup-on-void.svg" : "lockup-on-ivory.svg";
+const raw = readFileSync(join(process.cwd(), "brand/logos", file), "utf8");
+const svg = raw
+  .replace(/<svg\s/, `<svg class="${className}" `)
+  .replace(/\srole="img"/, "")
+  .replace(/\saria-label="[^"]*"/, "")
+  .replace(/<svg /, '<svg aria-hidden="true" focusable="false" ');
+---
+
+<Fragment set:html={svg} />

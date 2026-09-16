@@ -1,0 +1,24 @@
+---
+import Lockup from "./Lockup.astro";
+
+interface Props {
+  tone?: "ivory" | "void";
+  current?: "home" | "about" | "research" | "notes";
+}
+
+const { tone = "ivory", current } = Astro.props;
+---
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class:list={["site-header", `site-header--${tone}`]}>
+  <a class="logo" href="/" aria-label="Waking Matter" aria-current={current === "home" ? "page" : undefined}>
+    <Lockup tone={tone} class="logo-lockup" />
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="/about/" aria-current={current === "about" ? "page" : undefined}>About</a>
+    <a href="/research/" aria-current={current === "research" ? "page" : undefined}>Research</a>
+    <a href="/notes/" aria-current={current === "notes" ? "page" : undefined}>Notes</a>
+    <a href="mailto:hello@wakingmatter.com">Contact</a>
+  </nav>
+</header>
