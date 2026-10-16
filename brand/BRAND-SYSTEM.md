@@ -6,9 +6,11 @@ This is the first production identity we can credibly keep. It is not a campaign
 
 **Visual source of truth, in rank order:** Direction 04 Impeccable Craft (north star) → Direction 03 Systems Lab (grid, construction, numbered rigor) → Direction 01 Quiet Research Institution (editorial air). Direction 02 is a negative reference: do not drift toward luminous sci-fi or generic AI.
 
-**Core descriptor:** Building systems for cumulative intelligence.
+**Primary positioning:** Building systems for agents that improve with experience.
 
-**Definition we may use in public:** We explore systems that can preserve, inherit, and compound useful learning across agents, models, and time.
+**Broader thesis / secondary descriptor:** Building systems for cumulative intelligence.
+
+**Definition we may use in public:** We are building systems to help agents retain useful experience, act on changing knowledge, and become more capable across repeated work. Improvement remains an aim to be evaluated, not an achieved capability.
 
 **Contact:** [hello@wakingmatter.com](mailto:hello@wakingmatter.com)
 
