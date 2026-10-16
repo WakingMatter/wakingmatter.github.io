@@ -217,6 +217,7 @@ a {
 .hero-band {
   background: var(--void);
   color: var(--ivory);
+  overflow: clip;
 }
 
 .hero {
@@ -230,11 +231,6 @@ a {
 
 .hero-copy {
   max-width: 38rem;
-}
-
-.hero-eyebrow {
-  color: var(--mist);
-  margin-bottom: 1.75rem;
 }
 
 .hero h1 {
@@ -256,8 +252,14 @@ a {
   line-height: 1.55;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 2.25rem;
+}
+
 .hero-cta {
-  margin: 2rem 0 0;
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
@@ -275,16 +277,30 @@ a {
   border-bottom-color: var(--ivory);
 }
 
-.hero-figure {
-  position: relative;
-  display: grid;
-  place-items: center;
-  min-height: 22rem;
-  align-self: stretch;
+.hero-cta--quiet {
+  color: var(--mist);
+  border-bottom-color: transparent;
 }
 
+.hero-cta--quiet:hover {
+  color: var(--ivory);
+}
+
+.hero-figure {
+  position: relative;
+  min-height: 22rem;
+  align-self: stretch;
+  container-type: inline-size;
+}
+
+/* The pillars span 40% of the mark's box, so the box may be ~2.2× its column while the ink stays inside. */
 .hero-aperture {
-  width: min(100%, 22rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: min(68svh, 42rem, 220cqi);
+  max-width: none;
   color: var(--ivory);
 }
 
@@ -369,41 +385,6 @@ a {
   max-width: 18ch;
 }
 
-.notes-teaser h2 {
-  margin: 0 0 0.35rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 3vw, 2.35rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
-}
-
-.note-card {
-  display: grid;
-  gap: 0.65rem;
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--hair);
-  text-decoration: none;
-  max-width: 40rem;
-}
-
-.note-card:hover .note-card-title {
-  border-bottom-color: var(--void);
-}
-
-.note-card-title {
-  display: inline;
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  letter-spacing: -0.02em;
-  border-bottom: 1px solid transparent;
-}
-
-.note-card p {
-  margin: 0;
-  color: var(--charcoal);
-}
-
 /* ---------- Interior pages (01 air) ---------- */
 
 .page-hero {
@@ -451,6 +432,10 @@ a {
   display: grid;
   grid-template-columns: minmax(8rem, 14rem) minmax(0, 1fr);
   gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.split > * {
+  min-width: 0;
 }
 
 .inquiry {
@@ -681,15 +666,13 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   .hero h1,
   .hero-deck,
-  .hero-cta,
-  .hero-eyebrow {
+  .hero-actions {
     animation: rise 0.9s var(--ease) both;
   }
 
-  .hero-eyebrow { animation-delay: 0.05s; }
-  .hero h1 { animation-delay: 0.12s; }
-  .hero-deck { animation-delay: 0.22s; }
-  .hero-cta { animation-delay: 0.3s; }
+  .hero h1 { animation-delay: 0.08s; }
+  .hero-deck { animation-delay: 0.18s; }
+  .hero-actions { animation-delay: 0.28s; }
 
   .hero-aperture {
     animation: rise 1.1s var(--ease) both;
@@ -715,8 +698,7 @@ a {
 
   .hero h1,
   .hero-deck,
-  .hero-cta,
-  .hero-eyebrow,
+  .hero-actions,
   .hero-aperture {
     animation: none !important;
   }
@@ -788,3 +770,152 @@ a {
 }
 .question-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.5rem; }
 @media (max-width: 720px) { .question-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Void bands: public work and closing thesis ---------- */
+
+.band--void {
+  background: var(--void);
+  color: var(--ivory);
+}
+
+.band + .band--void,
+.band--void + .band {
+  border-top: 0;
+}
+
+.band--void .label {
+  color: var(--mist);
+}
+
+.band--void .section-copy p,
+.closing-copy p {
+  color: var(--mist);
+}
+
+.pipeline {
+  list-style: none;
+  margin: clamp(3rem, 6vw, 4.5rem) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pipeline li {
+  position: relative;
+  padding: 2.25rem 1.75rem 0 0;
+  border-top: 1px solid var(--hair-void);
+}
+
+/* Each stage is marked with the bead from the mark, in its void finish. */
+.pipeline li::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 28%, #e2e4e1 0, #3a3e3c 36%, #1a1c1b 100%);
+}
+
+.pipeline h3 {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 1.9vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.pipeline p {
+  margin: 0;
+  max-width: 18em;
+  color: var(--mist);
+  font-size: 0.95rem;
+}
+
+.transcript {
+  margin: 0;
+  min-width: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hair-void);
+}
+
+.transcript pre {
+  margin: 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--mist);
+}
+
+.transcript .t-dim {
+  color: #8e928f;
+}
+
+.transcript .t-key {
+  color: var(--resonance);
+}
+
+.transcript figcaption {
+  margin-top: 1.25rem;
+  color: #8e928f;
+}
+
+.evidence-copy {
+  max-width: var(--measure);
+  margin-top: 2.5rem;
+}
+
+.evidence-copy p {
+  margin: 0;
+  color: var(--mist);
+}
+
+.closing {
+  padding: clamp(5rem, 12vw, 9rem) 0;
+}
+
+.closing h2 {
+  margin: 1.5rem 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2.85rem, 7.2vw, 5.35rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  max-width: 12ch;
+  text-wrap: balance;
+}
+
+.closing-copy {
+  max-width: 32em;
+  margin-top: 2rem;
+}
+
+.closing-copy p {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 720px) {
+  .pipeline {
+    grid-template-columns: 1fr;
+    margin-left: 6px;
+  }
+
+  .pipeline li {
+    padding: 0 0 2.25rem 1.75rem;
+    border-top: 0;
+    border-left: 1px solid var(--hair-void);
+  }
+
+  .pipeline li:last-child {
+    padding-bottom: 0;
+  }
+
+  .pipeline li::before {
+    top: 0.45rem;
+    left: -7px;
+  }
+}
