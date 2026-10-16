@@ -558,10 +558,6 @@ a {
   line-height: 1.2;
 }
 
-.article-body p {
-  margin: 0;
-}
-
 .article-body a {
   text-decoration: underline;
   text-decoration-thickness: 1px;

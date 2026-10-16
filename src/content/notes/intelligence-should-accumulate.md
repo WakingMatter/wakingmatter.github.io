@@ -7,7 +7,7 @@ updatedDate: 2026-10-16
 
 An agent can complete a task without leaving its successor better prepared for the next one. Logs may survive. A summary may be retrieved. Neither establishes that the next decision will improve. That gap, between retaining a trace and using experience well, is the problem we want to work on.
 
-This is a strange way to spend effort. In almost every other domain where learning matters, the point is not to demonstrate capability once. It is to keep it.
+Starting over each time is a strange way to spend effort. In almost every other domain where learning matters, the point is not to demonstrate capability once. It is to keep it.
 
 Science makes an institutional bet: later work should be cheaper, sharper, or more ambitious because earlier work was kept in a form that others can use. Firms, crafts, and legal systems make the same bet in different materials. A tradition is, among other things, a way of not paying the full cost of understanding a second time.
 
