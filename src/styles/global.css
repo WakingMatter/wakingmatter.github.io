@@ -562,6 +562,10 @@ a {
   margin: 0;
 }
 
+.article-body p + p {
+  margin-top: 1.15em;
+}
+
 .article-body a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -788,3 +792,6 @@ a {
 }
 .question-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.5rem; }
 @media (max-width: 720px) { .question-grid { grid-template-columns: 1fr; } }
+
+/* Keep the two public-work destinations distinct without introducing a card. */
+.work-links { display: flex; flex-wrap: wrap; column-gap: 1.75rem; }

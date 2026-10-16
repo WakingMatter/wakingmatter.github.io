@@ -9,7 +9,7 @@ export async function GET(context) {
   return rss({
     title: "Waking Matter Notes",
     description:
-      "Notes on systems for cumulative intelligence, from Waking Matter.",
+      "Essays on agent memory, the transfer of useful knowledge and how to evaluate progress.",
     site: context.site,
     items: notes.map((note) => ({
       title: note.data.title,

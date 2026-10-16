@@ -184,6 +184,8 @@ Until we have commissioned photography, the site should use **type, rules, and t
 
 **Conviction:** State what we believe and what we are building toward directly. Be bold about the thesis and precise about demonstrated results. Epistemic honesty should sharpen the stance, not turn the voice into repeated disclaimers or self-effacement.
 
+**Progression:** Give adjacent blocks different jobs: belief, engineering scope, evidence, then invitation. Do not restate the mission in the headline, deck and opening paragraph. About introduces the founder and working approach; Research explains the questions and comparisons; Notes introduces the writing. Keep the limits of a demonstrated result beside that result rather than repeating general disclaimers across the site.
+
 Write as a long-lived institution that has not yet said much in public, not as a startup that needs to sound large.
 
 - Prefer short declarative sentences. Do not stack claims.
