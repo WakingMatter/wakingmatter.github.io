@@ -1,52 +1,16 @@
 ---
 import Base from "../layouts/Base.astro";
 ---
-
-<Base
-  title="About — Waking Matter"
-  description="Waking Matter explores systems for cumulative intelligence. Contact hello@wakingmatter.com."
-  canonical="https://wakingmatter.com/about/"
-  current="about"
->
+<Base title="About | Waking Matter" description="An early research and engineering effort building systems for agents that improve with experience." canonical="https://wakingmatter.com/about/" current="about">
   <main id="content" class="wrap">
-    <header class="page-hero">
-      <p class="label">About</p>
-      <h1>A small effort, held to a long problem.</h1>
-      <p class="lede">
-        Waking Matter is a research effort exploring systems for cumulative
-        intelligence. We are early. This page is an account of that, not a
-        portrait of an institution we have not built.
-      </p>
-    </header>
-
-    <div class="prose-page split">
-      <p class="label">What we are</p>
-      <div class="measure">
-        <p>
-          We explore systems that can preserve, inherit, and compound useful
-          learning across agents, models, and time. The short form is the line
-          we use everywhere else: building systems for cumulative intelligence.
-        </p>
-        <p>
-          That is a direction of work, not a catalogue of products, a roster,
-          or a list of results. We will publish notes when we have something
-          careful to say. We will not fill the silence with a team page, a
-          customer list, or a simulated lab.
-        </p>
-        <p>
-          The public surface is this site —
-          <a href="/research/">research questions</a>,
-          <a href="/notes/">notes</a>, an address —
-          <a href="mailto:hello@wakingmatter.com">hello@wakingmatter.com</a> —
-          and whatever we actually write. If you are looking for a demo, a
-          hiring page, or a claim of novelty, you will not find it here.
-        </p>
-        <p>
-          The traits we hold ourselves to are precision, depth, and composure.
-          They are standards for how we think and write, not decorations for a
-          brand that wants to look serious.
-        </p>
-      </div>
-    </div>
+    <header class="page-hero"><p class="label">About</p><h1>A small effort, held to a long problem.</h1><p class="lede">Waking Matter is an early research and engineering effort building systems for agents that improve with experience.</p></header>
+    <div class="prose-page split"><p class="label">What we are working on</p><div class="measure">
+      <p>Our question is how accumulated experience should change the next decision. What should an agent retrieve, trust, test, forget, stop or escalate? When should it begin again?</p>
+      <p>The work spans memory and state, provenance, evaluation and adaptive control. We are interested in repeated workflows where outcomes can be checked and where changed facts or uncertainty can lead to revision or human escalation.</p>
+      <p>The broader thesis is cumulative intelligence: useful learning should survive sessions and compound across work, agents, models and time. That requires more than retaining history. It requires evidence that the next decision is better because of it.</p>
+      <p><a href="https://github.com/avs-io/agent-memory-contracts">Agent Memory Contracts</a> is a public technical artifact in this line of work. It provides schemas, validation and a reference runtime for agent memory integrity. The <a href="/research/">research questions</a> describe the larger problem; our <a href="/notes/">notes</a> develop the thesis.</p>
+      <p>We are building and testing. If you work on a related question, or have a recurring workflow where agents lose context, repeat mistakes or fail when knowledge changes, write to <a href="mailto:hello@wakingmatter.com">hello@wakingmatter.com</a>.</p>
+      <p>Precision, depth and composure are the standards we hold the work to.</p>
+    </div></div>
   </main>
 </Base>

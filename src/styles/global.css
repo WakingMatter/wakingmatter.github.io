@@ -765,3 +765,26 @@ a {
     gap: 0.35rem 1.15rem;
   }
 }
+
+/* Positioning sections retain the existing editorial grid and type system. */
+.section-copy { max-width: var(--measure); }
+.section-copy h2 {
+  margin: 0 0 1.2rem;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.section-copy p { color: var(--charcoal); }
+.section-copy p:last-child { margin-bottom: 0; }
+.text-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  font-size: 0.95rem;
+}
+.question-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.5rem; }
+@media (max-width: 720px) { .question-grid { grid-template-columns: 1fr; } }

@@ -1,6 +1,6 @@
 # Waking Matter
 
-Public site for [wakingmatter.com](https://wakingmatter.com). Building systems for cumulative intelligence.
+Public site for [wakingmatter.com](https://wakingmatter.com). Building systems for agents that improve with experience. The broader thesis is cumulative intelligence.
 
 This repository is a **static** Astro project. The build emits HTML, CSS, SVG, and font files. There is no client framework, no React, and no tracker.
 
@@ -38,11 +38,7 @@ Wordmark: outlined Gloock-derived recut (OFL modification, not a live font). Sit
 
 ## GitHub Pages
 
-The live site on `main` is still the previous root-static folder, deployed with Pages **legacy / branch** hosting (`main`, `/`). This Astro tree must be published with **GitHub Actions**.
-
-The workflow in `.github/workflows/pages.yml` builds on pull requests and deploys only from `main`.
-
-**Before merging this architecture to `main`:** in the repository Pages settings, set the source to **GitHub Actions**. If `main` is updated while Pages is still “Deploy from a branch / root”, GitHub will serve `package.json` instead of the site.
+The Astro site is deployed with GitHub Actions. The workflow in `.github/workflows/pages.yml` builds on pull requests and deploys only from `main`. Keep positioning changes in a pull request until desktop/mobile visual review and owner merge approval are complete.
 
 `public/CNAME` keeps the custom domain `wakingmatter.com`. HTTPS stays with GitHub Pages. `.nojekyll` is in `public/` so the `_astro` directory is not ignored.
 

@@ -16,7 +16,7 @@ const canonical = `https://wakingmatter.com/notes/${note.slug}/`;
 ---
 
 <Base
-  title={`${note.data.title} — Waking Matter`}
+  title={`${note.data.title} | Waking Matter`}
   description={note.data.description}
   canonical={canonical}
   ogType="article"
@@ -26,7 +26,7 @@ const canonical = `https://wakingmatter.com/notes/${note.slug}/`;
   <main id="content" class="wrap">
     <header class="article-header">
       <p class="label">Note</p>
-      <p class="meta">{note.data.pubDate.toISOString().slice(0, 10)}</p>
+      <p class="meta">{note.data.pubDate.toISOString().slice(0, 10)}{note.data.updatedDate && <> · Updated {note.data.updatedDate.toISOString().slice(0, 10)}</>}</p>
       <h1>{note.data.title}</h1>
       <p class="dek">{note.data.description}</p>
     </header>

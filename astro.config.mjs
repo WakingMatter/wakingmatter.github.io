@@ -9,7 +9,7 @@ export default defineConfig({
     sitemap({
       changefreq: "monthly",
       priority: 0.7,
-      lastmod: new Date("2026-09-15"),
+      lastmod: new Date("2026-10-16"),
       filter: (page) => !page.includes("404"),
     }),
   ],
