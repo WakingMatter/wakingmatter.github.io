@@ -5,76 +5,75 @@ import { getCollection } from "astro:content";
 const notes = (await getCollection("notes")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const featured = notes[0];
 ---
-<Base title="Waking Matter" description="Building systems for agents that improve with experience. Memory, provenance and evaluation for repeated work in a changing world." canonical="https://wakingmatter.com/" tone="void" current="home">
+<Base title="Waking Matter" description="Memory, provenance and evaluation infrastructure for AI agents. Explore Waking Matter’s public code and research questions." canonical="https://wakingmatter.com/" tone="void" current="home">
   <main id="content">
     <div class="hero-band">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="label hero-eyebrow">Building systems for cumulative intelligence</p>
           <h1 id="hero-title">Agents should improve with experience.</h1>
-          <p class="hero-deck">We are building systems to help agents retain useful experience, act on changing knowledge, and become more capable across repeated work.</p>
-          <a class="hero-cta" href="#memory">The problem <span aria-hidden="true">↓</span></a>
+          <p class="hero-deck">We build memory, provenance and evaluation infrastructure for agents working with changing information.</p>
+          <a class="hero-cta" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-figure"><Aperture class="hero-aperture" /></div>
       </section>
     </div>
-
     <section id="memory" class="band" aria-labelledby="memory-title">
       <div class="wrap split">
         <p class="label">The problem</p>
         <div class="section-copy">
           <h2 id="memory-title">Memory is not enough.</h2>
-          <p>Retaining information is not the same as learning from experience. The harder question is whether yesterday’s work changes today’s decisions for the better.</p>
-          <p>What should an agent retrieve, trust, test or try differently? When should it forget, reset, stop or ask a person? More history can help, do nothing, or make the next decision worse. Improvement has to be checked.</p>
+          <p>A stored answer can be outdated. A successful procedure can fail when the task changes. Keeping more history does not tell an agent what to trust or do next.</p>
+          <p>The challenge is to connect retained experience to decisions, and to notice when the past has become a liability.</p>
         </div>
       </div>
     </section>
-
-    <section class="band" aria-labelledby="questions-label">
-      <div class="wrap">
-        <div class="band-head"><p class="label" id="questions-label">Questions we are working on</p><p class="label">01 / 04</p></div>
-        <div class="trait-grid question-grid">
-          <article class="trait"><span class="meta num">01</span><h2>Experience into action</h2><p>How should prior experience change the next allocation of retrieval, attention, compute and action?</p></article>
-          <article class="trait"><span class="meta num">02</span><h2>Memory into useful state</h2><p>What should persist, in what form, and for how long? How can its source and limits remain visible?</p></article>
-          <article class="trait"><span class="meta num">03</span><h2>Changing worlds</h2><p>How should a system notice that inherited knowledge is stale or harmful, and decide what to revise or reset?</p></article>
-          <article class="trait"><span class="meta num">04</span><h2>Evaluation into improvement</h2><p>Does experience improve the outcome, or did we just add context, compute or advice the system already had?</p></article>
-        </div>
-        <a class="text-link" href="/research/">Explore the research questions <span aria-hidden="true">→</span></a>
-      </div>
-    </section>
-
-    <section class="band" aria-labelledby="work-title">
+    <section id="work" class="band" aria-labelledby="work-title">
       <div class="wrap split">
         <p class="label">Public technical work</p>
         <div class="section-copy">
           <h2 id="work-title">Agent Memory Contracts</h2>
-          <p>An agent’s interpretation should not silently become a fact. Agent Memory Contracts is a public Python library that makes the boundary between extracted claims and trusted memory explicit.</p>
-          <p>Source evidence stays linked to a candidate claim. Accepting that claim requires an explicit decision. The validator rejects a trusted record without the required authorization. The <a href="https://github.com/avs-io/agent-memory-contracts/blob/main/examples/reference_reducer.py">worked reducer example</a> shows acceptance, rejection and an invalid promotion.</p>
-          <p>This is a foundation for reliable learning. The next test is whether agents use that memory to make better decisions across repeated work.</p>
-          <a class="text-link" href="https://github.com/avs-io/agent-memory-contracts">Inspect the code and tests <span aria-hidden="true">↗</span></a>
+          <p>An agent’s interpretation should not silently become a fact. Agent Memory Contracts is a public Python library for making that boundary explicit.</p>
+          <p>Source evidence stays linked to a candidate claim. Accepting the claim requires a recorded decision, and the validator rejects a trusted record without the required authorization. The worked reducer example shows acceptance, rejection and an invalid promotion.</p>
+          <div class="work-links">
+            <a class="text-link" href="https://github.com/avs-io/agent-memory-contracts">Inspect the code and tests <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/avs-io/agent-memory-contracts/blob/main/examples/reference_reducer.py">Run the worked example <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
     </section>
-
+    <section class="band" aria-labelledby="questions-label">
+      <div class="wrap">
+        <div class="band-head"><p class="label" id="questions-label">What we are investigating</p><p class="label">01 / 04</p></div>
+        <div class="trait-grid question-grid">
+          <article class="trait"><span class="meta num">01</span><h2>Decisions</h2><p>When should a previous outcome change the next search, test or action?</p></article>
+          <article class="trait"><span class="meta num">02</span><h2>Useful state</h2><p>Which facts, procedures and failed attempts deserve to persist, and with what source and scope?</p></article>
+          <article class="trait"><span class="meta num">03</span><h2>Revision</h2><p>How should a system detect stale knowledge and decide what to revise or reset?</p></article>
+          <article class="trait"><span class="meta num">04</span><h2>Evaluation</h2><p>Does retained experience improve results when context, compute and prior advice are accounted for?</p></article>
+        </div>
+        <a class="text-link" href="/research/">Explore the research questions <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
     <section class="band" aria-labelledby="workflows-title">
       <div class="wrap split">
         <p class="label">Repeated work</p>
         <div class="section-copy">
-          <h2 id="workflows-title">The test is whether this matters in real work.</h2>
-          <p>We are interested in bounded workflows where agents rediscover context, repeat mistakes or struggle when facts change. Outcomes should be checkable, uncertainty visible, and human escalation explicit.</p>
-          <p>The aim is for repeated work to become measurably better without agents becoming more confidently wrong. We are early, building and testing, and looking for hard problems and collaborators.</p>
-          <a class="text-link" href="mailto:hello@wakingmatter.com">Bring a recurring problem <span aria-hidden="true">→</span></a>
+          <h2 id="workflows-title">Bring a problem that keeps coming back.</h2>
+          <p>Does an agent reconstruct the same context every week, repeat a known mistake or fail when a fact changes? We want to work on recurring workflows where the result can be checked and a person can intervene.</p>
+          <a class="text-link" href="mailto:hello@wakingmatter.com">Tell us about your workflow <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
-
-    <section class="band" aria-labelledby="thesis-title">
+    {featured && <section class="band" aria-labelledby="thesis-title">
       <div class="wrap split">
         <p class="label">The broader thesis</p>
-        <div class="section-copy"><h2 id="thesis-title">Intelligence should accumulate.</h2><p>Useful learning should survive a session and compound across work, agents, models and time. Keeping it useful, revisable and worth inheriting is the work of cumulative intelligence.</p></div>
+        <div class="section-copy">
+          <h2 id="thesis-title">Intelligence should accumulate.</h2>
+          <p>Learning costs time, attention and failed attempts. The essay asks what should survive that investment, how it can pass between systems and when it should lose authority.</p>
+          <p class="meta">{featured.data.pubDate.toISOString().slice(0, 10)}{featured.data.updatedDate && <> · Updated {featured.data.updatedDate.toISOString().slice(0, 10)}</>}</p>
+          <a class="text-link" href={`/notes/${featured.slug}/`}>Read the essay <span aria-hidden="true">→</span></a>
+        </div>
       </div>
-    </section>
-
-    {featured && <section class="band notes-teaser" aria-labelledby="notes-label"><div class="wrap"><p class="label" id="notes-label">Notes</p><a class="note-card" href={`/notes/${featured.slug}/`}><span class="meta">{featured.data.pubDate.toISOString().slice(0, 10)}</span><span class="note-card-title">{featured.data.title}</span><p>{featured.data.description}</p></a></div></section>}
+    </section>}
   </main>
 </Base>
