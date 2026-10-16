@@ -182,6 +182,8 @@ Until we have commissioned photography, the site should use **type, rules, and t
 
 **Traits:** Precision. Depth. Composure.
 
+**Conviction:** State what we believe and what we are building toward directly. Be bold about the thesis and precise about demonstrated results. Epistemic honesty should sharpen the stance, not turn the voice into repeated disclaimers or self-effacement.
+
 Write as a long-lived institution that has not yet said much in public, not as a startup that needs to sound large.
 
 - Prefer short declarative sentences. Do not stack claims.

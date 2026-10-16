@@ -9,7 +9,7 @@ An agent can complete a task without leaving its successor better prepared for t
 
 This is a strange way to spend effort. In almost every other domain where learning matters, the point is not to demonstrate capability once. It is to keep it.
 
-Science is the obvious example, and it is not a metaphor we should lean on too heavily. Still, the institutional bet is clear: later work should be cheaper, sharper, or more ambitious because earlier work was kept in a form that others can use. Firms, crafts, and legal systems make the same bet in different materials. A tradition is, among other things, a way of not paying the full cost of understanding a second time.
+Science makes an institutional bet: later work should be cheaper, sharper, or more ambitious because earlier work was kept in a form that others can use. Firms, crafts, and legal systems make the same bet in different materials. A tradition is, among other things, a way of not paying the full cost of understanding a second time.
 
 A notebook, a transcript or an evaluation score may preserve a result without preserving what made it useful. When a model, workflow or team changes, later work may have to reconstruct the reasoning behind it. We are interested in making that inheritance explicit and testable.
 
@@ -17,9 +17,9 @@ The problem already has names. Continual and lifelong learning: new tasks withou
 
 These fields already address substantial parts of the problem. Our question is how their lessons should inform an agent system whose decisions depend on a changing world, and how to check whether its retained experience is earning its place.
 
-Several questions remain open. We will not close them here. What should stay local, and what should travel? How would we tell compounding from a pile of memories that only makes later work slower? Those are joints, not slogans.
+The design questions are concrete. What should stay local, and what should travel? How would we tell compounding from a pile of memories that only makes later work slower?
 
-We take the gap to be a design problem. Waking Matter is building systems for agents that improve with experience. The larger thesis is that useful learning should survive sessions and compound across agents, models and time. This note sets out the problem; it does not report an achieved capability.
+We take the gap to be a design problem. Waking Matter is building systems for agents that improve with experience. Our conviction is that useful learning should survive sessions and compound across agents, models and time. The work is to make that conviction hold up in systems we can inspect and experiments we can repeat.
 
 ## Memory is not enough
 
@@ -41,13 +41,13 @@ The difficulty is not only technical. What counts as *useful* learning is a judg
 
 Locality is not the same problem as revision. Some learning should never leave the room: privacy, a failed path that should die rather than be inherited, a fact that is only true here. We do not have an account of that boundary. We leave it open.
 
-## Inheritance has to be the default
+## Inherit useful learning. Keep the right to reset.
 
-If preservation is the vessel, inheritance is the habit. A system compounds only if new work begins from old work as a matter of course, not as a special project.
+If preservation is the vessel, inheritance is the habit. Useful prior learning should be available to new work as a matter of course. It should also be possible to inspect it, challenge it and start fresh. We want continuity without giving the past permanent authority.
 
 That is harder than it sounds. Starting over is often faster in the local sense. A new model is better on a public benchmark. A new agent is unencumbered by yesterday's ontology. A new file is easier than reading the old one. The incentives of demonstrating capability can cut against the incentives of accumulation.
 
-There is a corresponding technical difficulty. Inheritance requires interfaces that survive change: between models of different families, between agents with different tools, between human judgment and machine traces. It requires some account of what is worth passing on, and some way to notice when an inherited piece of learning has gone stale. None of that is solved by larger context windows, though larger windows can hide the absence of a design.
+There is a corresponding technical difficulty. Inheritance requires interfaces that survive change: between models of different families, between agents with different tools, between human judgment and machine traces. It requires some account of what is worth passing on, and some way to notice when an inherited piece of learning has gone stale. Larger context windows can make more history available. The system still needs a policy for what deserves authority and when that authority should end.
 
 We are interested in the boring machinery of inheritance: how an agent, a model, or a group might take on prior learning without having been present for it, and how that transfer can be inspected rather than believed. An inheritance that cannot be examined is not an inheritance. It is a rumor with better production values.
 
@@ -63,15 +63,15 @@ This is why we speak of systems rather than of a model, a memory module, or a pr
 
 Evaluation, in that light, cannot only ask whether a system can do a task from a cold start. Cold-start competence is real. It answers a different question from whether repeated work improves with experience. Cumulative intelligence would also have to show that a second, third, and tenth encounter with a related world is not billed at full price: in tokens, in human attention, or in repeated mistakes. We do not offer such a measure here. We note only that without one, it is easy to mistake a sequence of impressive debuts for a tradition.
 
-## A quieter posture
+## The standard we are building toward
 
 There is a fashionable alternative: treat each new demonstration as a reset, and call the rising envelope of those demonstrations progress. Some of that progress is real. Benchmarks move. Models that did not exist five years ago now do work that would have seemed implausible. We have no interest in denying it.
 
 What we doubt is that a sequence of isolated peaks is the same thing as intelligence that accumulates. A civilization that had to rediscover metallurgy in every generation would still produce impressive furnaces. It would not produce a metallurgy.
 
-The analogy is imperfect, and we will not press it. The claim is modest. Useful learning costs data, human attention and failed attempts. Systems that cannot keep it are wasteful even when they are capable. The research problem is to make keeping it ordinary.
+Useful learning costs data, human attention and failed attempts. We believe that investment should carry forward. Our ambition is to make useful inheritance ordinary: systems that retain what earns its place, revise what no longer holds and become more capable through repeated work.
 
-We will be wrong about some of the forms this should take. We expect to spend a long time on representations that do not survive contact with a new model, on inheritance that looks like copying, on compounding that is only bookkeeping. That is the work. It does not require a promise that the problem is unsolved by everyone else, or that we have already solved it.
+Experiments will tell us which forms deserve to survive. Some representations will fail with a new model. Some apparent compounding will turn out to be bookkeeping. We will keep the results that withstand scrutiny and change the systems that do not. That is how conviction becomes capability.
 
 Intelligence should accumulate. The rest is design.
 
