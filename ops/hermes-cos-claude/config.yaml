@@ -1,0 +1,128 @@
+# cos-claude — isolated Hermes home. Not the default ~/.hermes gateway.
+# Production model after tests pass: claude-opus-5-5. It is not active and is not a fallback.
+model:
+  provider: claude-subscription-directsdk-experimental
+  default: haiku
+
+fallback_providers: []
+
+agent:
+  api_max_retries: 0
+  auto_recovery_cycles: 0
+  disabled_toolsets:
+    - terminal
+    - code_execution
+    - computer_use
+    - debugging
+    - file
+    - skills
+    - memory
+    - browser
+    - web
+    - cronjob
+    - kanban
+    - delegation
+    - tts
+    - image_gen
+    - video_gen
+
+auxiliary:
+  background_review:
+    enabled: false
+    provider: claude-subscription-directsdk-experimental
+    model: haiku
+    fallback_chain: []
+  compression:
+    provider: claude-subscription-directsdk-experimental
+    model: haiku
+    fallback_chain: []
+  vision:
+    provider: claude-subscription-directsdk-experimental
+    model: haiku
+    fallback_chain: []
+  title_generation:
+    provider: claude-subscription-directsdk-experimental
+    model: haiku
+    fallback_chain: []
+
+skills:
+  write_approval: true
+
+memory:
+  memory_enabled: false
+  user_profile_enabled: false
+  write_approval: true
+
+curator:
+  enabled: false
+
+security:
+  redact_secrets: true
+
+approvals:
+  mode: manual
+
+slack:
+  require_mention: true
+  strict_mention: true
+  free_response_channels: ""
+  allowed_channels:
+    - C0C5U0A1L6R
+  unauthorized_dm_behavior: ignore
+
+platforms:
+  slack:
+    reply_to_mode: first
+    extra:
+      allow_bots: mentions
+      reply_in_thread: true
+      allow_admin_from:
+        - U0C6D8NTGNL
+      group_allow_admin_from:
+        - U0C6D8NTGNL
+      user_allowed_commands:
+        - help
+        - whoami
+        - status
+
+mcp_servers:
+  gbrain:
+    url: http://127.0.0.1:18790/mcp
+    headers:
+      Authorization: ${GBRAIN_MCP_AUTHORIZATION}
+    enabled: true
+    timeout: 30
+    connect_timeout: 30
+    trust: untrusted
+    tools:
+      include:
+        - context_pack
+        - delta
+        - entity
+        - find_anomalies
+        - get_agent_job
+        - get_backlinks
+        - get_ingest_log
+        - get_page
+        - get_recent_salience
+        - get_skill
+        - get_skill_asset
+        - get_write_request
+        - list_brain_skillpack
+        - list_link_sources
+        - list_pages
+        - list_skills
+        - list_write_requests
+        - query
+        - recall
+        - resolve_slugs
+        - search
+        - traverse_graph
+        - whoami
+
+plugins:
+  enabled:
+    - claude-subscription-directsdk-experimental
+    - cos-claude-guard
+    - hermes-telemetry
+  disabled: []

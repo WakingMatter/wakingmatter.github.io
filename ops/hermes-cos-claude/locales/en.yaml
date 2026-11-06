@@ -1,0 +1,15 @@
+gateway:
+  errors:
+    rate_limited: "CoS unavailable"
+    auth_failed: "CoS unavailable"
+    bad_request: "CoS unavailable"
+    connection_interrupted: "CoS unavailable"
+    unreachable: "CoS unavailable"
+    connection_unknown: "CoS unavailable"
+    usage_limit_resets: "CoS unavailable"
+    provider_kept_failing: "CoS unavailable"
+    generic_failed: "CoS unavailable"
+    generic_failed_with_hint: "CoS unavailable"
+    no_credentials: "CoS unavailable"
+    no_response: "CoS unavailable"
+    stopped_before_finishing: "CoS unavailable"

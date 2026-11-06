@@ -1,0 +1,3 @@
+name: cos-claude-guard
+version: "1.0.0"
+description: Profile-local loop guard, hourly post cap, CoS stop, and CoS unavailable rewrite for cos-claude.

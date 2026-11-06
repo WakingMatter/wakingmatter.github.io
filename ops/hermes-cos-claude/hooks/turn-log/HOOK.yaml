@@ -1,0 +1,6 @@
+name: cos-claude-turn-log
+description: Local turn log with secrets redacted before the line is stored.
+events:
+  - agent:start
+  - agent:step
+  - agent:end

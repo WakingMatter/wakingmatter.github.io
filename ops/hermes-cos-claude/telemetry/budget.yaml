@@ -1,0 +1,12 @@
+# List-price estimate only. On claude-subscription-directsdk this is not the
+# Claude subscription invoice. Extra-usage overage is an account setting.
+budgets:
+  global:
+    daily_usd: 5.00
+
+thresholds:
+  soft_pct: 0.80
+  hard_pct: 1.00
+
+on_estimated:
+  mode: enforce
