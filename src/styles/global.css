@@ -207,6 +207,33 @@ a {
   border-bottom-color: var(--hair);
 }
 
+.footer-credit {
+  flex: 1 0 100%;
+  display: flex;
+  margin: 0;
+  min-width: 0;
+}
+
+.e2b-badge {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  border-bottom: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.e2b-badge img {
+  height: 1.875rem;
+  width: auto;
+  max-width: none;
+  flex: none;
+}
+
+.site-footer .e2b-badge:hover {
+  border-bottom-color: transparent;
+}
+
 .wrap {
   width: min(100% - 2 * var(--page-pad), var(--content));
   margin-inline: auto;
